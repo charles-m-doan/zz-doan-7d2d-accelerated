@@ -1,11 +1,14 @@
 <configs>
 
 	<!-- Stacks -->
-	<set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">5000</set>
-	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">5000</set>
+	<!-- <set
+	xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">5000</set>
+	<set
+	xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">5000</set>
 	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">
 		5000</set>
-	<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">5000</set>
+	<set
+	xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">5000</set> -->
 
 	<!-- Machete -->
 	<set

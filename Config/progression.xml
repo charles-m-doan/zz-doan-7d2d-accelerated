@@ -1,6 +1,7 @@
 <configs>
 
-	<!-- <set xpath="/progression/level/@skill_points_per_level">3</set> -->
+	<!-- Skill Points Per Level -->
+	<set xpath="/progression/level/@skill_points_per_level">3</set>
 
 
 	<!-- Luck Looter -->
