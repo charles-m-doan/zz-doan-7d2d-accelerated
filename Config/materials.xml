@@ -1,0 +1,25 @@
+<configs>
+
+	<!-- Set all material XP values to 0 -->
+	<set xpath="/materials/material/property[@name='Experience']/@value">0</set>
+
+	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='stability_glue']/@value">80</set>
+	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='Mass']/@value">2</set>
+
+	<set
+		xpath="/materials/material[@id='Mwood_weak_shapes']/property[@name='stability_glue']/@value">
+		50</set>
+	<set xpath="/materials/material[@id='Mwood_weak_shapes']/property[@name='Mass']/@value">1</set>
+
+
+	<set xpath="/materials/material[@id='Mfarmland']/property[@name='stability_glue']/@value">30</set>
+	<set xpath="/materials/material[@id='Mfarmland']/property[@name='Mass']/@value">2</set>
+
+	<set
+		xpath="/materials/material[@id='MfertilizedFarmland']/property[@name='stability_glue']/@value">
+		30</set>
+	<set xpath="/materials/material[@id='MfertilizedFarmland']/property[@name='Mass']/@value">2</set>
+
+	<set xpath="/materials/material[@id='MfertilizedClayPlanter']/property[@name='Mass']/@value">1</set>
+
+</configs>

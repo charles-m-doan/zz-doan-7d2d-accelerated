@@ -1,0 +1,8 @@
+<configs>
+
+	<set xpath="/traders/trader_info[@id!='3' and @id!='4' and @id!='5']/@reset_interval">1</set>
+	<set xpath="/traders/trader_info[@id!='3' and @id!='4' and @id!='5']/@max_inventory">150</set>
+	<set xpath="/traders/trader_info[@id!='3' and @id!='4' and @id!='5']/@open_time">5:00</set>
+	<set xpath="/traders/trader_info[@id!='3' and @id!='4' and @id!='5']/@close_time">22:00</set>
+
+</configs>

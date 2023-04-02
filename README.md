@@ -1,1 +1,1 @@
-# zz-doan-7d2d-accelerated
+This mod is intended to minimize "grinding" and accelerate the overall pace of the game. Ideally it should be played with 40 minute days.
