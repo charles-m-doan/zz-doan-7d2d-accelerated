@@ -1,4 +1,6 @@
 <configs>
+	<!-- Modify Stack Counts for all Items -->
+	<set xpath="/items/item/property[@name='Stacknumber']/@value">50000</set>
 
 	<!-- Stacks -->
 	<!-- <set

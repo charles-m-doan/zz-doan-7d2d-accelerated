@@ -1,5 +1,8 @@
 <configs>
 
+	<!-- Modify Stack Counts for all Item Modifiers -->
+	<set xpath="/item_modifiers/item_modifier/property[@name='Stacknumber']/@value">500</set>
+
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@installable_tags">
 		armor,pocketMod</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@blocked_tags">
