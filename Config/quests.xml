@@ -1,8 +1,8 @@
 <configs>
 
-	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">15</set>
+	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">4</set>
 
-	<remove xpath="/quests/quest[@id='tier2_fetch_clear']/objective[@type='ClearSleepers']" />
+	<!-- <remove xpath="/quests/quest[@id='tier2_fetch_clear']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier3_fetch_clear']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier4_fetch_clear']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier5_fetch_clear']/objective[@type='ClearSleepers']" />
@@ -10,6 +10,6 @@
 
 	<remove xpath="/quests/quest[@id='tier2_restore_power']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier3_restore_power']/objective[@type='ClearSleepers']" />
-	<remove xpath="/quests/quest[@id='tier4_restore_power']/objective[@type='ClearSleepers']" />
+	<remove xpath="/quests/quest[@id='tier4_restore_power']/objective[@type='ClearSleepers']" /> -->
 
 </configs>
