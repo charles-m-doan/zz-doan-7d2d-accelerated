@@ -140,6 +140,58 @@
 		<drop event="Harvest" name="plantedPumpkin1" count="1" prob="0.5" />
 	</append>
 
+	<!-- =============== HEATMAP MODIFICATIONS =============== -->
+	<!-- HeatMapStrength: The Percentage of heat an event will contribute from the block. -->
+	<!-- HeatMapTime: The time or Number of 'ticks', until an event expires. -->
+	<!-- HeatMapFrequency: The time or Number of 'ticks', between heat event creations. -->
+
+	<!-- campfire -->
+	<!-- Original values: 5, 5000, 1000 -->
+	<set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">.5</set>
+	<set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">1000</set>
+	<set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapFrequency']/@value">10000</set>
+	<!-- forge -->
+	<!-- Original values: 6, 5000, 1000 -->
+	<set xpath="/blocks/block[@name='forge']/property[@name='HeatMapStrength']/@value">.6</set>
+	<set xpath="/blocks/block[@name='forge']/property[@name='HeatMapTime']/@value">1000</set>
+	<set xpath="/blocks/block[@name='forge']/property[@name='HeatMapFrequency']/@value">10000</set>
+	<!-- workbench -->
+	<!-- Original values: 2, 5000, 1000 -->
+	<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']/@value">.2</set>
+	<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapTime']/@value">1000</set>
+	<set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapFrequency']/@value">10000</set>
+	<!-- cementMixer -->
+	<!-- Original values: 2, 5000, 1000 -->
+	<set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']/@value">.2</set>
+	<set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapTime']/@value">1000</set>
+	<set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapFrequency']/@value">10000</set>
+	<!-- chemistryStation -->
+	<!-- Original values: 5, 5000, 1000 -->
+	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">.5</set>
+	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">1000</set>
+	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapFrequency']/@value">
+		10000</set>
+	<!-- wallTorchLightPlayer (HeatMapFrequency not used) -->
+	<!-- Original values: 1, 4000, N/A -->
+	<set
+		xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapStrength']/@value">
+		.1</set>
+	<set xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapTime']/@value">
+		1000</set>
+	<!-- candleWallLightPlayer (HeatMapFrequency not used) -->
+	<!-- Original values: 0.5, 4000, N/A -->
+	<set
+		xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapStrength']/@value">
+		.01</set>
+	<set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapTime']/@value">
+		1000</set>
+	<!-- burningBarrelPlayer (HeatMapFrequency not used) -->
+	<!-- Original values: 1, 4000, N/A -->
+	<set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapStrength']/@value">
+		.1</set>
+	<set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapTime']/@value">
+		1000</set>
+
 	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 	<set
