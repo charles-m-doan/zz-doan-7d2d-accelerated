@@ -1,0 +1,31 @@
+<configs>
+
+	<!-- Craftable Acid (chemistry station) -->
+	<append xpath="/recipes">
+		<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+			<ingredient name="resourcePotassiumNitratePowder" count="30" />
+			<ingredient name="resourceOilShale" count="20" />
+			<ingredient name="drinkJarRiverWater" count="2" />
+			<!-- <ingredient name="resourceSilverNugget" count="1" /> -->
+		</recipe>
+	</append>
+
+	<!-- Craftable Scrap Polymers (chemistry station) -->
+	<append xpath="/recipes">
+		<recipe name="resourceScrapPolymers" count="1" craft_area="chemistryStation"
+			tags="chemStationCrafting">
+			<ingredient name="ammoGasCan" count="5" />
+		</recipe>
+	</append>
+
+	<!-- Craftable Beakers (forge) -->
+	<append xpath="/recipes">
+		<recipe name="toolBeaker" count="1" material_based="true" craft_area="forge"
+			craft_tool="toolForgeCrucible">
+			<ingredient name="unit_glass" count="50" />
+			<ingredient name="unit_lead" count="20" />
+			<ingredient name="unit_clay" count="20" />
+		</recipe>
+	</append>
+
+</configs>
