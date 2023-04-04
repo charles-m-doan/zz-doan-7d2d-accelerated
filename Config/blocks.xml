@@ -20,6 +20,127 @@
 		<property name="Stacknumber" value="5000" />
 	</append>
 
+	<!-- Modify Farm Crops -->
+	<!-- Plant downgrades to seedlings on harvest -->
+	<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedMushroom1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedYucca1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedCotton1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedCoffee1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedGoldenrod1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedAloe1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedBlueberry1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedPotato1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedChrysanthemum1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedCorn1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedGraceCorn1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedHop3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedHop1" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedPumpkin1" />
+	</append>
+
+	<!-- Remove Plant Destroy -->
+	<remove xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Destroy']" />
+	<remove xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Destroy']" />
+
+	<!-- Modify Harvest Yields -->
+	<!-- Default original value for all crops is 2 -->
+	<set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Harvest']/@count">
+		4</set>
+	<set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Harvest']/@count">2</set>
+	<set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest']/@count">5</set>
+	<set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Harvest']/@count">2</set>
+	<set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Harvest']/@count">
+		2</set>
+	<set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Harvest']/@count">2</set>
+	<set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Harvest']/@count">
+		2</set>
+	<set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Harvest']/@count">3</set>
+	<set
+		xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Harvest']/@count">
+		2</set>
+	<set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Harvest']/@count">3</set>
+	<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Harvest']/@count">
+		2</set>
+	<set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Harvest']/@count">2</set>
+	<set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Harvest']/@count">2</set>
+
+	<!-- Modify adult crops to drop seeds half of the time -->
+	<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">
+		<drop event="Harvest" name="plantedMushroom1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+		<drop event="Harvest" name="plantedYucca1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']">
+		<drop event="Harvest" name="plantedCotton1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']">
+		<drop event="Harvest" name="plantedCoffee1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']">
+		<drop event="Harvest" name="plantedGoldenrod1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']">
+		<drop event="Harvest" name="plantedAloe1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']">
+		<drop event="Harvest" name="plantedBlueberry1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']">
+		<drop event="Harvest" name="plantedPotato1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']">
+		<drop event="Harvest" name="plantedChrysanthemum1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']">
+		<drop event="Harvest" name="plantedCorn1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']">
+		<drop event="Harvest" name="plantedGraceCorn1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedHop3HarvestPlayer']">
+		<drop event="Harvest" name="plantedHop1" count="1" prob="0.5" />
+	</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']">
+		<drop event="Harvest" name="plantedPumpkin1" count="1" prob="0.5" />
+	</append>
+
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 	<set
 		xpath="/blocks/block[@name='paperPillar100']/drop[@event='Destroy' and @name='resourcePaper']/@count">
