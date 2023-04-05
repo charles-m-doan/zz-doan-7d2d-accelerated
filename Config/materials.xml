@@ -1,7 +1,7 @@
 <configs>
 
 	<!-- Set all material XP values to 0 -->
-	<set xpath="/materials/material/property[@name='Experience']/@value">0</set>
+	<set xpath="/materials/material/property[@name='Experience']/@value">0.5</set>
 
 	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='stability_glue']/@value">80</set>
 	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='Mass']/@value">2</set>
