@@ -1,7 +1,7 @@
 <configs>
 
 	<!-- Modify Stack Counts for all Blocks -->
-	<set xpath="/blocks/block/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/blocks/block/property[@name='Stacknumber' and @value &gt; 1]/@value">5000</set>
 
 	<!-- Modify Stack Counts for Shape Blocks -->
 	<append xpath="/blocks/block[@name='frameShapes']">
