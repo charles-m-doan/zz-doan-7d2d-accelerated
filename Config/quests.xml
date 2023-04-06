@@ -1,8 +1,46 @@
 <configs>
 
+	<!-- Original Value: 4 -->
 	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">4</set>
 
-	<!-- <remove xpath="/quests/quest[@id='tier2_fetch_clear']/objective[@type='ClearSleepers']" />
+	<!-- Allow tutorial quest to use nearest trader in any non-wasteland biome -->
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
+	<append xpath="/quests">
+
+		<quest id="quest_whiteRiverCitizen1">
+			<property name="group_name_key" value="quest_WhiteRiverCitizen" />
+			<property name="name_key" value="quest_WhiteRiverCitizen1" />
+			<property name="subtitle_key" value="quest_WhiteRiverCitizen1_subtitle" />
+			<property name="description_key" value="quest_WhiteRiverCitizen1_description" />
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="false" />
+
+			<action type="ShowTip" value="quest_WhiteRiverCitizen1_description">
+				<property name="delay" value="3" />
+			</action>
+			<objective type="Goto" id="trader" value="5" phase="1">
+				<property name="biome_filter_type" value="ExcludeBiome" />
+				<property name="biome_filter" value="wasteland" />
+				<property name="nav_object" value="go_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+				<property name="use_closest" value="true" />
+			</objective>
+
+			<reward type="Exp" value="500" />
+		</quest>
+	</append>
+
+
+	<!-- Remove the "clear" portion of fetch/clear and restore_power quests -->
+	<!-- Note: NOT SAVE COMPATIBLE. START A NEW GAME. -->
+
+	<remove xpath="/quests/quest[@id='tier2_fetch_clear']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier3_fetch_clear']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier4_fetch_clear']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier5_fetch_clear']/objective[@type='ClearSleepers']" />
@@ -10,6 +48,6 @@
 
 	<remove xpath="/quests/quest[@id='tier2_restore_power']/objective[@type='ClearSleepers']" />
 	<remove xpath="/quests/quest[@id='tier3_restore_power']/objective[@type='ClearSleepers']" />
-	<remove xpath="/quests/quest[@id='tier4_restore_power']/objective[@type='ClearSleepers']" /> -->
+	<remove xpath="/quests/quest[@id='tier4_restore_power']/objective[@type='ClearSleepers']" />
 
 </configs>
