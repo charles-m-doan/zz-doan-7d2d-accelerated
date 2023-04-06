@@ -1,23 +1,23 @@
 <configs>
 
 	<!-- Modify Stack Counts for all Blocks -->
-	<set xpath="/blocks/block/property[@name='Stacknumber' and @value &gt; 1]/@value">5000</set>
+	<set xpath="/blocks/block/property[@name='Stacknumber' and @value &gt; 1]/@value">6400</set>
 
 	<!-- Modify Stack Counts for Shape Blocks -->
 	<append xpath="/blocks/block[@name='frameShapes']">
-		<property name="Stacknumber" value="5000" />
+		<property name="Stacknumber" value="6400" />
 	</append>
 	<append xpath="/blocks/block[@name='woodFrameBlock']">
-		<property name="Stacknumber" value="5000" />
+		<property name="Stacknumber" value="6400" />
 	</append>
 	<append xpath="/blocks/block[@name='cobblestoneShapes']">
-		<property name="Stacknumber" value="5000" />
+		<property name="Stacknumber" value="6400" />
 	</append>
 	<append xpath="/blocks/block[@name='concreteShapes']">
-		<property name="Stacknumber" value="5000" />
+		<property name="Stacknumber" value="6400" />
 	</append>
 	<append xpath="/blocks/block[@name='steelShapes']">
-		<property name="Stacknumber" value="5000" />
+		<property name="Stacknumber" value="6400" />
 	</append>
 
 	<!-- Modify Farm Crops -->
