@@ -1,3 +1,18 @@
 <configs>
 
+    <!-- Original Value: 100  -->
+    <set
+        xpath="/nav_object_classes/nav_object_class[@name='backpack']/onscreen_settings/property[@name='max_distance']/@value">
+        300</set>
+
+    <!-- Original Value: 5 -->
+    <set
+        xpath="/nav_object_classes/nav_object_class[@name='fetch_container']/onscreen_settings/property[@name='max_distance']/@value">
+        50</set>
+
+    <!-- Original Value: 5 -->
+    <set
+        xpath="/nav_object_classes/nav_object_class[@name='restore_power']/onscreen_settings/property[@name='max_distance']/@value">
+        50</set>
+
 </configs>
