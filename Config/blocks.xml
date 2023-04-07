@@ -228,4 +228,14 @@
 		xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy' and @name='resourceBone']/@count">
 		140</set>
 
+	<!-- palletBlueTarpBase - original value: 35 -->
+	<set
+		xpath="/blocks/block[@name='palletBlueTarpBase']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
+		100</set>
+
+	<!-- palletWhiteBagsBase - original value: 10,100 -->
+	<set
+		xpath="/blocks/block[@name='palletWhiteBagsBase']/drop[@event='Harvest' and @name='resourceCement']/@count">
+		150</set>
+
 </configs>
