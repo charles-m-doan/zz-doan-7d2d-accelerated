@@ -192,4 +192,40 @@
 	<set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapTime']/@value">
 		1000</set>
 
+
+	<!-- +++++++++++++++++++++++++++++ Harvest Amounts from Blocks +++++++++++++++++++++++++++++ -->
+
+	<!-- goreBlockHumanBones - original values: 2,4; 5,10 -->
+	<set
+		xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
+		20</set>
+	<set
+		xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy' and @name='resourceBone']/@count">
+		100</set>
+
+	<!-- goreBlockHumanCorpse - original values: 1,2; 4,8; 5,9 -->
+	<set
+		xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Harvest' and @name='foodRottingFlesh' and @tag='butcherHarvest']/@count">
+		30</set>
+	<set
+		xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
+		25</set>
+	<set
+		xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy' and @name='resourceBone']/@count">
+		120</set>
+
+	<!-- goreBlockAnimal - original values: 1,3; 1,2; 4,8; 5,10 -->
+	<set
+		xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest' and @name='foodRottingFlesh' and @tag='butcherHarvest']/@count">
+		35</set>
+	<set
+		xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest' and @name='resourceAnimalFat']/@count">
+		6</set>
+	<set
+		xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
+		30</set>
+	<set
+		xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy' and @name='resourceBone']/@count">
+		140</set>
+
 </configs>
