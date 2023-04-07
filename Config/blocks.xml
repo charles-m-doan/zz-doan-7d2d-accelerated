@@ -238,4 +238,53 @@
 		xpath="/blocks/block[@name='palletWhiteBagsBase']/drop[@event='Harvest' and @name='resourceCement']/@count">
 		150</set>
 
+	<!-- CLAY - original values: 22, 22, 22, 9, 2 -->
+	<set
+		xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+		22</set>
+	<set
+		xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+		22</set>
+	<set
+		xpath="/blocks/block[@name='terrBurntForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+		22</set>
+	<set
+		xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+		9</set>
+	<set
+		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+		2</set>
+
+	<!-- CRUSHED SAND - original values: 7, 8 -->
+	<set
+		xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+		9</set>
+	<set
+		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+		11</set>
+
+	<!-- Wasteland Ground ? - original values: 8, 9, 0 -->
+	<set
+		xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+		8</set>
+	<set
+		xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		9</set>
+
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<drop event="Harvest" name="resourceClayLump" count="15" tag="oreWoodHarvest" />
+	</append>
+
+
+	<!-- ROCKS -->
+
+	<!-- terrStone - original values: 55, 44 -->
+	<set xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest']/@count">55</set>
+	<set
+		xpath="/blocks/block[@name='terrStone']/drop[@event='Fall' and @name='resourceRockSmall']/@count">
+		44</set>
+
+	<!-- rockResource - original values: 22 -->
+	<set xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest']/@count">22</set>
+
 </configs>
