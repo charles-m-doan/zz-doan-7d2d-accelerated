@@ -9,13 +9,13 @@
         25</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalStag']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        3</set>
+        10</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalStag']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         25</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalStag']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        7</set>
+        200</set>
 
     <!-- Doe - original values: 20, 6, 2, 15, 5 -->
     <set
@@ -26,13 +26,13 @@
         20</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        2</set>
+        5</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        100</set>
 
     <!-- Rabbit - original values: 10, 2, 4, 2 -->
     <set
@@ -46,7 +46,7 @@
         4</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        2</set>
+        25</set>
 
     <!-- Chicken - original values: 10, 23, 4, 2 -->
     <set
@@ -60,7 +60,7 @@
         4</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        2</set>
+        20</set>
 
     <!-- Bear - original values: 50, 15, 5, 25, 5 -->
     <set
@@ -71,13 +71,13 @@
         60</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalBear']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        5</set>
+        50</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalBear']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
         25</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalBear']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        500</set>
 
     <!-- Zombie Bear - original values: 50, 15, 5, 25, 5 -->
     <set
@@ -88,13 +88,13 @@
         60</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        5</set>
+        50</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
         25</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        500</set>
 
     <!-- Wolf - original values: 25, 10, 3, 15, 5 -->
     <set
@@ -105,13 +105,13 @@
         20</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        3</set>
+        12</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        120</set>
 
     <!-- Coyote - original values: 12, 5, 2, 8, 3 -->
     <set
@@ -122,13 +122,13 @@
         10</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        2</set>
+        4</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         8</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        3</set>
+        80</set>
 
     <!-- Dire Wolf - original values: 35, 12, 3, 15, 5 -->
     <set
@@ -139,13 +139,13 @@
         30</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        3</set>
+        20</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        250</set>
 
     <!-- Mountain Lion - original values: 25, 10, 4, 15, 5 -->
     <set
@@ -156,13 +156,13 @@
         25</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        4</set>
+        15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        200</set>
 
     <!-- Zombie Vulture - original values: 4, 30, 6, 3 -->
     <set
@@ -176,7 +176,7 @@
         6</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        3</set>
+        30</set>
 
     <!-- Zombie Vulture Radiated - original values: 6, 35, 8, 5 -->
     <set
@@ -190,7 +190,7 @@
         8</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        50</set>
 
     <!-- Zombie Dog - original values: 10, 4, 1, 15, 5 -->
     <set
@@ -201,13 +201,13 @@
         12</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        1</set>
+        2</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        80</set>
 
     <!-- Snake - original values: 10, 2, 3, 2 -->
     <set
@@ -232,12 +232,12 @@
         20</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceAnimalFat']/@count">
-        4</set>
+        30</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceBone']/@count">
         15</set>
     <set
         xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@event='Harvest' and @tag='allToolsHarvest' and @name='resourceBone']/@count">
-        5</set>
+        90</set>
 
 </configs>
