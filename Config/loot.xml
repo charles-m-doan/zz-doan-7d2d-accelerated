@@ -307,8 +307,6 @@
 
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="myPrioritySchematics" count="1">
-			<!-- Schematics From 3rd party mods -->
-			<item name="CraftablePartsSchematic" />
 			<!-- Standard Schematics -->
 			<item name="cementMixerSchematic" loot_prob_template="low" />
 			<item name="chemistryStationSchematic" loot_prob_template="low" />
