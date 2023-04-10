@@ -238,32 +238,38 @@
 		xpath="/blocks/block[@name='palletWhiteBagsBase']/drop[@event='Harvest' and @name='resourceCement']/@count">
 		150</set>
 
-	<!-- CLAY - original values: 22, 22, 22, 9, 2 -->
+	<!-- terrDirt - original values: 22  -->
 	<set
 		xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
 		22</set>
+
+	<!-- terrForestGround - original values: 22  -->
 	<set
 		xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
 		22</set>
+
+	<!-- terrBurntForestGround - original values: 22  -->
 	<set
 		xpath="/blocks/block[@name='terrBurntForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
 		22</set>
+
+	<!-- terrDesertGround - original values: 9, 9  -->
 	<set
 		xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
 		9</set>
 	<set
-		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-		2</set>
-
-	<!-- CRUSHED SAND - original values: 7, 8 -->
-	<set
 		xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
 		9</set>
+
+	<!-- terrSand - original values: 2, 11  -->
+	<set
+		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+		2</set>
 	<set
 		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
 		11</set>
 
-	<!-- Wasteland Ground ? - original values: 8, 9, 0 -->
+	<!-- terrGravel - original values: 8, 9  -->
 	<set
 		xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
 		8</set>
@@ -271,20 +277,101 @@
 		xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
 		9</set>
 
-	<append xpath="/blocks/block[@name='terrGravel']">
-		<drop event="Harvest" name="resourceClayLump" count="15" tag="oreWoodHarvest" />
-	</append>
-
-
-	<!-- ROCKS -->
+	<!-- terrDestroyedStone - original values: 4, 12  -->
+	<set
+		xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+		4</set>
+	<set
+		xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		12</set>
 
 	<!-- terrStone - original values: 55, 44 -->
-	<set xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest']/@count">55</set>
+	<set
+		xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		55</set>
 	<set
 		xpath="/blocks/block[@name='terrStone']/drop[@event='Fall' and @name='resourceRockSmall']/@count">
 		44</set>
 
 	<!-- rockResource - original values: 22 -->
-	<set xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest']/@count">22</set>
+	<set
+		xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		22</set>
+
+	<!-- brickShapes - original values: 16 -->
+	<set
+		xpath="/blocks/block[@name='brickShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		16</set>
+
+	<!-- rubblePileBricks - original values: 4, 12 -->
+	<set
+		xpath="/blocks/block[@name='rubblePileBricks']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+		4</set>
+	<set
+		xpath="/blocks/block[@name='rubblePileBricks']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		12</set>
+
+	<!-- palletBricksBase - original values: 50 -->
+	<set
+		xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		50</set>
+
+	<!-- bricksStack - original value: 50 -->
+	<set
+		xpath="/blocks/block[@name='bricksStack']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		50</set>
+
+	<!-- ++++++++++++++++++++++++++ ORES ++++++++++++++++++++++++++ -->
+
+	<!-- terrOreIron - original value: 105, 14 -->
+	<set
+		xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">
+		105</set>
+	<set
+		xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		14</set>
+
+	<!-- terrOreLead - original value: 50, 14  -->
+	<set
+		xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">
+		50</set>
+	<set
+		xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		14</set>
+
+	<!-- terrOreCoal - original value: 50, 14 -->
+	<set
+		xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceCoal']/@count">
+		50</set>
+	<set
+		xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		14</set>
+
+	<!-- terrOrePotassiumNitrate - original value: 50, 14 -->
+	<set
+		xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
+		50</set>
+	<set
+		xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		14</set>
+
+	<!-- terrOreOilDeposit - original value: 50, 14, .005  -->
+	<!-- <append xpath="/blocks/block[@name='terrOreOilDeposit']">
+		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="500" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceCoal" count="600" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceScrapLead" count="700" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceScrapBrass" count="700" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceScrapIron" count="3200" tag="oreWoodHarvest" />
+	</append> -->
+	<set
+		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceOilShale']/@count">
+		50</set>
+	<set
+		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+		14</set>
+	<set
+		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRawDiamond']/@prob">
+		.005</set>
+
 
 </configs>
