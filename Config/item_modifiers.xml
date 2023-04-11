@@ -1,3 +1,13 @@
 <configs>
 
+    <!-- Remove all blocked_tags restrictions -->
+    <set xpath="/item_modifiers/item_modifier/@blocked_tags">
+        noMods</set>
+
+    <!-- Set all armor/clothing installable_tags to be applicable to both -->
+    <!-- TODO:  Verify that having dye be applicable to armor doesn't cause an issue. -->
+    <set
+        xpath="/item_modifiers/item_modifier[contains(@installable_tags, 'armor') or contains(@installable_tags, 'pocketMod')]/@installable_tags">
+        armor,pocketMod</set>
+
 </configs>
