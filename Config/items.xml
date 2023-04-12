@@ -34,5 +34,33 @@
 		xpath="/items/item[starts-with(@name, 'armor')]/effect_group[contains(@name, 'armor')]/passive_effect[@name='ModSlots']/@value">
 		1,2,3,4,5,6</set>
 
+	<!-- Remove mobility/stamina/noise penalties and add run speed buff on leather armors -->
+	<set
+		xpath="/items/item/effect_group[@name='leather armor']/passive_effect[@name='Mobility' or @name='StaminaChangeOT' or @name='NoiseMultiplier']/@value">
+		0</set>
+	<append xpath="/items/item/effect_group[@name='leather armor']">
+		<passive_effect name="RunSpeed" operation="perc_add" value=".05" />
+	</append>
+
+	<!-- Remove mobility/stamina/noise penalties and add run speed buff on military armors -->
+	<set
+		xpath="/items/item/effect_group[@name='military armor']/passive_effect[@name='Mobility' or @name='StaminaChangeOT' or @name='NoiseMultiplier']/@value">
+		0</set>
+	<append xpath="/items/item/effect_group[@name='military armor']">
+		<passive_effect name="RunSpeed" operation="perc_add" value=".05" />
+	</append>
+
+	<!-- Buff Military Stealth Boots -->
+	<set
+		xpath="/items/item[@name = 'armorMilitaryStealthBoots']/effect_group[@name='military without penalties']/passive_effect[@name='ModSlots']/@value">
+		1,2,3,4,5,6</set>
+	<set
+		xpath="/items/item[@name = 'armorMilitaryStealthBoots']/effect_group[@name='military without penalties']/passive_effect[@name='Mobility']/@value">
+		0.1</set>
+	<append
+		xpath="/items/item[@name = 'armorMilitaryStealthBoots']/effect_group[@name='military without penalties']">
+		<passive_effect name="RunSpeed" operation="perc_add" value=".15" />
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.05" />
+	</append>
 
 </configs>
