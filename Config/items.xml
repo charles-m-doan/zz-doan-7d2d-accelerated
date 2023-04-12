@@ -34,6 +34,19 @@
 		xpath="/items/item[starts-with(@name, 'armor')]/effect_group[contains(@name, 'armor')]/passive_effect[@name='ModSlots']/@value">
 		1,2,3,4,5,6</set>
 
+	<!-- Mod Slot Changes For Clothing -->
+	<set
+		xpath="/items/item[@name='apparelArmyPants' or @name='apparelArmyShirt']/effect_group/passive_effect[@name='ModSlots']/@value">
+		3</set>
+	<set
+		xpath="/items/item[property[@name='Tags' and contains(@value, 'clothing')]]/effect_group/passive_effect[@name='ModSlots' and @value='1']/@value">
+		2</set>
+	<set
+		xpath="/items/item[property[@name='Tags' and contains(@value, 'clothing')]]/effect_group/passive_effect[@name='ModSlots' and @value='0']/@value">
+		1</set>
+
+	<!-- ++++++++++++++++++++++++++ BALANCE_CHANGES ++++++++++++++++++++++++++ -->
+
 	<!-- Remove mobility/stamina/noise penalties and add run speed buff on leather armors -->
 	<set
 		xpath="/items/item/effect_group[@name='leather armor']/passive_effect[@name='Mobility' or @name='StaminaChangeOT' or @name='NoiseMultiplier']/@value">
@@ -62,5 +75,6 @@
 		<passive_effect name="RunSpeed" operation="perc_add" value=".15" />
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.05" />
 	</append>
+
 
 </configs>

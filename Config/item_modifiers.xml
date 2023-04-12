@@ -9,16 +9,6 @@
         xpath="/item_modifiers/item_modifier[contains(@installable_tags, 'armor') or contains(@installable_tags, 'pocketMod')]/@installable_tags">
         armor,pocketMod</set>
 
-    <!-- Add speed buffs to modArmorImprovedFittings and modArmorCustomizedFittings -->
-
-    <append xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/effect_group">
-        <passive_effect name="RunSpeed" operation="perc_add" value=".03" />
-    </append>
-
-    <append xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/effect_group">
-        <passive_effect name="RunSpeed" operation="perc_add" value=".05" />
-    </append>
-
     <!-- Overwite modifer tags with modifier name to avoid category restrictions -->
     <!-- Xpath operations generated using a Python script in an online Python interpreter. -->
     <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/@modifier_tags">
@@ -190,6 +180,18 @@
         modRoboticDroneWeaponMod</set>
     <set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneStunWeaponMod']/@modifier_tags">
         modRoboticDroneStunWeaponMod</set>
+
+    <!-- ++++++++++++++++++++++++++ BALANCE_CHANGES ++++++++++++++++++++++++++ -->
+
+    <!-- Add speed buffs to modArmorImprovedFittings and modArmorCustomizedFittings -->
+
+    <append xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/effect_group">
+        <passive_effect name="RunSpeed" operation="perc_add" value=".03" />
+    </append>
+
+    <append xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/effect_group">
+        <passive_effect name="RunSpeed" operation="perc_add" value=".05" />
+    </append>
 
 
 </configs>
