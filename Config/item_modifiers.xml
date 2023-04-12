@@ -155,15 +155,6 @@
         modClothingStoragePocket</set>
     <set xpath="/item_modifiers/item_modifier[@name='modClothingCargoStoragePocket']/@modifier_tags">
         modClothingCargoStoragePocket</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@modifier_tags">modDyeWhite</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeRed']/@modifier_tags">modDyeRed</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeGreen']/@modifier_tags">modDyeGreen</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeBlack']/@modifier_tags">modDyeBlack</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeBlue']/@modifier_tags">modDyeBlue</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeBrown']/@modifier_tags">modDyeBrown</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyePink']/@modifier_tags">modDyePink</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyePurple']/@modifier_tags">modDyePurple</set>
-    <set xpath="/item_modifiers/item_modifier[@name='modDyeYellow']/@modifier_tags">modDyeYellow</set>
     <set xpath="/item_modifiers/item_modifier[@name='modArmorCowboyHat']/@modifier_tags">
         modArmorCowboyHat</set>
     <set xpath="/item_modifiers/item_modifier[@name='modArmorSkullCap']/@modifier_tags">
