@@ -186,11 +186,11 @@
     <!-- Add speed buffs to modArmorImprovedFittings and modArmorCustomizedFittings -->
 
     <append xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/effect_group">
-        <passive_effect name="RunSpeed" operation="perc_add" value=".03" />
+        <passive_effect name="RunSpeed" operation="perc_add" value=".02" />
     </append>
 
     <append xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/effect_group">
-        <passive_effect name="RunSpeed" operation="perc_add" value=".05" />
+        <passive_effect name="RunSpeed" operation="perc_add" value=".03" />
     </append>
 
 

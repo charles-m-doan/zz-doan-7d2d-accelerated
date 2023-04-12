@@ -47,6 +47,21 @@
 
 	<!-- ++++++++++++++++++++++++++ BALANCE_CHANGES ++++++++++++++++++++++++++ -->
 
+	<!-- Bandana Buff -->
+	<append xpath="/items/item[@name='apparelBandana']/effect_group">
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".10" tags="running" />
+		<passive_effect name="Mobility" operation="perc_add" value=".01" />
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.05" />
+		<passive_effect name="RunSpeed" operation="perc_add" value=".1" />
+	</append>
+
+	<!-- BDU Buffs -->
+	<append xpath="/items/item[@name='apparelArmyPants' or @name='apparelArmyShirt']/effect_group">
+		<passive_effect name="RunSpeed" operation="perc_add" value=".15" />
+		<passive_effect name="Mobility" operation="perc_add" value=".01" />
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.04" />
+	</append>
+
 	<!-- Remove mobility/stamina/noise penalties and add run speed buff on leather armors -->
 	<set
 		xpath="/items/item/effect_group[@name='leather armor']/passive_effect[@name='Mobility' or @name='StaminaChangeOT' or @name='NoiseMultiplier']/@value">
@@ -72,9 +87,19 @@
 		0.1</set>
 	<append
 		xpath="/items/item[@name = 'armorMilitaryStealthBoots']/effect_group[@name='military without penalties']">
-		<passive_effect name="RunSpeed" operation="perc_add" value=".15" />
-		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.05" />
+		<passive_effect name="RunSpeed" operation="perc_add" value=".2" />
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.15" />
 	</append>
 
+	<!-- Forge Melt Times -->
+	<set xpath="/items/item/property[@name='MeltTimePerUnit']/@value">0.2</set>
+
+	<!-- Crucible -->
+	<append xpath="/items/item[@name='toolForgeCrucible']">
+		<effect_group tiered="false">
+			<passive_effect name="CraftingTime" operation="perc_add" value="-.333" />
+			<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.333" />
+		</effect_group>
+	</append>
 
 </configs>
