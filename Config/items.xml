@@ -39,10 +39,10 @@
 		xpath="/items/item[@name='apparelArmyPants' or @name='apparelArmyShirt']/effect_group/passive_effect[@name='ModSlots']/@value">
 		3</set>
 	<set
-		xpath="/items/item[property[@name='Tags' and contains(@value, 'clothing')]]/effect_group/passive_effect[@name='ModSlots' and @value='1']/@value">
+		xpath="/items/item[starts-with(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots' and @value='1']/@value">
 		2</set>
 	<set
-		xpath="/items/item[property[@name='Tags' and contains(@value, 'clothing')]]/effect_group/passive_effect[@name='ModSlots' and @value='0']/@value">
+		xpath="/items/item[starts-with(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots' and @value='0']/@value">
 		1</set>
 
 	<!-- ++++++++++++++++++++++++++ BALANCE_CHANGES ++++++++++++++++++++++++++ -->
