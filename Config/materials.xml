@@ -1,6 +1,6 @@
 <configs>
 
-	<!-- Set all material XP values to 0.5 -->
+	<!-- Set all material XP values to 0.1 -->
 	<set xpath="/materials/material/property[@name='Experience']/@value">0.1</set>
 
 	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='stability_glue']/@value">80</set>

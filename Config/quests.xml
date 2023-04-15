@@ -1,7 +1,7 @@
 <configs>
 
 	<!-- Original Value: 4 -->
-	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">4</set>
+	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">15</set>
 
 	<!-- Allow tutorial quest to use nearest trader in any non-wasteland biome -->
 	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
