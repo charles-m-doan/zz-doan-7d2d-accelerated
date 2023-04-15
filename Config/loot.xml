@@ -1,3 +1,408 @@
 <configs>
+    <!-- Destroy container on close -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@name='junk' or @name='birdNest']"
+        name="destroy_on_close">true</setattribute>
+    <setattribute xpath="/lootcontainers/lootcontainer[@name='junk' or @name='birdNest']"
+        name="sound_close">UseActions/close_garbage</setattribute>
+
+    <!-- ++++++++++++++++++++++ Custom Loot Group Definitions ++++++++++++++++++++++ -->
+
+    <!-- ALL BOOKS -->
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_allBooks" count="1">
+            <item name="bookRangersArrowRecovery" />
+            <item name="bookRangersCripplingShot" />
+            <item name="bookRangersKnockdown" />
+            <item name="bookRangersFlamingArrows" />
+            <item name="bookRangersAPAmmo" />
+            <item name="bookRangersExplodingBolts" />
+            <item name="bookRangersForestGuide" />
+
+            <item name="bookSpearHunter1Damage" />
+            <item name="bookSpearHunter2Maintenance" />
+            <item name="bookSpearHunter3SteelSpears" />
+            <item name="bookSpearHunter4StrongArm" />
+            <item name="bookSpearHunter5RapidStrike" />
+            <item name="bookSpearHunter6PuncturedLung" />
+            <item name="bookSpearHunter7QuickStrike" />
+
+            <item name="bookNeedleAndThreadDesertWear" />
+            <item name="bookNeedleAndThreadDusters" />
+            <item name="bookNeedleAndThreadFootwear" />
+            <item name="bookNeedleAndThreadLegwear" />
+            <item name="bookNeedleAndThreadPockets" />
+            <item name="bookNeedleAndThreadPufferCoats" />
+            <item name="bookNeedleAndThreadWinterWear" />
+
+            <item name="bookRangersArrowRecovery" />
+            <item name="bookRangersCripplingShot" />
+            <item name="bookRangersKnockdown" />
+            <item name="bookRangersFlamingArrows" />
+            <item name="bookRangersAPAmmo" />
+            <item name="bookRangersExplodingBolts" />
+            <item name="bookRangersForestGuide" />
+
+            <item name="bookSpearHunter1Damage" />
+            <item name="bookSpearHunter2Maintenance" />
+            <item name="bookSpearHunter3SteelSpears" />
+            <item name="bookSpearHunter4StrongArm" />
+            <item name="bookSpearHunter5RapidStrike" />
+            <item name="bookSpearHunter6PuncturedLung" />
+            <item name="bookSpearHunter7QuickStrike" />
+
+            <item name="bookHuntingJournalBears" />
+            <item name="bookHuntingJournalCoyotes" />
+            <item name="bookHuntingJournalDeer" />
+            <item name="bookHuntingJournalMountainLions" />
+            <item name="bookHuntingJournalVultures" />
+            <item name="bookHuntingJournalWolves" />
+            <item name="bookHuntingJournalSelfDefense" />
+
+            <item name="bookArtOfMiningLuckyStrike" />
+            <item name="bookArtOfMiningDiamondTools" />
+            <item name="bookArtOfMiningCoffee" />
+            <item name="bookArtOfMiningBlackStrap" />
+            <item name="bookArtOfMiningPallets" />
+            <item name="bookArtOfMiningAvalanche" />
+            <item name="bookArtOfMiningLantern" />
+
+            <item name="bookBatterUpBaseballBats" />
+            <item name="bookBatterUpBigHits" />
+            <item name="bookBatterUpGear" />
+            <item name="bookBatterUpKnockdown" />
+            <item name="bookBatterUpSlowPitch" />
+            <item name="bookBatterUpMaintenance" />
+            <item name="bookBatterUpMetalChain" />
+
+            <item name="bookNeedleAndThreadDesertWear" />
+            <item name="bookNeedleAndThreadDusters" />
+            <item name="bookNeedleAndThreadFootwear" />
+            <item name="bookNeedleAndThreadLegwear" />
+            <item name="bookNeedleAndThreadPockets" />
+            <item name="bookNeedleAndThreadPufferCoats" />
+            <item name="bookNeedleAndThreadWinterWear" />
+
+            <item name="bookBarBrawling1BasicMoves" />
+            <item name="bookBarBrawling2DropABomb" />
+            <item name="bookBarBrawling3KillerInstinct" />
+            <item name="bookBarBrawling4FinishingMoves" />
+            <item name="bookBarBrawling5AdrenalineHealing" />
+            <item name="bookBarBrawling6RageMode" />
+            <item name="bookBarBrawling7BoozedUp" />
+
+            <item name="bookWasteTreasuresAcid" />
+            <item name="bookWasteTreasuresCloth" />
+            <item name="bookWasteTreasuresCoffins" />
+            <item name="bookWasteTreasuresDoors" />
+            <item name="bookWasteTreasuresHoney" />
+            <item name="bookWasteTreasuresSinks" />
+            <item name="bookWasteTreasuresWater" />
+
+            <item name="bookUrbanCombatAdrenalineRush" />
+            <item name="bookUrbanCombatCigar" />
+            <item name="bookUrbanCombatRoomClearing" />
+            <item name="bookUrbanCombatJumping" />
+            <item name="bookUrbanCombatLandMines" />
+            <item name="bookUrbanCombatLanding" />
+            <item name="bookUrbanCombatSneaking" />
+
+            <item name="bookNightStalkerArchery" />
+            <item name="bookNightStalkerBlades" />
+            <item name="bookNightStalkerSilentNight" />
+            <item name="bookNightStalkerSlumberParty" />
+            <item name="bookNightStalkerStealthDamage" />
+            <item name="bookNightStalkerThiefAdrenaline" />
+            <item name="bookNightStalkerTwilightThief" />
+
+            <item name="bookFiremansAlmanacSpeed" />
+            <item name="bookFiremansAlmanacAxes" />
+            <item name="bookFiremansAlmanacEquipment" />
+            <item name="bookFiremansAlmanacPrevention" />
+            <item name="bookFiremansAlmanacHarvest" />
+            <item name="bookFiremansAlmanacHeat" />
+            <item name="bookFiremansAlmanacMolotov" />
+
+            <item name="bookPistolPeteAPAmmo" />
+            <item name="bookPistolPeteDamage" />
+            <item name="bookPistolPeteHPAmmo" />
+            <item name="bookPistolPeteMaintenance" />
+            <item name="bookPistolPeteSteadyHand" />
+            <item name="bookPistolPeteSwissKnees" />
+            <item name="bookPistolPeteTakeAim" />
+
+            <item name="bookLuckyLooterAmmunition" />
+            <item name="bookLuckyLooterBooks" />
+            <item name="bookLuckyLooterBrass" />
+            <item name="bookLuckyLooterDukes" />
+            <item name="bookLuckyLooterFood" />
+            <item name="bookLuckyLooterLead" />
+            <item name="bookLuckyLooterMedical" />
+
+            <item name="bookEnforcerAPAmmo" />
+            <item name="bookEnforcerApparel" />
+            <item name="bookEnforcerCriminalPursuit" />
+            <item name="bookEnforcerHPAmmo" />
+            <item name="bookEnforcerDamage" />
+            <item name="bookEnforcerIntimidation" />
+            <item name="bookEnforcerPunks" />
+
+            <item name="bookShotgunMessiahBreachingSlugs" />
+            <item name="bookShotgunMessiahDamage" />
+            <item name="bookShotgunMessiahLimbShot" />
+            <item name="bookShotgunMessiahMaintenance" />
+            <item name="bookShotgunMessiahMagazine" />
+            <item name="bookShotgunMessiahPartyStarter" />
+            <item name="bookShotgunMessiahSlugs" />
+
+            <item name="bookGreatHeistAdrenalineFall" />
+            <item name="bookGreatHeistTimedCharge" />
+            <item name="bookGreatHeistClaimed" />
+            <item name="bookGreatHeistGems" />
+            <item name="bookGreatHeistMotionDetection" />
+            <item name="bookGreatHeistSafes" />
+            <item name="bookGreatHeistSprintSneak" />
+
+            <item name="bookSniperAPAmmo" />
+            <item name="bookSniperControlledBreathing" />
+            <item name="bookSniperCripplingShot" />
+            <item name="bookSniperDamage" />
+            <item name="bookSniperHeadShot" />
+            <item name="bookSniperReload" />
+            <item name="bookSniperHPAmmo" />
+
+            <item name="bookAutoWeaponsDamage" />
+            <item name="bookAutoWeaponsRagdoll" />
+            <item name="bookAutoWeaponsMaintenance" />
+            <item name="bookAutoWeaponsRecoil" />
+            <item name="bookAutoWeaponsDrumMag" />
+            <item name="bookAutoWeaponsUncontrolledBurst" />
+            <item name="bookAutoWeaponsMachineGuns" />
+
+            <item name="bookTechJunkie1Damage" />
+            <item name="bookTechJunkie2Maintenance" />
+            <item name="bookTechJunkie3APAmmo" />
+            <item name="bookTechJunkie4Shells" />
+            <item name="bookTechJunkie5Repulsor" />
+            <item name="bookTechJunkie6BatonCharge" />
+            <item name="bookTechJunkie7Hydraulics" />
+        </lootgroup>
+    </insertAfter>
+
+    <!-- ALL SCHEMATICS -->
+    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_allSchematics" count="1">
+            <!-- T0 -->
+            <item name="medicalFirstAidBandageSchematic" />
+            <item name="modArmorCoolingMeshSchematic" />
+            <item name="modArmorImprovedFittingsSchematic" />
+            <item name="modArmorInsulatedLinerSchematic" />
+            <item name="modArmorMuffledConnectorsSchematic" />
+            <item name="modArmorPlatingBasicSchematic" />
+            <item name="modArmorStoragePocketSchematic" />
+            <item name="modGunBarrelExtenderSchematic" />
+            <item name="modGunDuckbillSchematic" />
+            <item name="modGunFlashlightSchematic" />
+            <item name="modGunForegripSchematic" />
+            <item name="modGunMeleeTheHunterSchematic" />
+            <item name="modGunRetractingStockSchematic" />
+            <item name="modGunScopeSmallSchematic" />
+            <item name="modGunTriggerGroupSemiSchematic" />
+            <item name="modMeleeClubBurningShaftSchematic" />
+            <item name="modMeleeErgonomicGripSchematic" />
+            <item name="modMeleeGraveDiggerSchematic" />
+            <item name="modMeleeStructuralBraceSchematic" />
+            <item name="modMeleeTemperedBladeSchematic" />
+            <item name="modMeleeWeightedHeadSchematic" />
+            <item name="modMeleeWoodSplitterSchematic" />
+            <item name="modShotgunSawedOffBarrelSchematic" />
+            <!-- T1 -->
+            <item name="drugHerbalAntibioticsSchematic" />
+            <item name="modArmorBandolierSchematic" />
+            <item name="modArmorDoubleStoragePocketSchematic" />
+            <item name="modArmorHelmetLightSchematic" />
+            <item name="modFuelTankSmallSchematic" />
+            <item name="modGunBipodSchematic" />
+            <item name="modGunBowArrowRestSchematic" />
+            <item name="modGunChokeSchematic" />
+            <item name="modGunCrippleEmSchematic" />
+            <item name="modGunMagazineExtenderSchematic" />
+            <item name="modGunMuzzleBrakeSchematic" />
+            <item name="modGunReflexSightSchematic" />
+            <item name="modGunScopeMediumSchematic" />
+            <item name="modGunTriggerGroupBurst3Schematic" />
+            <item name="modMeleeBunkerBusterSchematic" />
+            <item name="modMeleeClubBarbedWireSchematic" />
+            <item name="modMeleeFortifyingGripSchematic" />
+            <item name="modMeleeIronBreakerSchematic" />
+            <item name="modMeleeSerratedBladeSchematic" />
+            <!-- T2 -->
+            <item name="drugAntibioticsSchematic" />
+            <item name="medicalFirstAidKitSchematic" />
+            <item name="medicalPlasterCastSchematic" />
+            <item name="modArmorAdvancedMuffledConnectorsSchematic" />
+            <item name="modArmorCustomizedFittingsSchematic" />
+            <item name="modArmorImpactBracingSchematic" />
+            <item name="modArmorPlatingReinforcedSchematic" />
+            <item name="modArmorTripleStoragePocketSchematic" />
+            <item name="modArmorWaterPurifierSchematic" />
+            <item name="modFuelTankLargeSchematic" />
+            <item name="modGunBowPolymerStringSchematic" />
+            <item name="modGunLaserSightSchematic" />
+            <item name="modGunMeleeRadRemoverSchematic" />
+            <item name="modGunScopeLargeSchematic" />
+            <item name="modGunSoundSuppressorSilencerSchematic" />
+            <item name="modGunTriggerGroupAutomaticSchematic" />
+            <item name="modMeleeClubMetalSpikesSchematic" />
+            <item name="resourceMilitaryFiberSchematic" />
+            <!-- *** T0_Tool_Schematics -->
+            <item name="forgeSchematic" />
+            <item name="meleeToolIronSetSchematic" />
+            <item name="meleeToolSalvageT1WrenchSchematic" />
+            <item name="meleeWpnBladeT1HuntingKnifeSchematic" />
+            <item name="meleeWpnSledgeT1IronSledgehammerSchematic" />
+            <item name="ammoGasCanSchematic" />
+            <item name="resourceOilSchematic" />
+            <!-- *** T1_Tool_Schematics -->
+            <item name="meleeToolSteelSetSchematic" />
+            <item name="meleeToolSalvageT2RatchetSchematic" />
+            <item name="meleeWpnSledgeT3SteelSledgehammerSchematic" />
+            <item name="toolBellowsSchematic" />
+            <item name="toolAnvilSchematic" />
+            <item name="cementMixerSchematic" />
+            <item name="workbenchSchematic" />
+            <item name="chemistryStationSchematic" />
+            <!-- *** T2_Tool_Schematics -->
+            <item name="toolForgeCrucibleSchematic" />
+            <item name="meleeToolPickT3AugerSchematic" />
+            <item name="meleeToolAxeT3ChainsawSchematic" />
+            <item name="meleeToolSalvageT3ImpactDriverSchematic" />
+            <item name="meleeToolRepairT3NailgunSchematic" />
+            <!-- *** T0_Weapons_Armor_Schematics -->
+            <item name="gunBotT1JunkSledgeSchematic" />
+            <item name="gunBowT1IronCrossbowSchematic" />
+            <item name="gunBowT1WoodenBowSchematic" />
+            <item name="gunHandgunT1PistolSchematic" />
+            <item name="gunMGT1AK47Schematic" />
+            <item name="gunRifleT1HuntingRifleSchematic" />
+            <item name="gunShotgunT1DoubleBarrelSchematic" />
+            <item name="meleeWpnBatonT2StunBatonSchematic" />
+            <item name="meleeWpnBladeT1HuntingKnifeSchematic" />
+            <item name="meleeWpnClubT1BaseballBatSchematic" />
+            <item name="meleeWpnKnucklesT1IronKnucklesSchematic" />
+            <item name="meleeWpnSpearT1IronSpearSchematic" />
+            <item name="thrownAmmoPipeBombSchematic" />
+            <item name="thrownDynamiteSchematic" />
+            <!-- *** T1_Weapons_Armor_Schematics -->
+            <item name="armorIronSetSchematic" />
+            <item name="armorLeatherSetSchematic" />
+            <item name="gunBotT2JunkTurretSchematic" />
+            <item name="gunBowT3CompoundBowSchematic" />
+            <item name="gunBowT3CompoundCrossbowSchematic" />
+            <item name="gunHandgunT2Magnum44Schematic" />
+            <item name="gunMGT2TacticalARSchematic" />
+            <item name="gunRifleT2LeverActionRifleSchematic" />
+            <item name="gunShotgunT2PumpShotgunSchematic" />
+            <item name="meleeWpnBladeT3MacheteSchematic" />
+            <item name="meleeWpnKnucklesT3SteelKnucklesSchematic" />
+            <item name="thrownGrenadeSchematic" />
+            <!-- *** T2_Weapons_Armor_Schematics -->
+            <item name="armorMilitarySetSchematic" />
+            <item name="armorSteelSetSchematic" />
+            <item name="gunExplosivesT3RocketLauncherSchematic" />
+            <item name="gunHandgunT3DesertVultureSchematic" />
+            <item name="gunHandgunT3SMG5Schematic" />
+            <item name="gunMGT3M60Schematic" />
+            <item name="gunRifleT3SniperRifleSchematic" />
+            <item name="gunShotgunT3AutoShotgunSchematic" />
+            <item name="thrownGrenadeContactSchematic" />
+            <item name="gunBotT3JunkDroneSchematic" />
+            <item name="modRoboticDroneCargoModSchematic" />
+            <item name="modRoboticDroneMedicModSchematic" />
+            <item name="modRoboticDroneHeadlampModSchematic" />
+            <item name="modRoboticDroneArmorPlatingModSchematic" />
+            <item name="modRoboticDroneMoraleBoosterModSchematic" />
+            <!-- FARMING / FOOD SCHEMATICS -->
+            <item name="drinkJarCoffeeSchematic" />
+            <item name="drinkJarGoldenRodTeaSchematic" />
+            <item name="drinkJarRedTeaSchematic" />
+            <item name="foodBaconAndEggsSchematic" />
+            <item name="foodBakedPotatoSchematic" />
+            <item name="foodBoiledMeatSchematic" />
+            <item name="foodCornBreadSchematic" />
+            <item name="foodCornOnTheCobSchematic" />
+            <item name="foodGrilledMeatSchematic" />
+            <item name="plantedAloe1Schematic" />
+            <item name="plantedBlueberry1Schematic" />
+            <item name="plantedChrysanthemum1Schematic" />
+            <item name="plantedCoffee1Schematic" />
+            <item name="plantedCorn1Schematic" />
+            <item name="plantedCotton1Schematic" />
+            <item name="plantedGoldenrod1Schematic" />
+            <item name="plantedHop1Schematic" />
+            <item name="plantedMushroom1Schematic" />
+            <item name="plantedPotato1Schematic" />
+            <item name="plantedPumpkin1Schematic" />
+            <item name="plantedYucca1Schematic" />
+            <item name="drinkJarBeerSchematic" />
+            <item name="drinkYuccaJuiceSmoothieSchematic" />
+            <item name="foodBlueberryPieSchematic" />
+            <item name="foodChiliDogSchematic" />
+            <item name="foodFishTacosSchematic" />
+            <item name="foodHoboStewSchematic" />
+            <item name="foodMeatStewSchematic" />
+            <item name="foodPumpkinBreadSchematic" />
+            <item name="foodPumpkinCheesecakeSchematic" />
+            <item name="foodPumpkinPieSchematic" />
+            <item name="foodShamChowderSchematic" />
+            <item name="foodSteakAndPotatoSchematic" />
+            <item name="foodVegetableStewSchematic" />
+            <item name="plantedGraceCorn1Schematic" />
+            <item name="drinkJarGrandpasAwesomeSauceSchematic" />
+            <item name="drinkJarGrandpasLearningElixirSchematic" />
+            <item name="drinkJarGrandpasMoonshineSchematic" />
+            <item name="foodGumboStewSchematic" />
+            <item name="foodShepardsPieSchematic" />
+            <item name="foodSpaghettiSchematic" />
+            <item name="foodTunaFishGravyToastSchematic" />
+            <item name="drinkJarGrandpasAwesomeSauce" />
+            <item name="drinkJarGrandpasLearningElixir" />
+            <item name="drinkJarGrandpasMoonshine" />
+            <item name="foodShamChowder" />
+            <item name="foodHoboStew" />
+            <item name="drinkJarBlackStrapCoffee" />
+            <item name="drinkCanMegaCrush" />
+            <!-- VEHICLE-RELATED SCHEMATICS -->
+            <item name="modVehicleOffRoadHeadlightsSchematic" />
+            <item name="modVehicleFuelSaverSchematic" />
+            <item name="modVehicleReserveFuelTankSchematic" />
+            <item name="modVehicleExpandedSeatSchematic" />
+            <item name="modVehicleSuperChargerSchematic" />
+            <item name="vehicleBicycleChassisSchematic" />
+            <item name="vehicleBicycleHandlebarsSchematic" />
+            <item name="vehicleMinibikeChassisSchematic" />
+            <item name="vehicleMinibikeHandlebarsSchematic" />
+            <item name="vehicleMotorcycleChassisSchematic" />
+            <item name="vehicleMotorcycleHandlebarsSchematic" />
+            <item name="vehicle4x4TruckChassisSchematic" />
+            <item name="vehicle4x4TruckAccessoriesSchematic" />
+            <item name="vehicleGyroCopterChassisSchematic" />
+            <item name="vehicleGyroCopterAccessoriesSchematic" />
+            <!-- ELECTRONICS SCHEMATICS -->
+            <item name="pressureplateSchematic" />
+            <item name="poweredDoorsSchematic" />
+            <item name="bladeTrapSchematic" />
+            <item name="dartTrapSchematic" />
+            <item name="shotgunTurretSchematic" />
+            <item name="autoTurretSchematic" />
+            <item name="electricfencepostSchematic" />
+            <item name="motionsensorSchematic" />
+            <item name="speakerSchematic" />
+            <item name="spotlightPlayerSchematic" />
+            <item name="switchSchematic" />
+            <item name="generatorbankSchematic" />
+            <item name="batterybankSchematic" />
+            <item name="electrictimerrelaySchematic" />
+        </lootgroup>
+    </insertAfter>
 
 </configs>
