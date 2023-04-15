@@ -1,4 +1,15 @@
 <configs>
+
+	<!-- Plant Fiber Cloths Buffs for Map Exploration -->
+	<append
+		xpath="/items/item[@name='apparelPlantFiberPants' or @name='apparelPlantFiberShirt']/effect_group">
+		<passive_effect name="RunSpeed" operation="perc_add" value="2" />
+		<passive_effect name="Mobility" operation="perc_add" value=".5" />
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.4" />
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".4" tags="running" />
+	</append>
+
+
 	<!-- Modify Stack Counts for all Items -->
 	<set xpath="/items/item/property[@name='Stacknumber' and @value &gt; 1]/@value">64000</set>
 
