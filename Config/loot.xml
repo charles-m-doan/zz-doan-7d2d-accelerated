@@ -7,9 +7,8 @@
 
     <!-- ++++++++++++++++++++++ Custom Loot Group Definitions ++++++++++++++++++++++ -->
 
-    <!-- ============================================== BOOKS
-    ============================================== -->
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <!-- ============================== BOOKS ============================== -->
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_allBooks" count="1">
             <item name="bookRangersArrowRecovery" />
             <item name="bookRangersCripplingShot" />
@@ -187,9 +186,9 @@
             <item name="bookTechJunkie6BatonCharge" />
             <item name="bookTechJunkie7Hydraulics" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_prefBooks" count="1">
             <item name="bookRangersExplodingBolts" />
             <item name="bookArtOfMiningLuckyStrike" />
@@ -223,17 +222,19 @@
             <item name="bookPistolPeteSwissKnees" />
             <item name="bookPistolPeteTakeAim" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <lootgroup name="doan_books" count="all">
-        <item group="doan_allBooks" loot_prob_template="high" force_prob="true" />
-        <item group="doan_prefBooks" loot_prob_template="low" force_prob="true" />
-    </lootgroup>
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_books" count="all">
+            <item group="doan_allBooks" loot_prob_template="high" force_prob="true" />
+            <item group="doan_prefBooks" loot_prob_template="low" force_prob="true" />
+        </lootgroup>
+    </insertBefore>
 
     <!-- ============================================== SCHEMATICS
     ============================================== -->
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_allSchematics" count="1">
             <!-- T0 -->
             <item name="medicalFirstAidBandageSchematic" />
@@ -447,9 +448,9 @@
             <item name="batterybankSchematic" />
             <item name="electrictimerrelaySchematic" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_prefSchematics_combat" count="1">
             <item name="armorMilitarySetSchematic" />
             <item name="thrownGrenadeContactSchematic" />
@@ -458,9 +459,9 @@
             <item name="meleeWpnBladeT3MacheteSchematic" />
             <item name="gunRifleT3SniperRifleSchematic" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_prefSchematics_tools" count="1">
             <item name="resourceMilitaryFiberSchematic" />
             <item name="cementMixerSchematic" />
@@ -471,9 +472,9 @@
             <item name="meleeToolRepairT3NailgunSchematic" />
             <item name="meleeToolSteelSetSchematic" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_prefSchematics_mods" count="1">
             <item name="modArmorImprovedFittingsSchematic" />
             <item name="modArmorMuffledConnectorsSchematic" />
@@ -494,20 +495,20 @@
             <item name="modGunLaserSightSchematic" />
             <item name="modGunMeleeRadRemoverSchematic" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_schematics" count="all">
             <item group="doan_allSchematics" loot_prob_template="med" force_prob="true" />
             <item group="doan_prefSchematics_mods" loot_prob_template="medLow" force_prob="true" />
             <item group="doan_prefSchematics_combat" loot_prob_template="low" force_prob="true" />
             <item group="doan_prefSchematics_tools" loot_prob_template="low" force_prob="true" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
     <!-- Food / Farming -->
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_prefSeeds" count="1">
             <item name="plantedPotato1" count="1,3" />
             <item name="plantedCoffee1" count="1,3" />
@@ -517,22 +518,22 @@
             <item name="plantedMushroom1" count="1,3" />
             <item name="plantedPumpkin1" count="1,3" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
     <!-- Workstations -->
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_workstations" count="1">
             <item name="forge" loot_prob_template="high" />
             <item name="cementMixer" loot_prob_template="medLow" />
             <item name="workbench" loot_prob_template="low" />
             <item name="chemistryStation" loot_prob_template="veryLow" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
     <!-- Tools -->
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_tools" count="1">
             <item name="meleeToolSalvageT2Ratchet" />
             <item name="meleeToolRepairT3Nailgun" />
@@ -541,30 +542,30 @@
             <item name="meleeToolRepairT1ClawHammer" />
             <item name="meleeToolSalvageT1Wrench" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
     <!-- Equipment -->
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_equipment" count="1">
             <item name="toolForgeCrucible" />
             <item name="toolAnvil" />
             <item name="toolBellows" />
             <item name="toolBeaker" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_cooking" count="1">
             <item name="toolBeaker" />
             <item name="toolCookingPot" />
             <item name="toolCookingGrill" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
     <!-- =============================== MODS =============================== -->
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_allMods" count="1">
             <item name="modMeleeGraveDigger" />
             <item name="modMeleeSerratedBlade" />
@@ -645,9 +646,9 @@
             <item name="z87_modArmorSilkLiner" />
             <item name="z87_modBadgeattAgility" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_pref_toolMods" count="1">
             <item name="modMeleeGraveDigger" />
             <item name="modMeleeStructuralBrace" />
@@ -660,9 +661,9 @@
             <item name="z87_modSharpeningKit" />
             <item name="z87_modFiberglassHandle" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_pref_combatMods" count="1">
             <item name="modMeleeSerratedBlade" />
             <item name="modMeleeStructuralBrace" />
@@ -695,18 +696,81 @@
             <item name="z87_modShoeInsoles" />
             <item name="z87_modBadgeattAgility" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_mods" count="1,2">
             <item group="doan_allMods" loot_prob_template="low" force_prob="true" />
             <item group="doan_pref_toolMods" loot_prob_template="med" force_prob="true" />
             <item group="doan_pref_combatMods" loot_prob_template="medLow" force_prob="true" />
         </lootgroup>
-    </insertAfter>
+    </insertBefore>
 
-    <!-- Basic Crafting -->
+    <!-- Crafting -->
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_craftingAll" count="1">
+            <item name="resourceCloth" count="2,15" />
+            <item name="resourceMetalPipe" count="1,5" />
+            <item name="resourceGlue" count="1,2" />
+            <item name="resourceScrapPolymers" count="1,10" />
+            <item name="resourceNail" count="10,35" />
+            <item name="resourceSewingKit" count="1,3" />
+            <item name="resourceDuctTape" count="1,2" />
+            <item name="resourceOil" count="1,5" />
+            <item name="resourceSpring" count="1,2" />
+            <item name="resourceHeadlight" count="1,2" />
+            <item name="resourceElectricParts" count="1,2" />
+            <item name="resourceMechanicalParts" count="1,2" />
+            <item name="resourceAcid" count="1" />
+            <item name="resourceForgedIron" count="1,5" />
+            <item name="resourceForgedSteel" count="1,5" />
+            <item name="resourceMilitaryFiber" count="1,5" />
+            <item name="resourceScrapBrass" count="40,250" />
+            <item name="resourceLeather" count="1,5" />
+        </lootgroup>
+    </insertBefore>
+
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_pref_crafting" count="1">
+            <item name="resourceGlue" count="1,4" />
+            <item name="resourceSewingKit" count="1,3" />
+            <item name="resourceDuctTape" count="1,3" />
+            <item name="resourceLeather" count="1,7" />
+            <item name="resourceScrapBrass" count="40,250" />
+        </lootgroup>
+    </insertBefore>
+
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_crafting" count="all">
+            <item group="doan_craftingAll" loot_prob_template="veryLow" force_prob="true" />
+            <item group="doan_pref_crafting" loot_prob_template="medLow" force_prob="true" />
+        </lootgroup>
+    </insertBefore>
 
     <!-- Medical -->
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_medial_loot" count="1">
+            <item name="chemistryStationSchematic" loot_prob_template="low" />
+            <item name="toolBeaker" />
+            <item name="medicalFirstAidKit" count="0,2" />
+            <item name="medicalBloodBag" count="1,3" />
+            <item name="medicalFirstAidBandage" count="2,6" />
+            <item name="drugAntibiotics" count="0,2" />
+            <item name="drugHerbalAntibiotics" count="0,4" />
+            <item name="drugPainkillers" count="0,2" />
+            <item name="drugVitamins" count="1,2" />
+            <item name="medicalPlasterCast" count="1,2" />
+            <item name="resourceSewingKit" count="1,6" />
+        </lootgroup>
+    </insertBefore>
+
+    <!-- +++++++++++++++++++++ CONTAINER-SPECIFIC LOOT GROUPS +++++++++++++++++++++ -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Creating specific loot groups for each container type here -->
+
+
+    <!-- ________________________ ADDING LOOT GROUPS TO CONTAINERS ________________________ -->
+    <!-- append custom loot groups to their respective containers -->
+
 
 </configs>
