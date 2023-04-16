@@ -657,7 +657,7 @@
             <item name="modMeleeErgonomicGrip" />
             <item name="modMeleeTemperedBlade" />
             <item name="modMeleeIronBreaker" />
-            <!-- 3rd PArty -->
+            <!-- 3rd Party -->
             <item name="z87_modSharpeningKit" />
             <item name="z87_modFiberglassHandle" />
         </lootgroup>
@@ -742,7 +742,7 @@
 
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_crafting" count="all">
-            <item group="doan_craftingAll" loot_prob_template="veryLow" force_prob="true" />
+            <item group="doan_craftingAll" loot_prob_template="low" force_prob="true" />
             <item group="doan_pref_crafting" loot_prob_template="medLow" force_prob="true" />
         </lootgroup>
     </insertBefore>
@@ -764,6 +764,14 @@
         </lootgroup>
     </insertBefore>
 
+    <!-- Bird Nests -->
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_birdNest" count="all">
+            <item name="foodEgg" count="1,5" />
+            <item name="resourceFeather" count="10,35" />
+        </lootgroup>
+    </insertBefore>
+
     <!-- +++++++++++++++++++++ CONTAINER-SPECIFIC LOOT GROUPS +++++++++++++++++++++ -->
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- Creating specific loot groups for each container type here -->
@@ -772,5 +780,80 @@
     <!-- ________________________ ADDING LOOT GROUPS TO CONTAINERS ________________________ -->
     <!-- append custom loot groups to their respective containers -->
 
+    <!--  
+    <append xpath="/lootcontainers/lootgroup[@name='']">
+    </append>
+    -->
+
+    <!-- GENERAL -->
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupBirdNest']">
+        <item group="doan_birdNest" loot_prob_template="guaranteed" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupJunk' or @name='groupGarbage']">
+        <item group="doan_crafting" loot_prob_template="medHigh" force_prob="true" />
+        <item group="doan_prefSeeds" loot_prob_template="low" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupDesks']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupBackpacks']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCupboard']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupLaundry']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupLuggage']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupGarage']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupMailbox']">
+    </append>
+
+    <!-- KITCHEN / BATHROOM -->
+    <!-- beerCooler
+    refrigerator
+    charcoalGrill
+    groupGrills -->
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupMicrowave']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupOven']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupSinks']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupSinks']">
+    </append>
+
+    <!-- SAFES AND CHESTS/LOCKBOXES -->
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupGunSafeSecure']">
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='airDrop']">
+    </append>
+
+    <!-- <append xpath="/lootcontainers/lootgroup[@name='']">
+    </append> -->
+
+    <!-- MEDICAL -->
+
+    <!-- =================== -->
 
 </configs>
