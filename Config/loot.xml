@@ -1,8 +1,10 @@
 <configs>
     <!-- Destroy container on close -->
-    <setattribute xpath="/lootcontainers/lootcontainer[@name='junk' or @name='birdNest']"
+    <setattribute
+        xpath="/lootcontainers/lootcontainer[@name='junk' or @name='birdNest' or @name='purse' or @name='luggage' or @name='cntBackpack']"
         name="destroy_on_close">true</setattribute>
-    <setattribute xpath="/lootcontainers/lootcontainer[@name='junk' or @name='birdNest']"
+    <setattribute
+        xpath="/lootcontainers/lootcontainer[@name='junk' or @name='birdNest' or @name='purse'  or @name='luggage' or @name='cntBackpack']"
         name="sound_close">UseActions/close_garbage</setattribute>
 
     <!-- ++++++++++++++++++++++ Custom Loot Group Definitions ++++++++++++++++++++++ -->
