@@ -784,7 +784,39 @@
         </lootgroup>
     </insertBefore>
 
-    <!-- Bird Nests -->
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_general" count="1">
+            <item group="doan_medical" />
+            <item group="doan_books" />
+            <item group="doan_schematics" />
+            <item group="doan_tools" />
+            <item group="doan_equipment" />
+            <item group="doan_mods" />
+            <item group="doan_chemistry" />
+            <item group="doan_crafting" />
+        </lootgroup>
+    </insertBefore>
+
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_clothing_related" count="1">
+            <item name="apparelArmyPants" />
+            <item name="apparelArmyShirt" />
+            <item name="apparelCoatJacketLetterZU" />
+            <item name="apparelBandana" />
+            <item name="apparelRunningShoesRegular" />
+            <item name="apparelRunningShoesHP" />
+            <item name="apparelNerdGlasses" />
+            <item name="apparelAviatorGoggles" />
+            <item name="modArmorImprovedFittings" />
+            <item name="modArmorCustomizedFittings" />
+            <item name="resourceCloth" count="2,25" />
+            <item name="resourceSewingKit" count="2,4" />
+            <!-- 3rd party -->
+            <item name="z87_modClothPatch" />
+            <item name="z87_modBadgeattAgility" />
+        </lootgroup>
+    </insertBefore>
+
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_birdNest" count="all">
             <item name="foodEgg" count="1,5" />
@@ -804,14 +836,26 @@
 
     <append xpath="/lootcontainers/lootgroup[@name='groupJunk' or @name='groupGarbage']">
         <item group="doan_prefSeeds" loot_prob_template="low" force_prob="true" />
-        <item group="doan_crafting" loot_prob_template="medHigh" force_prob="true" />
-        <item group="doan_crafting" loot_prob_template="ProbT2Cap" force_prob="true" />
+        <item group="doan_crafting" loot_prob_template="low" force_prob="true" />
+        <item group="doan_crafting" loot_prob_template="ProbT1Cap" force_prob="true" />
     </append>
 
     <append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
         <item group="doan_treasure" count="1" loot_prob_template="guaranteed" force_prob="true" />
         <item group="doan_treasure" count="1" loot_prob_template="ProbT1Cap" force_prob="true" />
         <item group="doan_treasure" count="1,2" loot_prob_template="ProbT2Cap" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupDesks' or @name='groupNightstand' or @name='groupBackpacks' or @name='groupCupboard' or @name='groupLuggage' or @name='groupCars' or @name='groupGarage' or @name='groupLocker']">
+        <item group="doan_crafting" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_general" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_general" loot_prob_template="ProbT3" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupLaundry' or @name='groupLuggage' or @name='groupBackpacks']">
+        <item group="doan_clothing_related" loot_prob_template="low" force_prob="true" />
     </append>
 
 
