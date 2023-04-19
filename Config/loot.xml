@@ -565,8 +565,6 @@
         </lootgroup>
     </insertBefore>
 
-    <!-- =============================== MODS =============================== -->
-
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_allMods" count="1">
             <item name="modMeleeGraveDigger" />
@@ -708,7 +706,6 @@
         </lootgroup>
     </insertBefore>
 
-    <!-- Crafting -->
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_craftingAll" count="1">
             <item name="resourceCloth" count="2,15" />
@@ -759,10 +756,9 @@
         </lootgroup>
     </insertBefore>
 
-    <!-- Medical -->
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
-        <lootgroup name="doan_medical_loot" count="1">
-            <item name="chemistryStationSchematic" loot_prob_template="low" />
+        <lootgroup name="doan_medical" count="1">
+            <item name="chemistryStationSchematic" />
             <item name="toolBeaker" count="0,2" />
             <item name="medicalFirstAidKit" count="0,2" />
             <item name="medicalBloodBag" count="1,3" />
@@ -776,6 +772,18 @@
         </lootgroup>
     </insertBefore>
 
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_treasure" count="1">
+            <item group="doan_medical" />
+            <item group="doan_books" />
+            <item group="doan_schematics" />
+            <item group="doan_tools" />
+            <item group="doan_equipment" />
+            <item group="doan_mods" />
+            <item group="doan_workstations" />
+        </lootgroup>
+    </insertBefore>
+
     <!-- Bird Nests -->
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_birdNest" count="all">
@@ -784,224 +792,27 @@
         </lootgroup>
     </insertBefore>
 
-    <!-- +++++++++++++++++++++ CONTAINER-SPECIFIC LOOT GROUPS +++++++++++++++++++++ -->
+    <!-- +++++++++++++++++++++++++ CONTAINER LOOT GROUPS ++++++++++++++++++++++++++ -->
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <!-- Creating specific loot groups for each container type here -->
+
+    <!-- GENERAL / MISC -->
 
     <append xpath="/lootcontainers/lootgroup[@name='groupBirdNest']">
         <item group="doan_birdNest" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_birdNest" loot_prob_template="ProbT2Cap" force_prob="true" />
     </append>
 
     <append xpath="/lootcontainers/lootgroup[@name='groupJunk' or @name='groupGarbage']">
-        <item group="doan_crafting" loot_prob_template="medHigh" force_prob="true" />
         <item group="doan_prefSeeds" loot_prob_template="low" force_prob="true" />
+        <item group="doan_crafting" loot_prob_template="medHigh" force_prob="true" />
+        <item group="doan_crafting" loot_prob_template="ProbT2Cap" force_prob="true" />
     </append>
 
-    <append xpath="/lootcontainers/lootgroup[@name='groupDesks']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupNightstand']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupBackpacks']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupCupboard']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupLuggage']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupGarage']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupLocker']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupFileCabinet']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupMailbox']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupLaundry']">
-    </append>
-
-    <!-- KITCHEN / BATHROOM -->
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupMicrowave']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupOven']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupSinks']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupSinks']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupBeerCooler']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupCooler']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupRefrigerator']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupGrills']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupBathtub']">
-    </append>
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupToilet']">
-    </append>
-
-    <!-- SAFES AND CHESTS/LOCKBOXES -->
-
-    <append xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupGunSafeSecure']">
-    </append>
     <append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
+        <item group="doan_treasure" count="1" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_treasure" count="1" loot_prob_template="ProbT1Cap" force_prob="true" />
+        <item group="doan_treasure" count="1,2" loot_prob_template="ProbT2Cap" force_prob="true" />
     </append>
 
-    <append xpath="/lootcontainers/lootgroup[@name='groupPurse']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupBookcase']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupPopNPillsCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffsCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShoppingCart']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupCrackabookShelves']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupBuriedTreasure']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupArmyTruck']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupApparelPants']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupApparelShirtLong']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupApparelTankTopTShirt']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayShelves']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupSavageCountryCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupConstructionCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupCrackabookCrate']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupPassNGas']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupForge']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupCementMixerLoot']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupHiddenStash']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupSmallWeaponBag']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupLargeWeaponBag']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupBuriedSuppliesT1']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupPopnpillsShelves']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMedicalPileLarge']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoPileSmall']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoPileMed']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoPileLarge']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileSmall']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileMed']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileLarge']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMedicalPileSmall']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMedicalPileMed']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMedicalPileLarge']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupUtilityCart']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupCoffeeMaker']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupSodaFountain']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupBuriedWeaponChest']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupToolbox']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffs01']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayProduce']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayFreezer']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayCooler']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupApparelClothes']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMedicineCabinet']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoRackDisplay']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupApparelShoesAll']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupBookPile']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupCrackabookShelves']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupArmorScaled']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupGunRack']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMoPowerShelves']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupAmbulance']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupMoPower']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupReinforcedChestT1']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupReinforcedChestT2']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupReinforcedChestT3']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT4']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT5']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupChemPileSmall']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupChemPileMed']">
-    </append>
-    <append xpath="/lootcontainers/lootgroup[@name='groupChemPileLarge']">
-    </append>
 
 </configs>
