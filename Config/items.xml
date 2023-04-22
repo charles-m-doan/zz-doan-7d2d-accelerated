@@ -146,4 +146,5 @@
 		xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">
 		14</set>
 
+
 </configs>
