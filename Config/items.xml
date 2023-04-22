@@ -146,5 +146,86 @@
 		xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">
 		14</set>
 
+	<!-- Machete -->
+	<set
+		xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
+		25</set>
+	<set
+		xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
+		65</set>
+	<set
+		xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">
+		2.6</set>
+
+	<!-- Contact Grenade -->
+	<set
+		xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.RadiusBlocks']/@value">
+		6</set>
+	<set
+		xpath="/items/item[@name='thrownGrenadeContact']/property[@class='Action0']/property[@name='Throw_strength_default']/@value">
+		20</set>
+	<set
+		xpath="/items/item[@name='thrownGrenadeContact']/property[@class='Action0']/property[@name='Throw_strength_max']/@value">
+		70</set>
+
+	<!-- Exploding Arrows -->
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/property[@class='Action1']/property[@name='Explosion.RadiusEntities']/@value">
+		5</set>
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='BlockDamage']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='EntityDamage']/@value">
+		500</set>
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='ProjectileVelocity']/@value">
+		55</set>
+
+	<!-- Exploding Crossbow Bolts -->
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@class='Action1']/property[@name='Explosion.RadiusEntities']/@value">
+		6</set>
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='BlockDamage']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='EntityDamage']/@value">
+		600</set>
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='ProjectileVelocity']/@value">
+		70</set>
+
+	<!-- Spears -->
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
+		35</set>
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">
+		3.5</set>
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
+		60</set>
+
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
+		60</set>
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">
+		3.5</set>
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
+		65</set>
+
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
+		100</set>
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">
+		3.5</set>
+	<set
+		xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
+		70</set>
+
 
 </configs>
