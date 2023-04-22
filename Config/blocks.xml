@@ -1,5 +1,16 @@
 <configs>
 
+	<!-- Weird Cactus -->
+	<append xpath="/blocks/block[@name='treeCactus01']">
+		<drop event="Harvest" name="resourceScrapIron" count="4000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceCoal" count="2000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="1000"
+			tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceScrapLead" count="1000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceScrapBrass" count="1000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceOilShale" count="500" tag="salvageHarvest" />
+	</append>
+
 	<!-- Modify Stack Counts for all Blocks -->
 	<set xpath="/blocks/block/property[@name='Stacknumber' and @value &gt; 1]/@value">6400</set>
 
@@ -361,13 +372,6 @@
 		100</set>
 
 	<!-- terrOreOilDeposit - original value: 50, 14, .005  -->
-	<!-- <append xpath="/blocks/block[@name='terrOreOilDeposit']">
-		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="500" tag="oreWoodHarvest" />
-		<drop event="Harvest" name="resourceCoal" count="600" tag="oreWoodHarvest" />
-		<drop event="Harvest" name="resourceScrapLead" count="700" tag="oreWoodHarvest" />
-		<drop event="Harvest" name="resourceScrapBrass" count="700" tag="oreWoodHarvest" />
-		<drop event="Harvest" name="resourceScrapIron" count="3200" tag="oreWoodHarvest" />
-	</append> -->
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceOilShale']/@count">
 		150</set>
