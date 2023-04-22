@@ -758,8 +758,6 @@
 
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_medical" count="1">
-            <item name="chemistryStationSchematic" />
-            <item name="toolBeaker" count="0,2" />
             <item name="medicalFirstAidKit" count="0,2" />
             <item name="medicalBloodBag" count="1,3" />
             <item name="medicalFirstAidBandage" count="2,6" />
@@ -774,13 +772,12 @@
 
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_treasure" count="1">
-            <item group="doan_medical" />
             <item group="doan_books" />
             <item group="doan_schematics" />
             <item group="doan_tools" />
             <item group="doan_equipment" />
             <item group="doan_mods" />
-            <item group="doan_workstations" />
+            <!-- <item group="doan_workstations" /> -->
         </lootgroup>
     </insertBefore>
 
@@ -794,6 +791,13 @@
             <item group="doan_mods" />
             <item group="doan_chemistry" />
             <item group="doan_crafting" />
+        </lootgroup>
+    </insertBefore>
+
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_readables" count="1">
+            <item group="doan_books" />
+            <item group="doan_schematics" />
         </lootgroup>
     </insertBefore>
 
@@ -818,6 +822,16 @@
     </insertBefore>
 
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+        <lootgroup name="doan_shapes" count="1">
+            <item name="frameShapes:VariantHelper" count="500" loot_prob_template="medHigh" />
+            <item name="woodShapes:VariantHelper" count="500" loot_prob_template="high" />
+            <item name="cobblestoneShapes:VariantHelper" count="500" loot_prob_template="med" />
+            <item name="concreteShapes:VariantHelper" count="500" loot_prob_template="medLow" />
+            <item name="steelShapes:VariantHelper" count="500" loot_prob_template="low" />
+        </lootgroup>
+    </insertBefore>
+
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
         <lootgroup name="doan_birdNest" count="all">
             <item name="foodEgg" count="1,5" />
             <item name="resourceFeather" count="10,35" />
@@ -825,7 +839,6 @@
     </insertBefore>
 
     <!-- +++++++++++++++++++++++++ CONTAINER LOOT GROUPS ++++++++++++++++++++++++++ -->
-    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
     <!-- GENERAL / MISC -->
 
@@ -840,23 +853,247 @@
         <item group="doan_crafting" loot_prob_template="ProbT1Cap" force_prob="true" />
     </append>
 
-    <append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
-        <item group="doan_treasure" count="1" loot_prob_template="guaranteed" force_prob="true" />
-        <item group="doan_treasure" count="1" loot_prob_template="ProbT1Cap" force_prob="true" />
-        <item group="doan_treasure" count="1,2" loot_prob_template="ProbT2Cap" force_prob="true" />
-    </append>
-
     <append
-        xpath="/lootcontainers/lootgroup[@name='groupDesks' or @name='groupNightstand' or @name='groupBackpacks' or @name='groupCupboard' or @name='groupLuggage' or @name='groupCars' or @name='groupGarage' or @name='groupLocker']">
+        xpath="/lootcontainers/lootgroup[@name='groupDesks' or @name='groupNightstand' or @name='groupBackpacks' or @name='groupCupboard' or @name='groupLuggage' or @name='groupCars' or @name='groupGarage' or @name='groupLocker' or @name='groupShoppingCart' or @name='groupUtilityCart' or @name='groupPurse']">
         <item group="doan_crafting" loot_prob_template="veryLow" force_prob="true" />
         <item group="doan_general" loot_prob_template="veryLow" force_prob="true" />
         <item group="doan_general" loot_prob_template="ProbT3" force_prob="true" />
     </append>
 
+    <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
+        <item name="meleeToolFlashlight02" loot_prob_template="med" force_prob="true" />
+        <item group="doan_clothing_related" loot_prob_template="veryLow" force_prob="true" />
+        <item name="meleeToolRepairT1ClawHammer" count="1" loot_prob_template="veryLow"
+            force_prob="true" />
+        <item name="meleeToolSalvageT1Wrench" count="1" loot_prob_template="veryLow"
+            force_prob="true" />
+        <item group="doan_chemistry" count="1" loot_prob_template="low" force_prob="true" />
+    </append>
+
     <append
-        xpath="/lootcontainers/lootgroup[@name='groupLaundry' or @name='groupLuggage' or @name='groupBackpacks']">
+        xpath="/lootcontainers/lootgroup[@name='groupLaundry' or @name='groupLuggage' or @name='groupBackpacks' or @name='groupApparelClothes']">
         <item group="doan_clothing_related" loot_prob_template="low" force_prob="true" />
     </append>
 
+    <!-- BOOK / SCHEMATICS SOURCES -->
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupDesks' or @name='groupNightstand' or @name='groupFileCabinet' or @name='groupLocker']">
+        <item group="doan_readables" loot_prob_template="low" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupCupboard'">
+        <item group="doan_readables" loot_prob_template="veryLow" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupMailbox' or @name='groupCrackabookShelves']">
+        <item group="doan_readables" loot_prob_template="med" force_prob="true" />
+        <item group="doan_readables" loot_prob_template="ProbT3" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCrackabookCrate']">
+        <item group="doan_books" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_readables" loot_prob_template="med" force_prob="true" />
+        <item group="doan_readables" loot_prob_template="ProbT3" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupBookcase']">
+        <item group="doan_readables" loot_prob_template="low" force_prob="true" />
+        <item group="doan_readables" loot_prob_template="ProbT3" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupBookPile']">
+        <item group="doan_readables" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_readables" loot_prob_template="ProbT3" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupMoPowerShelves' or @name='groupMoPower']">
+        <item group="doan_schematics" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <!-- SAFES -->
+    <append xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot']">
+        <item group="doan_treasure" loot_prob_template="medHigh" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupGunSafeSecure']">
+        <item group="doan_pref_combatMods" loot_prob_template="high" force_prob="true" />
+        <item group="doan_treasure" loot_prob_template="medHigh" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupReinforcedChestT1']">
+        <item group="doan_treasure" loot_prob_template="med" force_prob="true" />
+        <item group="doan_mods" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupReinforcedChestT2']">
+        <item group="doan_treasure" loot_prob_template="medHigh" force_prob="true" />
+        <item group="doan_mods" loot_prob_template="medHigh" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupReinforcedChestT3']">
+        <item group="doan_treasure" loot_prob_template="high" force_prob="true" />
+        <item group="doan_mods" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT4']">
+        <item group="doan_treasure" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_mods" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT5']">
+        <item group="doan_treasure" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_mods" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_treasure" loot_prob_template="medHigh" force_prob="true" />
+    </append>
+
+    <!-- CRATES -->
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupMoPower']">
+        <item group="doan_equipment" loot_prob_template="high" force_prob="true" />
+        <item group="doan_workstations" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
+        <item group="doan_treasure" count="1" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_treasure" count="1" loot_prob_template="ProbT1Cap" force_prob="true" />
+        <item group="doan_treasure" count="1,2" loot_prob_template="ProbT2Cap" force_prob="true" />
+        <item group="doan_shapes" count="1" loot_prob_template="med" force_prob="true" />
+        <item name="questRewardFarmT1Bundle" count="1" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupHiddenStash']">
+        <item group="doan_crafting" loot_prob_template="med" force_prob="true" />
+        <item group="doan_general" loot_prob_template="medLow" force_prob="true" />
+        <item group="doan_treasure" loot_prob_template="veryLow" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupSavageCountryCrate']">
+        <item group="doan_clothing_related" loot_prob_template="high" force_prob="true" />
+        <item group="doan_pref_combatMods" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrate']">
+        <item group="doan_pref_combatMods" loot_prob_template="guaranteed" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupConstructionCrate']">
+        <item group="doan_pref_toolMods" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_prefSchematics_tools" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_tools" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_workstations" loot_prob_template="veryLow" force_prob="true" />
+        <item group="doan_shapes" count="1" loot_prob_template="medHigh" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffsCrate']">
+        <item group="doan_pref_toolMods" loot_prob_template="med" force_prob="true" />
+        <item group="doan_prefSchematics_tools" loot_prob_template="med" force_prob="true" />
+        <item group="doan_tools" loot_prob_template="medHigh" force_prob="true" />
+        <item group="doan_workstations" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupPopNPillsCrate' or @name='groupAmbulance']">
+        <item group="doan_medical" count="1" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_medical" count="1" loot_prob_template="high" force_prob="true" />
+        <item group="doan_chemistry" count="1" loot_prob_template="med" force_prob="true" />
+        <item name="chemistryStationSchematic" count="1" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayCrate']">
+        <item name="questRewardFarmT1Bundle" count="1" loot_prob_template="high" force_prob="true" />
+        <item group="doan_cooking" count="1" loot_prob_template="high" force_prob="true" />
+        <item group="cannedfood" count="1,3" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupPassNGas']">
+        <item group="doan_prefSchematics_tools" loot_prob_template="low" force_prob="true" />
+        <item group="doan_tools" loot_prob_template="low" force_prob="true" />
+        <item group="doan_workstations" loot_prob_template="low" force_prob="true" />
+        <item group="doan_chemistry" loot_prob_template="med" force_prob="true" />
+        <item group="doan_equipment" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <!-- MISC -->
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox' o @name='groupToolbox']">
+        <item group="doan_pref_toolMods" loot_prob_template="medLow" force_prob="true" />
+        <item group="doan_tools" loot_prob_template="medLow" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffs01']">
+        <item group="doan_pref_toolMods" loot_prob_template="medLow" force_prob="true" />
+        <item group="doan_prefSchematics_tools" loot_prob_template="medLow" force_prob="true" />
+        <item group="doan_tools" loot_prob_template="med" force_prob="true" />
+        <item group="doan_workstations" loot_prob_template="medLow" force_prob="true" />
+        <item group="doan_pref_crafting" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupSmallWeaponBag' or @name='groupLargeWeaponBag' or @name='groupGunRack' @name='groupArmorScaled']">
+        <item group="doan_pref_combatMods" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupMedicalPileLarge' or @name='groupMedicalPileMed' or @name='groupMedicalPileSmall' or @name='groupMedicineCabinet' or @name='groupPopnpillsShelves']">
+        <item group="doan_medical" count="1" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupPopnpillsShelves']">
+        <item group="doan_medical" count="1" loot_prob_template="guaranteed" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupChemPileSmall' or @name='groupChemPileMed' or @name='groupChemPileLarge']">
+        <item group="doan_chemistry" count="1" loot_prob_template="guaranteed" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot']">
+        <item group="doan_tools" loot_prob_template="med" force_prob="true" />
+        <item group="doan_pref_crafting" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot']">
+        <item group="doan_chemistry" count="1,3" loot_prob_template="guaranteed" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCementMixerLoot']">
+        <item group="doan_shapes" count="1" loot_prob_template="med" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupMicrowave' or @name='groupOven' or @name='groupSinks' or @name='groupGrills']">
+        <item group="doan_cooking" count="1" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupSinks']">
+        <item name="meleeToolRepairT1ClawHammer" count="1" loot_prob_template="medLow"
+            force_prob="true" />
+        <item name="meleeToolSalvageT1Wrench" count="1" loot_prob_template="medLow"
+            force_prob="true" />
+        <item group="doan_chemistry" count="1" loot_prob_template="medLow" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupBeerCooler' or @name='groupCooler' or @name='groupRefrigerator' or @name='groupSodaFountain']">
+        <item group="drinks" count="1" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupShamwayProduce' or @name='groupShamwayFreezer' or @name='groupShamwayCooler' or @name='groupRefrigerator']">
+        <item group="cannedfood" count="1,3" loot_prob_template="high" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileSmall']">
+        <item group="cannedfood" count="1" loot_prob_template="medHigh" force_prob="true" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileMed']">
+        <item group="cannedfood" count="1,2" loot_prob_template="high" force_prob="true" />
+    </append>
+    <append
+        xpath="/lootcontainers/lootgroup[@name='groupFoodPileLarge' or @name='groupShamwayFreezer']">
+        <item group="cannedfood" count="1,3" loot_prob_template="guaranteed" force_prob="true" />
+    </append>
 
 </configs>
