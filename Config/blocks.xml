@@ -241,124 +241,124 @@
 	<!-- terrDirt - original values: 22  -->
 	<set
 		xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-		22</set>
+		250</set>
 
 	<!-- terrForestGround - original values: 22  -->
 	<set
 		xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-		22</set>
+		250</set>
 
 	<!-- terrBurntForestGround - original values: 22  -->
 	<set
 		xpath="/blocks/block[@name='terrBurntForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-		22</set>
+		250</set>
 
 	<!-- terrDesertGround - original values: 9, 9  -->
 	<set
 		xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-		9</set>
+		100</set>
 	<set
 		xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
-		9</set>
+		100</set>
 
 	<!-- terrSand - original values: 2, 11  -->
 	<set
 		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-		2</set>
+		50</set>
 	<set
 		xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
-		11</set>
+		550</set>
 
 	<!-- terrGravel - original values: 8, 9  -->
 	<set
 		xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
-		8</set>
+		80</set>
 	<set
 		xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		9</set>
+		90</set>
 
 	<!-- terrDestroyedStone - original values: 4, 12  -->
 	<set
 		xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
-		4</set>
+		40</set>
 	<set
 		xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		12</set>
+		120</set>
 
 	<!-- terrStone - original values: 55, 44 -->
 	<set
 		xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		55</set>
+		275</set>
 	<set
 		xpath="/blocks/block[@name='terrStone']/drop[@event='Fall' and @name='resourceRockSmall']/@count">
-		44</set>
+		150</set>
 
 	<!-- rockResource - original values: 22 -->
 	<set
 		xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		22</set>
+		100</set>
 
 	<!-- brickShapes - original values: 16 -->
 	<set
 		xpath="/blocks/block[@name='brickShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		16</set>
+		80</set>
 
 	<!-- rubblePileBricks - original values: 4, 12 -->
 	<set
 		xpath="/blocks/block[@name='rubblePileBricks']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
-		4</set>
+		40</set>
 	<set
 		xpath="/blocks/block[@name='rubblePileBricks']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		12</set>
+		60</set>
 
 	<!-- palletBricksBase - original values: 50 -->
 	<set
 		xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		50</set>
+		800</set>
 
 	<!-- bricksStack - original value: 50 -->
 	<set
 		xpath="/blocks/block[@name='bricksStack']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		50</set>
+		500</set>
 
 	<!-- cinderBlocks01 - original value: 5 -->
 	<set
 		xpath="/blocks/block[@name='cinderBlocks01']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		5</set>
+		50</set>
 
 	<!-- ++++++++++++++++++++++++++ ORES ++++++++++++++++++++++++++ -->
 
 	<!-- terrOreIron - original value: 105, 14 -->
 	<set
 		xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">
-		105</set>
+		300</set>
 	<set
 		xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		14</set>
+		100</set>
 
 	<!-- terrOreLead - original value: 50, 14  -->
 	<set
 		xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">
-		50</set>
+		150</set>
 	<set
 		xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		14</set>
+		100</set>
 
 	<!-- terrOreCoal - original value: 50, 14 -->
 	<set
 		xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceCoal']/@count">
-		50</set>
+		150</set>
 	<set
 		xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		14</set>
+		100</set>
 
 	<!-- terrOrePotassiumNitrate - original value: 50, 14 -->
 	<set
 		xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
-		50</set>
+		150</set>
 	<set
 		xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		14</set>
+		100</set>
 
 	<!-- terrOreOilDeposit - original value: 50, 14, .005  -->
 	<!-- <append xpath="/blocks/block[@name='terrOreOilDeposit']">
@@ -370,10 +370,10 @@
 	</append> -->
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceOilShale']/@count">
-		50</set>
+		150</set>
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		14</set>
+		100</set>
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRawDiamond']/@prob">
 		.005</set>
@@ -381,45 +381,45 @@
 	<!-- +++++++++++++++++ WOOD +++++++++++++++++ -->
 
 	<!-- treeStump - original value: 20,30; .2 -->
-	<set xpath="/blocks/block[@name='treeStump']/drop[@event='Harvest']/@count">20,30</set>
-	<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy']/@prob">.2</set>
+	<set xpath="/blocks/block[@name='treeStump']/drop[@event='Harvest']/@count">600</set>
+	<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy']/@prob">.5</set>
 
 	<!-- modularFireWoodStackA - original value: 30 -->
-	<set xpath="/blocks/block[@name='modularFireWoodStackA']/drop[@event='Harvest']/@count">30</set>
+	<set xpath="/blocks/block[@name='modularFireWoodStackA']/drop[@event='Harvest']/@count">1000</set>
 
 	<!-- modularFireWoodStackC - original value: 10 -->
-	<set xpath="/blocks/block[@name='modularFireWoodStackC']/drop[@event='Harvest']/@count">10</set>
+	<set xpath="/blocks/block[@name='modularFireWoodStackC']/drop[@event='Harvest']/@count">1000</set>
 
 	<!-- Trees -->
-	<set xpath="/blocks/block[@name='treeJuniper4m']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeJuniper4m']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
 
-	<set xpath="/blocks/block[@name='treeDeadTree01']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeDeadTree01']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treeDeadTree02']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeDeadTree02']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
 
-	<set xpath="/blocks/block[@name='treeOakSml01']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeOakSml01']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treeOakMed01']/drop[@event='Harvest']/@count">70</set> <!--
+	<set xpath="/blocks/block[@name='treeOakMed01']/drop[@event='Harvest']/@count">350</set> <!--
 	original value: 70 -->
-	<set xpath="/blocks/block[@name='treeOakMed02']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treeOakMed02']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treeOakLrg01']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treeOakLrg01']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
-	<set xpath="/blocks/block[@name='treePlantedOak08m']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedOak08m']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treePlantedOak16m']/drop[@event='Harvest']/@count">70</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedOak16m']/drop[@event='Harvest']/@count">350</set> <!--
 	original value: 70 -->
-	<set xpath="/blocks/block[@name='treePlantedOak27m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedOak27m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treePlantedOak41m']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedOak41m']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
 	<set xpath="/blocks/block[@name='treePlainsTree']/drop[@event='Harvest']/@count">1,5</set> <!--
 	original value: 1,5 -->
-	<set xpath="/blocks/block[@name='treePlainsTree2']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treePlainsTree2']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
 	<set xpath="/blocks/block[@name='treeDeadPineLeaf']/drop[@event='Harvest']/@count">1,3</set> <!--
 	original value: 1,3 -->
@@ -428,64 +428,64 @@
 	<set xpath="/blocks/block[@name='treeAzalea']/drop[@event='Harvest']/@count">1,3</set> <!--
 	original value: 1,3 -->
 
-	<set xpath="/blocks/block[@name='treeMountainPine12m']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPine12m']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treeMountainPine19m']/drop[@event='Harvest']/@count">70</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPine19m']/drop[@event='Harvest']/@count">350</set> <!--
 	original value: 70 -->
-	<set xpath="/blocks/block[@name='treeMountainPine27m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPine27m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treeMountainPine31m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPine31m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treeMountainPine41m']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPine41m']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
-	<set xpath="/blocks/block[@name='treeMountainPine48m']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPine48m']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
-	<set xpath="/blocks/block[@name='treeMountainPineDry21m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treeMountainPineDry21m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
 
-	<set xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
-	<set xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
 
-	<set xpath="/blocks/block[@name='treeFirLrg01']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treeFirLrg01']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
-	<set xpath="/blocks/block[@name='treePlantedMountainPine12m']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedMountainPine12m']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treePlantedMountainPine19m']/drop[@event='Harvest']/@count">70</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedMountainPine19m']/drop[@event='Harvest']/@count">350</set> <!--
 	original value: 70 -->
-	<set xpath="/blocks/block[@name='treePlantedMountainPine27m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedMountainPine27m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treePlantedMountainPine41m']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedMountainPine41m']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
-	<set xpath="/blocks/block[@name='treeWinterEverGreen']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeWinterEverGreen']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
 
-	<set xpath="/blocks/block[@name='treeWinterPine13m']/drop[@event='Harvest']/@count">70</set> <!--
+	<set xpath="/blocks/block[@name='treeWinterPine13m']/drop[@event='Harvest']/@count">350</set> <!--
 	original value: 70 -->
-	<set xpath="/blocks/block[@name='treeWinterPine19m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treeWinterPine19m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treeWinterPine28m']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treeWinterPine28m']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
-	<set xpath="/blocks/block[@name='treePlantedWinterPine6m']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedWinterPine6m']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treePlantedWinterPine13m']/drop[@event='Harvest']/@count">70</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedWinterPine13m']/drop[@event='Harvest']/@count">350</set> <!--
 	original value: 70 -->
-	<set xpath="/blocks/block[@name='treePlantedWinterPine19m']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedWinterPine19m']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treePlantedWinterPine28m']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treePlantedWinterPine28m']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
-	<set xpath="/blocks/block[@name='treeBurntMaple01']/drop[@event='Harvest']/@count">30</set> <!--
+	<set xpath="/blocks/block[@name='treeBurntMaple01']/drop[@event='Harvest']/@count">150</set> <!--
 	original value: 30 -->
-	<set xpath="/blocks/block[@name='treeBurntMaple02']/drop[@event='Harvest']/@count">110</set> <!--
+	<set xpath="/blocks/block[@name='treeBurntMaple02']/drop[@event='Harvest']/@count">550</set> <!--
 	original value: 110 -->
-	<set xpath="/blocks/block[@name='treeBurntMaple03']/drop[@event='Harvest']/@count">150</set> <!--
+	<set xpath="/blocks/block[@name='treeBurntMaple03']/drop[@event='Harvest']/@count">750</set> <!--
 	original value: 150 -->
 
 	<!-- ++++++++++++++++++++++++++++++++++ MECHANICAL ++++++++++++++++++++++++++++++++++ -->
