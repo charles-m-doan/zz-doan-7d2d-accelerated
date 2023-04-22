@@ -882,7 +882,7 @@
     </append>
 
     <append
-        xpath="/lootcontainers/lootgroup[@name='groupCupboard'">
+        xpath="/lootcontainers/lootgroup[@name='groupCupboard']">
         <item group="doan_readables" loot_prob_template="veryLow" force_prob="true" />
     </append>
 
@@ -1016,7 +1016,7 @@
 
     <!-- MISC -->
 
-    <append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox' o @name='groupToolbox']">
+    <append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox' or @name='groupToolbox']">
         <item group="doan_pref_toolMods" loot_prob_template="medLow" force_prob="true" />
         <item group="doan_tools" loot_prob_template="medLow" force_prob="true" />
     </append>
@@ -1030,7 +1030,7 @@
     </append>
 
     <append
-        xpath="/lootcontainers/lootgroup[@name='groupSmallWeaponBag' or @name='groupLargeWeaponBag' or @name='groupGunRack' @name='groupArmorScaled']">
+        xpath="/lootcontainers/lootgroup[@name='groupSmallWeaponBag' or @name='groupLargeWeaponBag' or @name='groupGunRack' or @name='groupArmorScaled']">
         <item group="doan_pref_combatMods" loot_prob_template="med" force_prob="true" />
     </append>
 
