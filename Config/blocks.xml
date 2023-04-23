@@ -9,6 +9,8 @@
 		<drop event="Harvest" name="resourceScrapLead" count="1000" tag="salvageHarvest" />
 		<drop event="Harvest" name="resourceScrapBrass" count="1000" tag="salvageHarvest" />
 		<drop event="Harvest" name="resourceOilShale" count="500" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceClayLump" count="1000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceCrushedSand" count="500" tag="salvageHarvest" />
 	</append>
 
 	<!-- Modify Stack Counts for all Blocks -->
