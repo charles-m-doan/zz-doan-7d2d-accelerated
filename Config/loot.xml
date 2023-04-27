@@ -861,11 +861,11 @@
     </append>
 
     <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
-        <item name="meleeToolFlashlight02" loot_prob_template="med" force_prob="true" />
+        <item name="meleeToolFlashlight02" count="0,1" loot_prob_template="low" force_prob="true" />
         <item group="doan_clothing_related" loot_prob_template="veryLow" force_prob="true" />
-        <item name="meleeToolRepairT1ClawHammer" count="1" loot_prob_template="veryLow"
+        <item name="meleeToolRepairT1ClawHammer" count="0,1" loot_prob_template="veryLow"
             force_prob="true" />
-        <item name="meleeToolSalvageT1Wrench" count="1" loot_prob_template="veryLow"
+        <item name="meleeToolSalvageT1Wrench" count="0,1" loot_prob_template="veryLow"
             force_prob="true" />
         <item group="doan_chemistry" count="1" loot_prob_template="low" force_prob="true" />
     </append>

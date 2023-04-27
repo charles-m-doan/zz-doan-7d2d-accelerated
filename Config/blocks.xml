@@ -1,16 +1,21 @@
 <configs>
 
 	<!-- Weird Cactus -->
-	<append xpath="/blocks/block[@name='treeCactus01']">
-		<drop event="Harvest" name="resourceScrapIron" count="4000" tag="salvageHarvest" />
-		<drop event="Harvest" name="resourceCoal" count="2000" tag="salvageHarvest" />
-		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="1000"
+	<!-- <append xpath="/blocks/block[@name='treeCactus01']">
+		<drop event="Harvest" name="resourceScrapIron" count="40000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceCoal" count="20000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="10000"
 			tag="salvageHarvest" />
-		<drop event="Harvest" name="resourceScrapLead" count="1000" tag="salvageHarvest" />
-		<drop event="Harvest" name="resourceScrapBrass" count="1000" tag="salvageHarvest" />
-		<drop event="Harvest" name="resourceOilShale" count="500" tag="salvageHarvest" />
-		<drop event="Harvest" name="resourceClayLump" count="1000" tag="salvageHarvest" />
-		<drop event="Harvest" name="resourceCrushedSand" count="500" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceScrapLead" count="10000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceScrapBrass" count="10000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceOilShale" count="5000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceClayLump" count="100000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceRockSmall" count="50000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceCrushedSand" count="50000" tag="salvageHarvest" />
+	</append> -->
+	<append xpath="/blocks/block[@name='treeCactus01']">
+		<drop event="Harvest" name="resourceClayLump" count="200000" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceRockSmall" count="50000" tag="salvageHarvest" />
 	</append>
 
 	<!-- Modify Stack Counts for all Blocks -->
@@ -344,45 +349,56 @@
 	<!-- terrOreIron - original value: 105, 14 -->
 	<set
 		xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">
-		300</set>
+		6000</set>
 	<set
 		xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		100</set>
+		2000</set>
 
 	<!-- terrOreLead - original value: 50, 14  -->
 	<set
 		xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">
-		150</set>
+		5000</set>
 	<set
 		xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		100</set>
+		2000</set>
 
 	<!-- terrOreCoal - original value: 50, 14 -->
 	<set
 		xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceCoal']/@count">
-		150</set>
+		5000</set>
 	<set
 		xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		100</set>
+		2000</set>
 
 	<!-- terrOrePotassiumNitrate - original value: 50, 14 -->
 	<set
 		xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
-		150</set>
+		5000</set>
 	<set
 		xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		100</set>
+		2000</set>
 
 	<!-- terrOreOilDeposit - original value: 50, 14, .005  -->
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceOilShale']/@count">
-		150</set>
+		250</set>
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-		100</set>
+		2500</set>
 	<set
 		xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRawDiamond']/@prob">
-		.005</set>
+		.02</set>
+
+	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
+		<drop event="Harvest" name="resourceScrapIron" count="4000" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceCoal" count="3000" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="1000"
+			tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceScrapLead" count="1000" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceScrapBrass" count="1000" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceClayLump" count="1000" tag="oreWoodHarvest" />
+		<drop event="Harvest" name="resourceCrushedSand" count="500" tag="oreWoodHarvest" />
+	</append>
 
 	<!-- +++++++++++++++++ WOOD +++++++++++++++++ -->
 

@@ -2,6 +2,19 @@
 
 	<append xpath="/recipes">
 
+		<!-- Oil Crafting -->
+		<recipe name="resourceOil" count="20" craft_time="20" craft_area="chemistryStation">
+			<ingredient name="resourceOilShale" count="500" />
+			<ingredient name="drinkCanEmpty" count="20" />
+		</recipe>
+
+		<!-- Craftable Sewing Kit -->
+		<recipe name="resourceSewingKit" count="5">
+			<ingredient name="resourceCloth" count="20" />
+			<ingredient name="resourceScrapPolymers" count="5" />
+			<ingredient name="resourceScrapIron" count="5" />
+		</recipe>
+
 		<!-- Craftable Acid (chemistry station) -->
 
 		<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
@@ -28,12 +41,12 @@
 
 		<!-- Basic Parts Crafting -->
 
-		<recipe name="resourceSpring" count="1" craft_time="10" craft_area="workbench"
+		<recipe name="resourceSpring" count="1" craft_time="2" craft_area="workbench"
 			tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="3" />
 		</recipe>
 
-		<recipe name="resourceMechanicalParts" count="1" craft_time="10" craft_area="workbench"
+		<recipe name="resourceMechanicalParts" count="1" craft_time="5" craft_area="workbench"
 			tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="5" />
 			<ingredient name="resourceSpring" count="2" />

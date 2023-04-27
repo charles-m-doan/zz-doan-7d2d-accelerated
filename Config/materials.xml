@@ -1,7 +1,11 @@
 <configs>
 
 	<!-- Set all material XP values to 0.1 -->
-	<set xpath="/materials/material/property[@name='Experience']/@value">0.1</set>
+	<!-- <set xpath="/materials/material/property[@name='Experience']/@value">0.1</set> -->
+	<set
+		xpath="/materials/material[not (@id='Mconcrete' or @id='MrConcrete' or @id='Mcobblestone' or @id='MresourceCobblestones' or @id='MresourceConcreteMix' or @id='Mcobblestone_shapes' or @id='Mconcrete_shapes' or @id='MrConcrete_shapes' or @id='Msteel_shapes' or @id='Mmetal_shapes' or @id='Msteel' or @id='MstainlessSteel' or @id='Mwood_weak_shapes' or @id='Mwood_shapes' or @id='MwoodReinforced_shapes' or @id='MwoodMetal_shapes' or @id='Mstone_shapes' or @id='Mbrick_shapes')]/property[@name='Experience']/@value">
+		0.1</set>
+
 
 	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='stability_glue']/@value">80</set>
 	<set xpath="/materials/material[@id='Mwood_shapes']/property[@name='Mass']/@value">2</set>
