@@ -699,10 +699,10 @@
     </insertBefore>
 
     <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
-        <lootgroup name="doan_mods" count="1,2">
-            <item group="doan_allMods" loot_prob_template="low" force_prob="true" />
-            <item group="doan_pref_toolMods" loot_prob_template="med" force_prob="true" />
-            <item group="doan_pref_combatMods" loot_prob_template="medLow" force_prob="true" />
+        <lootgroup name="doan_mods" count="all">
+            <item group="doan_allMods" loot_prob_template="high" force_prob="true" />
+            <item group="doan_pref_toolMods" loot_prob_template="low" force_prob="true" />
+            <item group="doan_pref_combatMods" loot_prob_template="low" force_prob="true" />
         </lootgroup>
     </insertBefore>
 
@@ -938,14 +938,17 @@
     </append>
 
     <append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT4']">
+        <item group="doan_readables" count="1,2" loot_prob_template="guaranteed" force_prob="true" />
         <item group="doan_treasure" loot_prob_template="guaranteed" force_prob="true" />
         <item group="doan_mods" loot_prob_template="high" force_prob="true" />
     </append>
 
     <append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT5']">
+        <item group="doan_readables" count="2,8" loot_prob_template="guaranteed" force_prob="true" />
         <item group="doan_treasure" loot_prob_template="guaranteed" force_prob="true" />
+        <item group="doan_treasure" loot_prob_template="high" force_prob="true" />
         <item group="doan_mods" loot_prob_template="guaranteed" force_prob="true" />
-        <item group="doan_treasure" loot_prob_template="medHigh" force_prob="true" />
+        <item group="doan_mods" loot_prob_template="high" force_prob="true" />
     </append>
 
     <!-- CRATES -->

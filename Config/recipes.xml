@@ -2,6 +2,19 @@
 
 	<append xpath="/recipes">
 
+		<!-- Cobblestone at cement mixer -->
+		<recipe name="resourceCobblestones" count="10" craft_area="cementMixer" craft_time="2"
+			tags="cementMixerCrafting">
+			<ingredient name="resourceRockSmall" count="10" />
+			<ingredient name="resourceClayLump" count="10" />
+		</recipe>
+
+		<!-- Cement at cement mixer -->
+		<recipe name="resourceCement" count="1" craft_area="cementMixer" craft_time="0.5"
+			tags="cementMixerCrafting">
+			<ingredient name="resourceRockSmall" count="5" />
+		</recipe>
+
 		<!-- Oil Crafting -->
 		<recipe name="resourceOil" count="20" craft_time="20" craft_area="chemistryStation">
 			<ingredient name="resourceOilShale" count="500" />

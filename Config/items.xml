@@ -1,4 +1,11 @@
 <configs>
+
+	<!-- Buff yield per unit of resources in forge -->
+	<set xpath="/items/item[@name='resourceScrapIron']/property[@name='Weight']/@value">50</set>
+	<set xpath="/items/item[@name='resourceScrapBrass']/property[@name='Weight']/@value">50</set>
+	<set xpath="/items/item[@name='resourceScrapLead']/property[@name='Weight']/@value">50</set>
+	<set xpath="/items/item[@name='resourceClayLump']/property[@name='Weight']/@value">100</set>
+
 	<!-- Modify Stack Counts for all Items -->
 	<set xpath="/items/item/property[@name='Stacknumber' and @value &gt; 1]/@value">64000</set>
 
@@ -44,6 +51,14 @@
 	<set
 		xpath="/items/item[starts-with(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots' and @value='0']/@value">
 		1</set>
+
+	<!-- Mod tag changes for certain clothing -->
+	<!-- <set
+		xpath="/items/item[@name='apparelBandana' or @name='apparelShades']/property[@name='Tags']/@value">
+		head,clothing,canHaveCosmetic</set> -->
+	<set
+		xpath="/items/item[starts-with(@name, 'apparel')]/property[@name='Tags' and @value='head,clothing,canHaveCosmetic,noMods']/@value">
+		head,clothing,canHaveCosmetic,pocketMod</set>
 
 	<!-- ++++++++++++++++++++++++++ BALANCE_CHANGES ++++++++++++++++++++++++++ -->
 
@@ -101,6 +116,16 @@
 			<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.333" />
 		</effect_group>
 	</append>
+
+	<!-- Bellows -->
+	<set
+		xpath="/items/item[@name='toolBellows']/effect_group/passive_effect[@name='CraftingSmeltTime']/@value">
+		-.5</set>
+
+	<!-- Anvil -->
+	<set
+		xpath="/items/item[@name='toolAnvil']/effect_group/passive_effect[@name='CraftingTime']/@value">
+		-.5</set>
 
 	<!-- running shoes -->
 	<append
