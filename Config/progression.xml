@@ -3,6 +3,28 @@
 	<!-- Skill Points Per Level.  Original Value: 1 -->
 	<set xpath="/progression/level/@skill_points_per_level">3</set>
 
+	<!-- Crafting Tier Quality Upgrades -->
+	<!-- Archery -->
+	<set
+		xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier']/@value">
+		1,2,3,4,5</set>
+	<!-- Gunslinger -->
+	<set
+		xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier']/@value">
+		1,2,3,4,5</set>
+	<!-- Deep Cuts -->
+	<set
+		xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier']/@value">
+		1,2,3,4,5</set>
+	<!-- Light Armor -->
+	<set
+		xpath="progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier']/@value">
+		2,5</set>
+	<!-- Miner69er Tools -->
+	<set
+		xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier']/@value">
+		1,2,3,4,5</set>
+
 	<!-- Lucky Looter -->
 	<set
 		xpath="progression/perks/perk[@name='perkLuckyLooter']/effect_group/passive_effect[@name='LootGamestage']/@value">

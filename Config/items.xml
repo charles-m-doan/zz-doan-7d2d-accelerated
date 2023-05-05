@@ -1,10 +1,26 @@
 <configs>
 
-	<!-- Buff yield per unit of resources in forge -->
-	<set xpath="/items/item[@name='resourceScrapIron']/property[@name='Weight']/@value">50</set>
-	<set xpath="/items/item[@name='resourceScrapBrass']/property[@name='Weight']/@value">50</set>
-	<set xpath="/items/item[@name='resourceScrapLead']/property[@name='Weight']/@value">50</set>
-	<set xpath="/items/item[@name='resourceClayLump']/property[@name='Weight']/@value">100</set>
+	<append xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group">
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest" />
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="allHarvest" />
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="allToolsHarvest" />
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="oreWoodHarvest" />
+
+		<passive_effect name="HarvestCount" operation="base_add" value="20" tags="butcherHarvest" />
+		<passive_effect name="HarvestCount" operation="base_add" value="20" tags="allHarvest" />
+		<passive_effect name="HarvestCount" operation="base_add" value="20" tags="allToolsHarvest" />
+		<passive_effect name="HarvestCount" operation="base_add" value="20" tags="oreWoodHarvest" />
+	</append>
+
+	<set
+		xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">
+		50</set>
+	<set
+		xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
+		150</set>
+	<set
+		xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">
+		5</set>
 
 	<!-- Modify Stack Counts for all Items -->
 	<set xpath="/items/item/property[@name='Stacknumber' and @value &gt; 1]/@value">64000</set>
@@ -116,16 +132,6 @@
 			<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.333" />
 		</effect_group>
 	</append>
-
-	<!-- Bellows -->
-	<set
-		xpath="/items/item[@name='toolBellows']/effect_group/passive_effect[@name='CraftingSmeltTime']/@value">
-		-.5</set>
-
-	<!-- Anvil -->
-	<set
-		xpath="/items/item[@name='toolAnvil']/effect_group/passive_effect[@name='CraftingTime']/@value">
-		-.5</set>
 
 	<!-- running shoes -->
 	<append

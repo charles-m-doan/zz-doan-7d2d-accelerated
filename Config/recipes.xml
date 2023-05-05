@@ -1,6 +1,41 @@
 <configs>
 
+	<!-- MODIFICATION OF EXISTING RECIPES -->
+	<set xpath="/recipes/recipe[@name='resourceBulletCasing']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='resourceBulletTip']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='resourceForgedIron']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='resourceForgedSteel']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='drinkJarEmpty']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='drinkCanEmpty']/@count">10</set>
+
+	<set xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='chemistryStation']/@count">5</set>
+	<set
+		xpath="/recipes/recipe[@name='resourceGunPowderBundle' and @craft_area='chemistryStation']/@craft_time">
+		600</set>
+	<set
+		xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='chemistryStation']/@count">
+		5</set>
+	<set xpath="/recipes/recipe[@name='resourcePaper' and @craft_area='chemistryStation']/@count">
+		200</set>
+	<set xpath="/recipes/recipe[@name='foodCanSham']/@count">20</set>
+
+	<!-- ADDING NEW RECIPES -->
 	<append xpath="/recipes">
+
+		<!-- Taza's Stone Axe -->
+		<recipe name="meleeToolRepairT0TazasStoneAxe" count="1" tags="perkMiner69r">
+			<ingredient name="resourceRockSmall" count="2" />
+			<ingredient name="resourceYuccaFibers" count="2" />
+			<ingredient name="resourceWood" count="2" />
+		</recipe>
+
+		<recipe name="foodCanChili" count="5" craft_area="campfire" craft_tool="toolCookingPot"
+			tags="perkMasterChef">
+			<ingredient name="drinkCanEmpty" count="5" />
+			<ingredient name="foodRawMeat" count="10" />
+			<ingredient name="resourcePotassiumNitratePowder" count="5" />
+			<ingredient name="foodCropYuccaFruit" count="5" />
+		</recipe>
 
 		<!-- Cobblestone at cement mixer -->
 		<recipe name="resourceCobblestones" count="10" craft_area="cementMixer" craft_time="2"
