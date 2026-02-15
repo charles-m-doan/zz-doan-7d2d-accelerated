@@ -1,0 +1,11 @@
+/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value: No
+
+/quests/quest[@id='tier2_fetch_clear']/objective[@type='ClearSleepers']: Yes
+/quests/quest[@id='tier3_fetch_clear']/objective[@type='ClearSleepers']: Yes
+/quests/quest[@id='tier4_fetch_clear']/objective[@type='ClearSleepers']: Yes
+/quests/quest[@id='tier5_fetch_clear']/objective[@type='ClearSleepers']: Yes
+/quests/quest[@id='tier6_fetch_clear']/objective[@type='ClearSleepers']: Yes
+
+/quests/quest[@id='tier2_restore_power']/objective[@type='ClearSleepers']: Yes
+/quests/quest[@id='tier3_restore_power']/objective[@type='ClearSleepers']: Yes
+/quests/quest[@id='tier4_restore_power']/objective[@type='ClearSleepers']: Yes
