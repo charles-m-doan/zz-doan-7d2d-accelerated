@@ -1,0 +1,4 @@
+I'm doing some modding for the game 7 Days To Die.  I have a git repository for my mod that I've cloned down.  I made these mod xpath patches about 3 years ago, and the game has been updated numerous times since then, so I'm not sure how much of it still applies.  I'd like your help to verify pieces of it by comparing current xpath commands to the actual game data.
+
+Game Data Location
+D:\SteamLibrary\steamapps\common\7 Days To Die\Data\Config
