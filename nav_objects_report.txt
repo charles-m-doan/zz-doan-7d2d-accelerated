@@ -1,3 +1,0 @@
-/nav_object_classes/nav_object_class[@name='backpack']/onscreen_settings/property[@name='max_distance']/@value: Yes
-
-/nav_object_classes/nav_object_class[@name='fetch_container']/onscreen_settings/property[@name='max_distance']/@value: Yes

@@ -1,5 +1,10 @@
-I'm doing some modding for the game 7 Days To Die.  I have a git repository for my mod that I've cloned down.  I made these mod xpath patches about 3 years ago, and the game has been updated numerous times since then, so I'm not sure how much of it still applies.  I'd like your help to verify pieces of it by comparing current xpath commands to the actual game data.
+Easy modding for the game "7 Days to Die" largely consists of xpath operations to patch over values, or append / remove nodes in the game data.
 
-Actual Game Data is copied into this repository in Data\Config.
+The base game data itself can be found in Data\Config.
 
-No changes should EVER be made to anything in Data\Config. It is reference only.
+Examples of xpath operations can be found in the files under MOD_REFS.
+
+Many of the xpath operations under MOD_REFS are no longer valid because the game has been updated in ways that change or remove reference names.
+However, syntactically, all xpath operations found within are correct.
+
+The assistant should reference both Data\Config and MOD_REFS when generating patch operation xml.
