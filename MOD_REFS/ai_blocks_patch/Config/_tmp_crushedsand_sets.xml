@@ -1,0 +1,17 @@
+    <set xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">9</set>
+    <set xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">11</set>
+    <set xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">4</set>
+    <set xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">8</set>
+    <set xpath="/blocks/block[@name='sandbagStraight01']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">2</set>
+    <set xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">10,30</set>
+    <set xpath="/blocks/block[@name='dryWallStack']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">10</set>
+    <set xpath="/blocks/block[@name='palletBagSandBaseFull']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">30,40</set>
+    <set xpath="/blocks/block[@name='palletBagSandTile']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">30,40</set>
+    <set xpath="/blocks/block[@name='palletBagSandBaseMed']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">15,20</set>
+    <set xpath="/blocks/block[@name='palletBagSandCapMed']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">15,20</set>
+    <set xpath="/blocks/block[@name='palletBagSandCapSml']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">6,12</set>
+    <set xpath="/blocks/block[@name='palletBagSandSingleBent']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">2,4</set>
+    <set xpath="/blocks/block[@name='palletBagSandSingleFlat']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">2,4</set>
+    <set xpath="/blocks/block[@name='decoReptileTerrarium']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">3</set>
+    <set xpath="/blocks/block[@name='barrierMilitary']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">3,5</set>
+    <set xpath="/blocks/block[@name='rubblePileBricks']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">4</set>
