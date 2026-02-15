@@ -1,0 +1,11 @@
+<configs>
+
+	<set
+		xpath="/nav_object_classes/nav_object_class[@name='backpack']/onscreen_settings/property[@name='max_distance']/@value">
+		1000</set>
+
+	<set
+		xpath="/nav_object_classes/nav_object_class[@name='fetch_container']/onscreen_settings/property[@name='max_distance']/@value">
+		300</set>
+
+</configs>
