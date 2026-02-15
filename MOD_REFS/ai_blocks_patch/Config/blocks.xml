@@ -737,6 +737,11 @@
         xpath="/blocks/block[@name='farmPlotBlockPlayer']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         0</set>
 
+    <!-- Patches for all Harvest drops of resourceCobblestones -->
+    <set
+        xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
+        10,30</set>
+
     <!-- Patches for all Harvest drops of resourceCrushedSand -->
     <set
         xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">

@@ -1,0 +1,1 @@
+    <set xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">10,30</set>
