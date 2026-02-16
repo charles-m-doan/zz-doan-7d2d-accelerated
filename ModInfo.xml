@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-	<Name value="Doan's Accelerated Pace Mod" />
-	<DisplayName value="Doan's Accelerated Pace Mod" />
-	<Description
-		value="This mod is intended to minimize 'grinding' and accelerate the overall pace of the game. Ideally it should be played with 40 minute days." />
+	<Name value="DoanTest" />
+	<DisplayName value="Test" />
+	<Description value="This modlet tests the Doan mod system." />
 	<Author value="Doanage" />
 	<Version value="2.0.0.0" />
 	<Website value="" />
