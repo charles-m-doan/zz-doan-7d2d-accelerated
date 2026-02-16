@@ -18,840 +18,1057 @@
         <property name="Stacknumber" value="5000" />
     </append>
 
-    <!-- Harvest drops: resourceRockSmall -->
+    <!-- Patches for all Harvest drops of resourceRockSmall -->
+    <!-- 55 -->
     <set
         xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         55</set>
+    <!-- 12 -->
     <set
         xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         12</set>
+    <!-- 9 -->
     <set
         xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         9</set>
+    <!-- 27 -->
     <set
         xpath="/blocks/block[@name='terrAsphalt']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         27</set>
+    <!-- 27 -->
     <set
         xpath="/blocks/block[@name='terrConcrete']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         27</set>
+    <!-- 14 -->
     <set
         xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         14</set>
+    <!-- 14 -->
     <set
         xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         14</set>
+    <!-- 14 -->
     <set
         xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         14</set>
+    <!-- 14 -->
     <set
         xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         14</set>
+    <!-- 14 -->
     <set
         xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         14</set>
+    <!-- 16 -->
     <set
         xpath="/blocks/block[@name='brickShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         16</set>
+    <!-- 6 -->
     <set
         xpath="/blocks/block[@name='cobblestoneShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         6</set>
+    <!-- 25 -->
     <set
         xpath="/blocks/block[@name='concreteShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         25</set>
+    <!-- 25 -->
     <set
         xpath="/blocks/block[@name='concreteNoUpgradeMaster']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         25</set>
+    <!-- 16 -->
     <set
         xpath="/blocks/block[@name='stoneNoUpgradeMaster']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         16</set>
+    <!-- 6 -->
     <set
         xpath="/blocks/block[@name='cobblestoneMaster']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         6</set>
+    <!-- 16 -->
     <set
         xpath="/blocks/block[@name='brickNoUpgradeMaster']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         16</set>
+    <!-- 12 -->
     <set
         xpath="/blocks/block[@name='cntBathTubEmpty']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
         12</set>
 
-    <!-- Harvest drops: resourceWood -->
+    <!-- Patches for all Harvest drops of resourceWood -->
     <set
         xpath="/blocks/block[@name='terrDestroyedWoodDebris']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='woodShapes']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='frameShapes']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='woodNoUpgradeMaster']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='rWoodMaster']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2,6 -->
     <set
         xpath="/blocks/block[@name='keyRackWood01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2,6</set>
+    <!-- 5 -->
     <set
         xpath="/blocks/block[@name='woodLogPillar100']/drop[@event='Harvest' and @name='resourceWood']/@count">
         5</set>
+    <!-- 20,40 -->
     <set
         xpath="/blocks/block[@name='doorWoodLargeGate']/drop[@event='Harvest' and @name='resourceWood']/@count">
         20,40</set>
+    <!-- 8 -->
     <set
         xpath="/blocks/block[@name='logWallLeft']/drop[@event='Harvest' and @name='resourceWood']/@count">
         8</set>
+    <!-- 5,10 -->
     <set
         xpath="/blocks/block[@name='noCorpseHangingLog1']/drop[@event='Harvest' and @name='resourceWood']/@count">
         5,10</set>
+    <!-- 8,14 -->
     <set
         xpath="/blocks/block[@name='driftwood']/drop[@event='Harvest' and @name='resourceWood']/@count">
         8,14</set>
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='modularFireWoodStackA']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 10 -->
     <set
         xpath="/blocks/block[@name='modularFireWoodStackC']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10</set>
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='decoWildWestWagon']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 4 -->
     <set
         xpath="/blocks/block[@name='decoWildWestWagonWheelBack']/drop[@event='Harvest' and @name='resourceWood']/@count">
         4</set>
-
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletBrownBoxesTile']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletBrownBoxesTop']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletBrownBoxesLoose']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
-
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletBricksTile']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletBricksTop']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
+
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletBricksLoose']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
-
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='palletTarpTileWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         0</set>
-
+    <!-- 20 -->
     <set
         xpath="/blocks/block[@name='OSBWoodStack']/drop[@event='Harvest' and @name='resourceWood']/@count">
         20</set>
-
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='palletBagFlourBaseFull']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='palletBagSandBaseFull']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='palletBagConcreteBaseFull']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='palletBagFertilizerBaseFull']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
-
+    <!-- 20,30 -->
     <set
         xpath="/blocks/block[@name='cntApiary']/drop[@event='Harvest' and @name='resourceWood']/@count">
         20,30</set>
-
+    <!-- 20 -->
     <set
         xpath="/blocks/block[@name='workbench']/drop[@event='Harvest' and @name='resourceWood']/@count">
         20</set>
+    <!-- 20 -->
+    <set
+        xpath="/blocks/block[@name='workbench']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        20</set>
+    <!-- 20 -->
     <set
         xpath="/blocks/block[@name='cntCollapsedWorkbench']/drop[@event='Harvest' and @name='resourceWood']/@count">
         20</set>
+    <!-- 20 -->
     <set
         xpath="/blocks/block[@name='cntCollapsedWorkbenchEmpty']/drop[@event='Harvest' and @name='resourceWood']/@count">
         20</set>
-
+    <!-- 20 -->
+    <set
+        xpath="/blocks/block[@name='cntCollapsedWorkbenchEmpty']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        20</set>
+    <!-- 16 -->
     <set
         xpath="/blocks/block[@name='chemistryStation']/drop[@event='Harvest' and @name='resourceWood']/@count">
         16</set>
+    <!-- 15 -->
+    <set
+        xpath="/blocks/block[@name='chemistryStation']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        15</set>
+    <!-- 16 -->
+    <set
+        xpath="/blocks/block[@name='cntCollapsedChemistryStation']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        16</set>
+    <!-- 15 -->
     <set
         xpath="/blocks/block[@name='cntCollapsedChemistryStation']/drop[@event='Harvest' and @name='resourceWood']/@count">
         15</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='oldWoodDoor']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='oldWoodDoorDouble']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 6 -->
     <set
         xpath="/blocks/block[@name='cellarDoorDoubleWood']/drop[@event='Harvest' and @name='resourceWood']/@count">
         6</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='exteriorHouseDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='exteriorHouseDoorDoubleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='exteriorHouseDoorSideLightSingleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='exteriorHouseDoorSideLightWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='exteriorHouseDoorOldWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='exteriorHouseDoorDoubleOldWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='frenchDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='frenchDoorDoubleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='interiorHouseDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='interiorHouseDoorDoubleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='interiorDoorOldWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='interiorDoorOldDoubleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='tallCabinetDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='closetDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='closetDoorDoubleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-    <set
-        xpath="/blocks/block[@name='closetDoorDoubleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
-        2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='pantryDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='woodenFenceDoorWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='woodenGarageDoor3x3White']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='woodenGarageDoor4x3White']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='woodenGarageDoor5x3White']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10 -->
     <set
         xpath="/blocks/block[@name='woodenGarageDoor3x3_PoweredWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10</set>
+    <!-- 10 -->
     <set
         xpath="/blocks/block[@name='woodenGarageDoor4x3_PoweredWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10</set>
+    <!-- 10 -->
     <set
         xpath="/blocks/block[@name='woodenGarageDoor5x3_PoweredWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='woodHatch']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 400 -->
     <set
         xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/drop[@event='Harvest' and @name='resourceWood']/@count">
         400</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='cntArmoireDoorsWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 1,2 -->
     <set
         xpath="/blocks/block[@name='cntModularClosetClosed']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,2</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='sectionalPlaidCouchSofaMiddle']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='sectionalLeatherCouchSofaArm']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='couchUglySingleWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='couchModernArm']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='churchPewLeftWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-
+    <!-- 15 -->
     <set xpath="/blocks/block[@name='piano']/drop[@event='Harvest' and @name='resourceWood']/@count">
         15</set>
+    <!-- 15 -->
     <set
         xpath="/blocks/block[@name='decoPoolTable']/drop[@event='Harvest' and @name='resourceWood']/@count">
         15</set>
+    <!-- 3,6 -->
     <set
         xpath="/blocks/block[@name='decoBasketBallHoop']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3,6</set>
-
+    <!-- 8 -->
     <set xpath="/blocks/block[@name='bed02']/drop[@event='Harvest' and @name='resourceWood']/@count">
         8</set>
+    <!-- 5,8 -->
     <set
         xpath="/blocks/block[@name='cntShelvesWoodFullA']/drop[@event='Harvest' and @name='resourceWood']/@count">
         5,8</set>
-
+    <!-- 1,2 -->
     <set
         xpath="/blocks/block[@name='cntStoreProduceBasketCornerRandomLootHelper']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,2</set>
+    <!-- 1,2 -->
     <set
         xpath="/blocks/block[@name='cntStoreProduceBasketCornerEmpty1_Player']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,2</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='restaurantBooth']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 4 -->
     <set
         xpath="/blocks/block[@name='fastFoodBooth']/drop[@event='Harvest' and @name='resourceWood']/@count">
         4</set>
+    <!-- 4 -->
     <set
         xpath="/blocks/block[@name='fastFoodBoothBenchWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         4</set>
-
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='cntTrashBinCommercialWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
+    <!-- 4,8 -->
     <set
         xpath="/blocks/block[@name='officeDesk']/drop[@event='Harvest' and @name='resourceWood']/@count">
         4,8</set>
+    <!-- 4,8 -->
     <set
         xpath="/blocks/block[@name='cntshelfSupplyOfficeEmptyWhite']/drop[@event='Harvest' and @name='resourceWood']/@count">
         4,8</set>
-
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='rubblePileWoodLarge']/drop[@event='Harvest' and @name='resourceWood']/@count">
         3</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='barbedFence']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2</set>
-
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='semiFlatbedBack']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='semiFlatbedMiddleWheels']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='semiFlatbedMiddle']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='semiFlatbedMiddle45']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
+    <!-- 10,20 -->
     <set
         xpath="/blocks/block[@name='semiFlatbedFront']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,20</set>
-
+    <!-- 1,5 -->
     <set
         xpath="/blocks/block[@name='treePlainsTree']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,5</set>
+    <!-- 1,3 -->
     <set
         xpath="/blocks/block[@name='treeDeadPineLeaf']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,3</set>
+    <!-- 1,3 -->
     <set
         xpath="/blocks/block[@name='treeSnowyDeadBush']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,3</set>
+    <!-- 1,3 -->
     <set
         xpath="/blocks/block[@name='treeAzalea']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,3</set>
+    <!-- 1,3 -->
     <set
         xpath="/blocks/block[@name='plantHedge']/drop[@event='Harvest' and @name='resourceWood']/@count">
         1,3</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeDeadTree01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeDeadTree02']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treePlainsTree2']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
-
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treeMountainPineDry21m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeOakSml01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 70 -->
     <set
         xpath="/blocks/block[@name='treeOakMed01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         70</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treeOakMed02']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeOakLrg01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treePlantedOak08m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 70 -->
     <set
         xpath="/blocks/block[@name='treePlantedOak16m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         70</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treePlantedOak27m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treePlantedOak41m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeJuniper4m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeMountainPine12m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 70 -->
     <set
         xpath="/blocks/block[@name='treeMountainPine19m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         70</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treeMountainPine27m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treeMountainPine31m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeMountainPine41m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeMountainPine48m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeFirLrg01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treePlantedMountainPine12m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 70 -->
     <set
         xpath="/blocks/block[@name='treePlantedMountainPine19m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         70</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treePlantedMountainPine27m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treePlantedMountainPine41m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeWinterEverGreen']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeWinterEverGreenLarge']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
-
+    <!-- 70 -->
     <set
         xpath="/blocks/block[@name='treeWinterPine13m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         70</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treeWinterPine19m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeWinterPine28m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treePlantedWinterPine6m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 70 -->
     <set
         xpath="/blocks/block[@name='treePlantedWinterPine13m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         70</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treePlantedWinterPine19m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treePlantedWinterPine28m']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
-
+    <!-- 30 -->
     <set
         xpath="/blocks/block[@name='treeBurntMaple01']/drop[@event='Harvest' and @name='resourceWood']/@count">
         30</set>
+    <!-- 110 -->
     <set
         xpath="/blocks/block[@name='treeBurntMaple02']/drop[@event='Harvest' and @name='resourceWood']/@count">
         110</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeBurntMaple03']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
+    <!-- 150 -->
     <set
         xpath="/blocks/block[@name='treeBurntMaple04']/drop[@event='Harvest' and @name='resourceWood']/@count">
         150</set>
-
+    <!-- 10,15 -->
     <set
         xpath="/blocks/block[@name='treeStump']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,15</set>
+    <!-- 10,15 -->
     <set
         xpath="/blocks/block[@name='treeStumpPOI']/drop[@event='Harvest' and @name='resourceWood']/@count">
         10,15</set>
-
+    <!-- 5,8 -->
     <set
         xpath="/blocks/block[@name='traderShelvesWoodFullA']/drop[@event='Harvest' and @name='resourceWood']/@count">
         5,8</set>
 
-    <!-- Harvest drops: resourceClayLump -->
+    <!-- Patches for all Harvest drops of resourceClayLump -->
     <set
         xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         22</set>
+    <!-- 22 -->
     <set
         xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         22</set>
+    <!-- 22 -->
     <set
         xpath="/blocks/block[@name='terrBurntForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         22</set>
+    <!-- 9 -->
     <set
         xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         9</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2</set>
-
+    <!-- 6 -->
     <set
         xpath="/blocks/block[@name='cobblestoneShapes']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6</set>
+    <!-- 6 -->
     <set
         xpath="/blocks/block[@name='cobblestoneMaster']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6</set>
+    <!-- 10 -->
     <set
         xpath="/blocks/block[@name='birdBathPlanter']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         10</set>
-
+    <!-- 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         10,30</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatBrown']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatRed']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatOrange']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatYellow']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatBlue']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullPurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTilePurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedPurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedPurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlPurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentPurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatPurple']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatGrey']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullPink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTilePink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedPink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedPink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlPink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentPink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatPink']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseFullArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankTileArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankBaseMedArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapMedArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankCapSmlArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleBentArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagBlankSingleFlatArmyGreen']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         2,4</set>
-
+    <!-- 20 -->
     <set
         xpath="/blocks/block[@name='forge']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         20</set>
+    <!-- 20 -->
     <set
         xpath="/blocks/block[@name='cntForgeWorkstationBroken']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         20</set>
+    <!-- 3,5 -->
     <set
         xpath="/blocks/block[@name='barrierMilitary']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         3,5</set>
+    <!-- 22 -->
     <set
         xpath="/blocks/block[@name='farmPlotBlock']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         22</set>
+    <!-- 0 -->
     <set
         xpath="/blocks/block[@name='farmPlotBlockPlayer']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         0</set>
 
-    <!-- Harvest drops: resourceCobblestones -->
+    <!-- Patches for all Harvest drops of resourceCobblestones -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
         10,30</set>
 
-    <!-- Harvest drops: resourceCrushedSand -->
+    <!-- Patches for all Harvest drops of resourceCrushedSand -->
     <set
         xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         9</set>
+    <!-- 11 -->
     <set
         xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         11</set>
+    <!-- 4 -->
     <set
         xpath="/blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         4</set>
+    <!-- 8 -->
     <set
         xpath="/blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         8</set>
+    <!-- 2 -->
     <set
         xpath="/blocks/block[@name='sandbagStraight01']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         2</set>
+    <!-- 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         10,30</set>
+    <!-- 10 -->
     <set
         xpath="/blocks/block[@name='dryWallStack']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         10</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagSandBaseFull']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         30,40</set>
+    <!-- 30,40 -->
     <set
         xpath="/blocks/block[@name='palletBagSandTile']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         30,40</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagSandBaseMed']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         15,20</set>
+    <!-- 15,20 -->
     <set
         xpath="/blocks/block[@name='palletBagSandCapMed']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         15,20</set>
+    <!-- 6,12 -->
     <set
         xpath="/blocks/block[@name='palletBagSandCapSml']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         6,12</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagSandSingleBent']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         2,4</set>
+    <!-- 2,4 -->
     <set
         xpath="/blocks/block[@name='palletBagSandSingleFlat']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         2,4</set>
+    <!-- 3 -->
     <set
         xpath="/blocks/block[@name='decoReptileTerrarium']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         3</set>
+    <!-- 3,5 -->
     <set
         xpath="/blocks/block[@name='barrierMilitary']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         3,5</set>
+    <!-- 4 -->
     <set
         xpath="/blocks/block[@name='rubblePileBricks']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         4</set>
+
 </configs>
