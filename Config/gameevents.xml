@@ -2,11 +2,11 @@
 
     <set
         xpath="/gameevents/action_sequence[@name='challenge_reward_default']/action[@class='AddXP']/property[@name='xp_amount']/@value">
-        10000</set>
+        1000</set>
 
     <append xpath="/gameevents/action_sequence[@name='challenge_reward_default']">
         <action class="AddSkillPoints">
-            <property name="skill_points" value="10" />
+            <property name="skill_points" value="6" />
         </action>
     </append>
 
