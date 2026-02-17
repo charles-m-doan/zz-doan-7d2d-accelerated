@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="noSkills_StackSizeLarge" />
-	<DisplayName value="Increased Stack Sizes (Large)" />
-	<Version value="1.0" />
-	<Description value="This will increase most items stack size, anything that was set to 1 remains the same." />
-	<Author value="noSkillsGaming - OneShot23" />
-	<Website value="" />
-</xml>
