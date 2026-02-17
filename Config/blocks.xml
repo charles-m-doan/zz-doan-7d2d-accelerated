@@ -1,7 +1,9 @@
 <configs>
+
+    <!-- original value: 10,15 -->
     <set
         xpath="/blocks/block[@name='treeStump']/drop[@event='Harvest']/@count">
-        1000,2000</set>
+        1000,1500</set>
 
 
 </configs>
