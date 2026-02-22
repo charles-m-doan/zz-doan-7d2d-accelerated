@@ -6,7 +6,6 @@
 	<set xpath="/recipes/recipe[@name='resourceForgedIron']/@count">10</set>
 	<set xpath="/recipes/recipe[@name='resourceForgedSteel']/@count">10</set>
 	<set xpath="/recipes/recipe[@name='drinkJarEmpty']/@count">10</set>
-	<set xpath="/recipes/recipe[@name='drinkCanEmpty']/@count">10</set>
 
 	<set xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='chemistryStation']/@count">5</set>
 	<set
@@ -31,7 +30,7 @@
 
 		<recipe name="foodCanChili" count="5" craft_area="campfire" craft_tool="toolCookingPot"
 			tags="perkMasterChef">
-			<ingredient name="drinkCanEmpty" count="5" />
+			<ingredient name="resourceScrapIron" count="5" />
 			<ingredient name="foodRawMeat" count="10" />
 			<ingredient name="resourcePotassiumNitratePowder" count="5" />
 			<ingredient name="foodCropYuccaFruit" count="5" />
@@ -53,7 +52,7 @@
 		<!-- Oil Crafting -->
 		<recipe name="resourceOil" count="20" craft_time="20" craft_area="chemistryStation">
 			<ingredient name="resourceOilShale" count="500" />
-			<ingredient name="drinkCanEmpty" count="20" />
+			<ingredient name="resourceScrapIron" count="20" />
 		</recipe>
 
 		<!-- Craftable Sewing Kit -->
@@ -218,21 +217,6 @@
 			tags="workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="2" />
 			<ingredient name="resourceMechanicalParts" count="1" />
-			<ingredient name="resourceSpring" count="2" />
-		</recipe>
-
-		<recipe name="armorMilitarySetParts" count="1" craft_time="15" craft_area="workbench"
-			tags="workbenchCrafting">
-			<ingredient name="resourceForgedSteel" count="4" />
-			<ingredient name="resourceMechanicalParts" count="3" />
-			<ingredient name="resourceSpring" count="2" />
-		</recipe>
-
-		<recipe name="armorSteelSetParts" count="1" craft_time="15" craft_area="workbench"
-			tags="workbenchCrafting">
-			<ingredient name="resourceForgedSteel" count="5" />
-			<ingredient name="resourceForgedIron" count="10" />
-			<ingredient name="resourceMechanicalParts" count="2" />
 			<ingredient name="resourceSpring" count="2" />
 		</recipe>
 
