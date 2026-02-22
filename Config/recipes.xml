@@ -21,13 +21,6 @@
 	<!-- ADDING NEW RECIPES -->
 	<append xpath="/recipes">
 
-		<!-- Taza's Stone Axe -->
-		<recipe name="meleeToolRepairT0TazasStoneAxe" count="1" tags="perkMiner69r">
-			<ingredient name="resourceRockSmall" count="2" />
-			<ingredient name="resourceYuccaFibers" count="2" />
-			<ingredient name="resourceWood" count="2" />
-		</recipe>
-
 		<recipe name="foodCanChili" count="5" craft_area="campfire" craft_tool="toolCookingPot"
 			tags="perkMasterChef">
 			<ingredient name="resourceScrapIron" count="5" />
