@@ -1,0 +1,10 @@
+<configs>
+
+	<!-- Agility: +10% run speed per Agility level (1 => 10%, 10 => 100%) -->
+	<append xpath="/progression/attributes/attribute[@name='attAgility']">
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value=".1,1" />
+		</effect_group>
+	</append>
+
+</configs>

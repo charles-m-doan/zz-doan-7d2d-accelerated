@@ -1,0 +1,56 @@
+Methodology: Adding custom effects to skills/attributes (what we discovered)
+
+Goal
+- Add a movement speed bonus tied to Agility (a progression attribute), using only XML patching.
+
+Key discovery: items, buffs, and progression share the same effect system
+- The game uses the same effect primitives in multiple places:
+  - Items: <passive_effect ...> inside items.xml effect groups (e.g. armor boots granting RunSpeed).
+  - Buffs: <passive_effect ...> inside buffs.xml (e.g. a buff that grants RunSpeed).
+  - Progression (attributes/perks/books): <passive_effect ...> and <triggered_effect ...> inside progression.xml.
+- This strongly indicates there is not a separate “item-only stats” system. Many stats are just named effects that can be applied from different sources.
+
+How we validated movement speed hooks exist
+- We searched Data/Config for movement-speed-like stats and found:
+  - RunSpeed and WalkSpeed used as passive_effect names in buffs.xml.
+  - RunSpeed used as a passive_effect on multiple items in items.xml.
+  - Progression can trigger buffs (triggered_effect action="AddBuff") and those buffs can carry RunSpeed.
+- A small but important nuance: UI/strings sometimes say “Movement Speed”, but the actual effect hooks we saw in XML were RunSpeed/WalkSpeed (and separately, Mobility is commonly used for armor penalties/bonuses).
+
+How “skills” map in this version
+- In progression.xml there are:
+  - Attributes (attAgility, attStrength, etc.) that you spend points into directly.
+  - Skill groupings (skillAgilityAthletics, etc.) that serve as parents/categories for perks.
+  - Perks/books that contain most of the real gameplay effects.
+- If you want an effect that scales with the attribute points themselves, patch the attribute node (attAgility), not the skill category.
+
+Two implementation patterns you can reuse
+1) Always-on, level-scaled stat bonus (simplest)
+- Add a passive_effect to the relevant attribute/perk effect_group.
+- Example pattern:
+  - operation="perc_add" to add a percentage modifier.
+  - level="1,10" with value=".1,1" to scale linearly from +10% to +100%.
+- This is what we used for Agility -> RunSpeed.
+
+2) Conditional / timed effects via buffs (more flexible)
+- Use progression.xml to apply a buff in response to a trigger (onSelfKilledOther, onOtherAttackedSelf, etc.).
+- Put the actual stat change on the buff in buffs.xml.
+- This is useful when you want conditions, cooldowns, durations, stacking, or HUD icons.
+
+Practical patching approach
+- Use an XPath patch file (your mod already follows this pattern) rather than copying full vanilla XML.
+- Common operations:
+  - <set xpath=".../@value"> ... </set> to adjust existing values.
+  - <append xpath="/progression/attributes/attribute[@name='attAgility']"> ... </append> to add new effect_group blocks.
+
+Common pitfalls / sanity checks
+- Requirements can restrict when an effect applies.
+  - Many progression effect_groups include requirements like ItemHasTags, HoldingItemHasTags, !IsAttachedToEntity, IsAlive, etc.
+  - For a global attribute bonus, avoid adding requirements unless you intend to limit it.
+- Make sure you’re using a real effect name.
+  - We confirmed RunSpeed is valid by finding it already used in items.xml and buffs.xml.
+- Expect balance side effects.
+  - +10% per attribute point is extremely strong (Agility 10 becomes +100% run speed). If this is intended, great; if not, scale down.
+
+Result
+- Because RunSpeed is a shared passive_effect hook used by both items and buffs, and progression.xml supports passive_effects at the attribute level, adding a RunSpeed bonus to Agility via an XML patch is feasible and works in-game.
