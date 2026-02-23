@@ -28,4 +28,15 @@
 		</effect_group>
 	</append>
 
+	<!-- Strength: up to -30% stamina cost for melee attacks (linear; 1 => 3%, 10 => -30%) -->
+	<append xpath="/progression/attributes/attribute[@name='attStrength']">
+		<effect_group>
+			<!-- Primary = regular attack; Secondary = power attack -->
+			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.03,-.3"
+				tags="primary" />
+			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.03,-.3"
+				tags="secondary" />
+		</effect_group>
+	</append>
+
 </configs>
