@@ -24,14 +24,24 @@
 		</effect_group>
 	</append>
 
-	<!-- Strength: up to -30% stamina cost for melee attacks (linear; 1 => 0%, 10 => -30%) -->
+	<!-- Strength: up to -30% stamina cost for attacks (linear; 1 => 0%, 10 => -30%) -->
 	<append xpath="/progression/attributes/attribute[@name='attStrength']">
 		<effect_group>
 			<!-- Primary = regular attack; Secondary = power attack -->
-			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.03,-.3"
+			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="0,-.3"
 				tags="primary" />
-			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.03,-.3"
+			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="0,-.3"
 				tags="secondary" />
+		</effect_group>
+	</append>
+
+	<!-- Perception: +10% loot quantity per Perception level (1 => 10%, 10 => 100%) -->
+	<append xpath="/progression/attributes/attribute[@name='attPerception']">
+		<effect_group>
+			<!-- LootQuantity is tag-scoped in vanilla; this targets the common Lucky Looter
+			categories -->
+			<passive_effect name="LootQuantity" operation="perc_add" level="1,10" value=".1,1"
+				tags="ammo,food,medical,junk,dukes,brass,lead,gems" />
 		</effect_group>
 	</append>
 
