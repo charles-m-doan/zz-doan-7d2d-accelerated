@@ -4,6 +4,34 @@
 	<append xpath="/progression/attributes/attribute[@name='attAgility']">
 		<effect_group>
 			<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value=".1,1" />
+			<passive_effect name="WalkSpeed" operation="perc_add" level="1,10" value=".1,1" />
+		</effect_group>
+	</append>
+
+	<!-- Fortitude: +10% stamina recovery per Fortitude level (1 => 10%, 10 => 100%) -->
+	<append xpath="/progression/attributes/attribute[@name='attFortitude']">
+		<effect_group>
+			<!-- Used by coffee and cardio perks as a stamina regen modifier -->
+			<passive_effect name="StaminaChangeOT" operation="perc_add" level="1,10" value=".1,1" />
+		</effect_group>
+	</append>
+
+	<!-- Intellect: +10% XP gain per Intellect level (1 => 10%, 10 => 100%) -->
+	<append xpath="/progression/attributes/attribute[@name='attIntellect']">
+		<effect_group>
+			<!-- Global XP multiplier hook (used in vanilla buffs) -->
+			<passive_effect name="ExperienceGain" operation="perc_add" level="1,10" value=".1,1" />
+		</effect_group>
+	</append>
+
+	<!-- Strength: up to -30% stamina cost for melee attacks (linear; 1 => 0%, 10 => -30%) -->
+	<append xpath="/progression/attributes/attribute[@name='attStrength']">
+		<effect_group>
+			<!-- Primary = regular attack; Secondary = power attack -->
+			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.03,-.3"
+				tags="primary" />
+			<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.03,-.3"
+				tags="secondary" />
 		</effect_group>
 	</append>
 
