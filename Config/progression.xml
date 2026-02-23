@@ -3,9 +3,11 @@
 	<!-- Skill Points Per Level -->
 	<set xpath="/progression/level/@skill_points_per_level">4</set>
 
+	<!-- Agility: +10% walk speed per Agility level (1 => 10%, 10 => 100%) -->
 	<!-- Agility: +20% run speed per Agility level (1 => 20%, 10 => 200%) -->
 	<append xpath="/progression/attributes/attribute[@name='attAgility']">
 		<effect_group>
+			<passive_effect name="WalkSpeed" operation="perc_add" level="1,10" value=".1,1" />
 			<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value="0.2,2.0" />
 		</effect_group>
 	</append>
