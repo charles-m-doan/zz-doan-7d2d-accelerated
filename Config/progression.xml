@@ -51,4 +51,19 @@
 		</effect_group>
 	</append>
 
+	<!-- Parkour: Jump Strength levels -->
+	<set
+		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@value">
+		.40,.65,.90,1.2</set>
+
+	<!-- Mother Lode: harvest starts at +100% and scales to +200% -->
+	<set
+		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount' and @tags='oreWoodHarvest']/@value">
+		1,2</set>
+
+	<!-- Counterbalance: reduce Harvesting XP roughly inverse to yield (rank1: -50%, rank5: -66.67%) -->
+	<set
+		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
+		-.5,-.6667</set>
+
 </configs>
