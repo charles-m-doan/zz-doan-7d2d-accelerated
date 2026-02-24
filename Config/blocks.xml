@@ -3,42 +3,47 @@
     <!-- original value: 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
-        10,30</set>
+        100,300</set>
 
     <!-- original value: 105 -->
     <set
         xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">
-        105</set>
+        400</set>
 
     <!-- original value: 50 -->
     <set
         xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">
-        50</set>
+        150</set>
+
+    <!-- original value: 0.05 -->
+    <set
+        xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapBrass']/@prob">
+        0.25</set>
 
     <!-- original value: 100,200 -->
     <set
         xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapBrass']/@count">
-        100,200</set>
+        200,400</set>
 
     <!-- original value: 50 -->
     <set
         xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceCoal']/@count">
-        50</set>
+        150</set>
 
     <!-- original value: 50 -->
     <set
         xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">
-        50</set>
+        150</set>
 
     <!-- original value: 50 -->
     <set
         xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceOilShale']/@count">
-        50</set>
+        150</set>
 
     <!-- original value: 55 -->
     <set
         xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-        55</set>
+        155</set>
 
     <!-- original value: 10,15 -->
     <set

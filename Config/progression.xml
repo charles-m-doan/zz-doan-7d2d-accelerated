@@ -39,4 +39,16 @@
 		</effect_group>
 	</append>
 
+	<!-- Perception: +20% loot quantity per Perception level (1 => 20%, 10 => 200%) -->
+	<append xpath="/progression/attributes/attribute[@name='attPerception']">
+		<effect_group>
+			<!-- LootQuantity is tag-scoped in vanilla; this targets the common Lucky Looter
+			categories -->
+			<passive_effect name="LootQuantity" operation="perc_add" level="1,10" value=".2,2"
+				tags="ammo,food,medical,junk,dukes,brass,lead,gems" />
+			<!-- Crit chance: up to +20% at Perception 10 (linear: 1 => +2%, 10 => +20%) -->
+			<passive_effect name="CriticalChance" operation="base_add" level="1,10" value=".02,.2" />
+		</effect_group>
+	</append>
+
 </configs>
