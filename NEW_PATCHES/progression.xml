@@ -42,7 +42,33 @@
 			categories -->
 			<passive_effect name="LootQuantity" operation="perc_add" level="1,10" value=".1,1"
 				tags="ammo,food,medical,junk,dukes,brass,lead,gems" />
+
+			<!-- Crit chance: up to +20% at Perception 10 (linear: 1 => +2%, 10 => +20%) -->
+			<passive_effect name="CriticalChance" operation="base_add" level="1,10" value=".02,.2" />
 		</effect_group>
 	</append>
+
+	<!-- Parkour: +1m jump height per Parkour rank (1 => +1m, 5 => +5m) -->
+	<!--
+		Vanilla notes JumpStrength scaling is multiplicative off an ~1.6m base jump.
+		So for +Nm we use perc_add = ((1.6 + N) / 1.6) - 1.
+		Rank 1..5 => 0.625, 1.25, 1.875, 2.5, 3.125
+	-->
+	<set
+		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@level">
+		1,2,3,4,5</set>
+	<set
+		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@value">
+		.625,1.25,1.875,2.5,3.125</set>
+
+	<!-- Mother Lode: harvest starts at +100% and scales to +200% -->
+	<set
+		xpath="/progression//perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount' and @tags='oreWoodHarvest']/@value">
+		1,2</set>
+
+	<!-- Counterbalance: reduce Harvesting XP roughly inverse to yield (rank1: -50%, rank5: -66.67%) -->
+	<set
+		xpath="/progression//perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
+		-.5,-.6667</set>
 
 </configs>
