@@ -6,7 +6,7 @@
 
     <append xpath="/gameevents/action_sequence[@name='challenge_reward_default']">
         <action class="AddSkillPoints">
-            <property name="skill_points" value="99" />
+            <property name="skill_points" value="3" />
         </action>
     </append>
 
