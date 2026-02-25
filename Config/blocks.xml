@@ -1,5 +1,17 @@
 <configs>
 
+    <!-- Boulders: 5x stone yield (resourceRockSmall) -->
+    <!-- resourceRock01 is the base for stone boulder decorations (resourceRock02/03 extend it) -->
+    <set
+        xpath="/blocks/block[@name='resourceRock01']/drop[@event='Harvest' and @name='resourceRockSmall' and @tag='oreWoodHarvest']/@count">
+        110</set>
+
+    <!-- oreBoulderMaster is the base for surface ore boulders (oreIronBoulder, oreLeadBoulder,
+    etc.) -->
+    <set
+        xpath="/blocks/block[@name='oreBoulderMaster']/drop[@event='Harvest' and @name='resourceRockSmall' and @tag='oreWoodHarvest']/@count">
+        70</set>
+
     <!-- Cotton plants: 3x cotton yield on harvest -->
     <set
         xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
