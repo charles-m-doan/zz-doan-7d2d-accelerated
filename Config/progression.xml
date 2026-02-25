@@ -3,12 +3,12 @@
 	<!-- Skill Points Per Level -->
 	<set xpath="/progression/level/@skill_points_per_level">3</set>
 
-	<!-- Agility: +10% walk speed per Agility level (1 => 10%, 10 => 100%) -->
-	<!-- Agility: +20% run speed per Agility level (1 => 20%, 10 => 200%) -->
+	<!-- Agility: +8% walk speed per Agility level (1 => 8%, 10 => 80%) -->
+	<!-- Agility: +15% run speed per Agility level (1 => 15%, 10 => 150%) -->
 	<append xpath="/progression/attributes/attribute[@name='attAgility']">
 		<effect_group>
-			<passive_effect name="WalkSpeed" operation="perc_add" level="1,10" value=".1,1" />
-			<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value="0.2,2.0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" level="1,10" value=".08,.8" />
+			<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value=".15,1.5" />
 		</effect_group>
 	</append>
 
@@ -58,20 +58,20 @@
 	<!-- <passive_effect name="JumpStrength" operation="perc_add" level="2,3,4,5"
 	value=".39,.39,.75,.75"/> -->
 	<set
-		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@level">
+		xpath="/progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@level">
 		1,5</set>
 	<set
-		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@value">
+		xpath="/progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@value">
 		0.25,1.25</set>
 
 	<!-- Mother Lode: harvest starts at +100% and scales to +200% -->
 	<set
-		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">
+		xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">
 		1.2,3.2</set>
 
 	<!-- Counterbalance: reduce Harvesting XP roughly inverse to yield (rank1: -50%, rank5: -66.67%) -->
 	<set
-		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
+		xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
 		-.5,-.6667</set>
 
 </configs>
