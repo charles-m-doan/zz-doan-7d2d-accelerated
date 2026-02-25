@@ -1,5 +1,26 @@
 <configs>
 
+    <!-- Cotton plants: 3x cotton yield on harvest -->
+    <set
+        xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='bonusCropHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='farmerBonusHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='cropHarvest']/@count">
+        6</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='bonusCropHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='farmerBonusHarvest']/@count">
+        3</set>
+
+
     <!-- original value: 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">

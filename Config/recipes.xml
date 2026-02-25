@@ -18,6 +18,14 @@
 		200</set>
 	<set xpath="/recipes/recipe[@name='foodCanSham']/@count">20</set>
 
+	<!-- Cotton -> Cloth: bulk recipe (10 cotton => 15 cloth) -->
+	<set
+		xpath="/recipes/recipe[@name='resourceCloth' and contains(@tags,'packMuleCrafting') and ingredient[@name='resourceCropCottonPlant']]/@count">
+		15</set>
+	<set
+		xpath="/recipes/recipe[@name='resourceCloth' and contains(@tags,'packMuleCrafting') and ingredient[@name='resourceCropCottonPlant']]/ingredient[@name='resourceCropCottonPlant']/@count">
+		10</set>
+
 	<!-- ADDING NEW RECIPES -->
 	<append xpath="/recipes">
 
