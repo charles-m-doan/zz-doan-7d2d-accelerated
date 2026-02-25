@@ -1,7 +1,7 @@
 <configs>
 
 	<!-- Skill Points Per Level -->
-	<set xpath="/progression/level/@skill_points_per_level">4</set>
+	<set xpath="/progression/level/@skill_points_per_level">3</set>
 
 	<!-- Agility: +10% walk speed per Agility level (1 => 10%, 10 => 100%) -->
 	<!-- Agility: +20% run speed per Agility level (1 => 20%, 10 => 200%) -->
@@ -52,14 +52,22 @@
 	</append>
 
 	<!-- Parkour: Jump Strength levels -->
+	<!-- <passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1"
+	tags="oreWoodHarvest"/> -->
+
+	<!-- <passive_effect name="JumpStrength" operation="perc_add" level="2,3,4,5"
+	value=".39,.39,.75,.75"/> -->
+	<set
+		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@level">
+		1,5</set>
 	<set
 		xpath="/progression/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@value">
-		.40,.65,.90,1.2</set>
+		0.25,1.25</set>
 
 	<!-- Mother Lode: harvest starts at +100% and scales to +200% -->
 	<set
-		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount' and @tags='oreWoodHarvest']/@value">
-		1,2</set>
+		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">
+		1.2,3.2</set>
 
 	<!-- Counterbalance: reduce Harvesting XP roughly inverse to yield (rank1: -50%, rank5: -66.67%) -->
 	<set
