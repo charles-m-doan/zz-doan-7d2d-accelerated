@@ -1,0 +1,32 @@
+<configs>
+
+    <!-- Bird nests: 3x feather drops on Harvest -->
+    <set
+        xpath="/blocks/block[@name='cntBirdnest']/drop[@event='Harvest' and @name='resourceFeather' and @prob='0.35']/@count">
+        9</set>
+    <set
+        xpath="/blocks/block[@name='cntBirdnest']/drop[@event='Harvest' and @name='resourceFeather' and @prob='0.6']/@count">
+        6</set>
+
+    <!-- Cotton plants: 3x cotton yield on harvest -->
+    <set
+        xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='bonusCropHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='farmerBonusHarvest']/@count">
+        3</set>
+
+    <set
+        xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='cropHarvest']/@count">
+        6</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='bonusCropHarvest']/@count">
+        3</set>
+    <set
+        xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='farmerBonusHarvest']/@count">
+        3</set>
+
+</configs>

@@ -1,0 +1,14 @@
+<configs>
+
+    <!-- Bird nests: 3x feathers, higher egg probability -->
+    <set
+        xpath="/lootcontainers/lootgroup[@name='groupBirdNest01']/item[@name='resourceFeather']/@count">
+        3</set>
+    <set
+        xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']/item[@name='resourceFeather']/@count">
+        3,15</set>
+    <set
+        xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']/item[@name='foodEgg']/@loot_prob_template">
+        high</set>
+
+</configs>
