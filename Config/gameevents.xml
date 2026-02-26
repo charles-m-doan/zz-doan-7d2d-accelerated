@@ -1,13 +1,19 @@
 <configs>
 
+    <!-- WHITE_RIVER_CITIZEN_QUEST (vanilla: action_sequence name="challenge_group_reward_basics") -->
     <set
-        xpath="/gameevents/action_sequence[@name='challenge_reward_default']/action[@class='AddXP']/property[@name='xp_amount']/@value">
+        xpath="/gameevents/action_sequence[@name='challenge_group_reward_basics']/action[@class='AddSkillPoints']/property[@name='skill_points']/@value">
+        10</set>
+
+    <!-- <set
+    xpath="/gameevents/action_sequence[@name='challenge_reward_default']/action[@class='AddXP']/property[@name='xp_amount']/@value">
         1000</set>
 
     <append xpath="/gameevents/action_sequence[@name='challenge_reward_default']">
         <action class="AddSkillPoints">
-            <property name="skill_points" value="3" />
+            <property name="skill_points" value="1" />
         </action>
-    </append>
+    </append> -->
+
 
 </configs>
