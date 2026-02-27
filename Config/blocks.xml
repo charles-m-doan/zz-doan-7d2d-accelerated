@@ -10,17 +10,17 @@
         xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         100</set>
 
-    <!-- CLAY original value 7 -->
+    <!-- CLAY original value 9 -->
     <set
         xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
         30</set>
 
-    <!-- SAND original value 7 -->
+    <!-- SAND original value 9 -->
     <set
-        xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         30</set>
 
-    <!-- SAND original value 8 -->
+    <!-- SAND original value 11 -->
     <set
         xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         100</set>
