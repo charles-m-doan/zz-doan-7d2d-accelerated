@@ -1,10 +1,35 @@
 <configs>
 
+    <!-- CLAY original value 22 -->
+    <set
+        xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+        100</set>
+
+    <!-- CLAY original value 22 -->
+    <set
+        xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+        100</set>
+
+    <!-- CLAY original value 7 -->
+    <set
+        xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
+        30</set>
+
+    <!-- SAND original value 7 -->
+    <set
+        xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        30</set>
+
+    <!-- SAND original value 8 -->
+    <set
+        xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        100</set>
+
     <!-- Boulders: 5x stone yield (resourceRockSmall) -->
     <!-- resourceRock01 is the base for stone boulder decorations (resourceRock02/03 extend it) -->
     <set
         xpath="/blocks/block[@name='resourceRock01']/drop[@event='Harvest' and @name='resourceRockSmall' and @tag='oreWoodHarvest']/@count">
-        110</set>
+        200</set>
 
     <!-- oreBoulderMaster is the base for surface ore boulders (oreIronBoulder, oreLeadBoulder,
     etc.) -->
@@ -36,7 +61,11 @@
     <!-- original value: 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
-        100,300</set>
+        50,100</set>
+    <!-- original value: 0.2 -->
+    <set
+        xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@prob">
+        1</set>
 
     <!-- original value: 105 -->
     <set
