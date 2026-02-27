@@ -25,6 +25,23 @@
         xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         100</set>
 
+    <!-- Gore blocks: 3x bone yield (resourceBone) -->
+
+    <!-- goreBlockAnimal original value 5,10 -->
+    <set
+        xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy' and @name='resourceBone' and @tag='butcherHarvest']/@count">
+        15,30</set>
+
+    <!-- goreBlockHumanCorpse original value 5,9 -->
+    <set
+        xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy' and @name='resourceBone' and @tag='butcherHarvest']/@count">
+        15,27</set>
+
+    <!-- goreBlockHumanBones original value 5,10 -->
+    <set
+        xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy' and @name='resourceBone' and @tag='butcherHarvest']/@count">
+        15,30</set>
+
     <!-- Boulders: 5x stone yield (resourceRockSmall) -->
     <!-- resourceRock01 is the base for stone boulder decorations (resourceRock02/03 extend it) -->
     <set
