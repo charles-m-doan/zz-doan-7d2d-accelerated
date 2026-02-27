@@ -1,0 +1,70 @@
+<configs>
+
+	<!-- Remove pure 'clear' / 'infested clear' quests from trader offerings -->
+
+	<!-- Rekt -->
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier1_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier3_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier4_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier5_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier6_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier3_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier4_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier5_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier6_clear_infested']" />
+
+	<!-- Jen -->
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier1_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier2_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier3_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier4_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier5_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier6_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier2_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier3_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier4_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier5_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier6_clear_infested']" />
+
+	<!-- Bob -->
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier1_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier2_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier3_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier4_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier5_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier6_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier2_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier3_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier4_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier5_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier6_clear_infested']" />
+
+	<!-- Hugh -->
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier1_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier2_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier3_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier4_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier5_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier6_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier2_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier3_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier4_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier5_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier6_clear_infested']" />
+
+	<!-- Joel -->
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier1_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier2_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier3_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier4_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier5_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier6_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier2_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier3_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier4_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier5_clear_infested']" />
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier6_clear_infested']" />
+
+</configs>
