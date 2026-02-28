@@ -2,16 +2,6 @@
 	<!-- Modify Stack Counts for all Items -->
 	<set xpath="/items/item/property[@name='Stacknumber']/@value">50000</set>
 
-	<!-- Stacks -->
-	<!-- <set
-	xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">5000</set>
-	<set
-	xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">5000</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">
-		5000</set>
-	<set
-	xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">5000</set> -->
-
 	<!-- Machete -->
 	<set
 		xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">

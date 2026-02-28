@@ -71,4 +71,9 @@
 		xpath="/progression/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
 		-.5,-.6667</set>
 
+	<!-- Intellect Mastery: Bookworm chance to loot an additional book/mag/schematic -->
+	<set
+		xpath="/progression/perk[@name='perkIntellectMastery']/effect_group/triggered_effect[@cvar='$perkBookwormChance' and requirement[@operation='GTE']]/@value">
+		95</set>
+
 </configs>
