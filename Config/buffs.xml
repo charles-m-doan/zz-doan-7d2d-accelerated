@@ -1,0 +1,21 @@
+<configs>
+
+    <!-- Red Tea / Mineral Water: +50% running speed while buff is active -->
+    <append
+        xpath="/buffs/buff[@name='buffRedTea']/effect_group[passive_effect[@name='FoodLossPerStaminaPointGained']]">
+        <passive_effect name="RunSpeed" operation="perc_add" value=".50" />
+    </append>
+
+    <!-- Coffee: +100% running speed while buff is active -->
+    <append
+        xpath="/buffs/buff[@name='buffCoffee']/effect_group[passive_effect[@name='HypothermalResist']]">
+        <passive_effect name="RunSpeed" operation="perc_add" value="1.0" />
+    </append>
+
+    <!-- Black Strap Coffee: +150% running speed while buff is active -->
+    <append
+        xpath="/buffs/buff[@name='buffBlackStrapCoffee']/effect_group[passive_effect[@name='HypothermalResist']]">
+        <passive_effect name="RunSpeed" operation="perc_add" value="1.50" />
+    </append>
+
+</configs>

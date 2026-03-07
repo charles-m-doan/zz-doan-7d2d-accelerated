@@ -34,41 +34,41 @@
 	<!-- original value: 12 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
-		35</set>
+		30</set>
 	<!-- original value: 3.6 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@class='Action1']/property[@name='Range']/@value">
-		4</set>
+		6.0</set>
 	<!-- original value: 55 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
-		60</set>
+		65</set>
 
 	<!-- original value: 20 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
-		60</set>
+		45</set>
 	<!-- original value: 3.6 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@class='Action1']/property[@name='Range']/@value">
-		4</set>
+		6.0</set>
 	<!-- original value: 55 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
-		65</set>
+		75</set>
 
 	<!-- original value: 33 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">
-		70</set>
+		75</set>
 	<!-- original value: 3.6 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@class='Action1']/property[@name='Range']/@value">
-		4</set>
+		6.0</set>
 	<!-- original value: 55 -->
 	<set
 		xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">
-		70</set>
+		90</set>
 
 	<!-- Exploding Arrows -->
 	<!-- original value: 4 -->
