@@ -11,4 +11,43 @@
         xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']/item[@name='foodEgg']/@loot_prob_template">
         high</set>
 
+    <!-- Extra books/magazines/schematics (booksAllScaled) -->
+    <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupMailbox']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <!-- Backpacks: always drop 3 extra -->
+    <append xpath="/lootcontainers/lootgroup[@name='groupBackpacks']">
+        <item group="booksAllScaled" count="3" />
+    </append>
+
+    <!-- Other containers that plausibly hold reading material: always drop 1 extra -->
+    <append xpath="/lootcontainers/lootgroup[@name='groupDesks']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupNightstand']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupFileCabinet']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupPurse']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupLuggage']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCampingTents']">
+        <item group="booksAllScaled" count="1" />
+    </append>
+
 </configs>
