@@ -222,7 +222,8 @@
 		</recipe>
 
 		<!-- War3zuk: HD Mini Hatchet -->
-		<recipe name="HD Mini Hatchet" count="1" craft_time="30" tags="perkMiner69r">
+		<recipe name="HD Mini Hatchet" count="1" craft_time="30"
+			tags="craftingHarvestingTools,packMuleCrafting">
 			<ingredient name="resourceScrapIron" count="100" />
 			<ingredient name="resourceWood" count="50" />
 			<ingredient name="resourceDuctTape" count="1" />

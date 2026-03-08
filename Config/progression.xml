@@ -73,4 +73,12 @@
 		xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
 		-.5,-.6667</set>
 
+	<!-- HD Mini Hatchet: follow the same magazine-based crafting tier rules as the stone axe -->
+	<set
+		xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,100' and @tags='meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel']/@tags">
+		meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,HD Mini Hatchet</set>
+	<set
+		xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@name='CraftingTier' and @operation='base_add' and @level='2,4,6,8,10,100' and @tags='meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel']/@tags">
+		meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,HD Mini Hatchet</set>
+
 </configs>
