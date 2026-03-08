@@ -11,7 +11,17 @@
 	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_clear_infested']" />
 	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier3_clear_infested']" />
 	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier4_clear_infested']" />
-	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier5_clear_infested']" />
+
+	<!-- Remove 'fetch_clear' quests from trader offerings (Rekt only) -->
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_fetch_clear']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier3_fetch_clear']" />
+
+	<!-- Remove 'buried supplies' quests from trader offerings (Rekt only) -->
+	<!-- <remove
+	xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='intro_buried_supplies']" /> -->
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier1_buried_supplies']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_buried_supplies']" />
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier3_buried_supplies']" />
 
 	<!-- Jen -->
 	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier1_clear']" />
