@@ -73,6 +73,14 @@
 		xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
 		-.5,-.6667</set>
 
+	<!-- Agility Mastery: +10% walk speed and +5% run speed per perk level -->
+	<append xpath="/progression/perks/perk[@name='perkAgilityMastery']">
+		<effect_group>
+			<passive_effect name="WalkSpeed" operation="perc_add" level="1,5" value=".1,.5" />
+			<passive_effect name="RunSpeed" operation="perc_add" level="1,5" value=".05,.25" />
+		</effect_group>
+	</append>
+
 	<!-- HD Mini Hatchet: follow the same magazine-based crafting tier rules as the stone axe -->
 	<set
 		xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,100' and @tags='meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel']/@tags">
