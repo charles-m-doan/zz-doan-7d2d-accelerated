@@ -13,6 +13,9 @@
 
     <!-- Books -->
 
+    <!-- Crafting skill magazines: whenever one drops, drop 1-3 copies -->
+    <set xpath="/lootcontainers//item[contains(@name,'SkillMagazine')]/@count">1,3</set>
+
     <!-- Extra books/magazines/schematics (booksAllScaled) -->
     <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
         <item group="booksAllScaled" count="1" />
