@@ -14,7 +14,7 @@
 	<!-- original value: 2.3 -->
 	<set
 		xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">
-		2.6</set>
+		4</set>
 
 	<!-- Contact Grenade -->
 	<!-- original value: 4 -->
