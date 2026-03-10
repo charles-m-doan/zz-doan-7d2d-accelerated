@@ -94,15 +94,9 @@
         xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">
         150</set>
 
-    <!-- original value: 0.05 -->
-    <set
-        xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapBrass']/@prob">
-        0.25</set>
-
-    <!-- original value: 100,200 -->
-    <set
-        xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapBrass']/@count">
-        200,400</set>
+    <append xpath="/blocks/block[@name='terrOreLead']">
+        <drop event="Harvest" name="resourceScrapBrass" count="150" tag="oreWoodHarvest" />
+    </append>
 
     <!-- original value: 50 -->
     <set

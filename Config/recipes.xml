@@ -116,6 +116,11 @@
 
 		<!-- Tool/Weapon/Armor Parts Crafting -->
 
+		<recipe name="armorParts" count="1" craft_time="10" craft_area="workbench"
+			tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10" />
+		</recipe>
+
 		<recipe name="gunBowT1WoodenBowParts" count="1" craft_time="10" craft_area="workbench"
 			tags="workbenchCrafting">
 			<ingredient name="resourceWood" count="20" />
