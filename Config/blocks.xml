@@ -76,6 +76,35 @@
         xpath="/blocks/block[@name='OSBWoodStack']/drop[@event='Harvest' and @name='resourceWood']/@count">
         2000</set>
 
+    <!-- Brick stacks: 100x stone yield on harvest -->
+
+    <!-- palletBricksBase original value 50 -->
+    <set
+        xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+        5000</set>
+
+    <!-- bricksStack original value 50 -->
+    <set
+        xpath="/blocks/block[@name='bricksStack']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
+        5000</set>
+
+    <!-- Paper stacks: 100x paper yield on harvest -->
+
+    <!-- palletBrownBoxesBase original value 1,3 -->
+    <set
+        xpath="/blocks/block[@name='palletBrownBoxesBase']/drop[@event='Harvest' and @name='resourcePaper']/@count">
+        100,300</set>
+
+    <!-- palletCompressedCardboard original value 25 -->
+    <set
+        xpath="/blocks/block[@name='palletCompressedCardboard']/drop[@event='Harvest' and @name='resourcePaper']/@count">
+        2500</set>
+
+    <!-- dryWallStack original value 4 -->
+    <set
+        xpath="/blocks/block[@name='dryWallStack']/drop[@event='Harvest' and @name='resourcePaper']/@count">
+        400</set>
+
     <!-- Cotton plants: 3x cotton yield on harvest -->
     <set
         xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
