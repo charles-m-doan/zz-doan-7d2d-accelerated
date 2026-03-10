@@ -147,6 +147,82 @@
         xpath="/blocks/block[@name='palletBagSandSingleFlat']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         200,400</set>
 
+    <!-- Scrap polymers sources: 100x polymers yield on harvest/destroy -->
+
+    <!-- portaPottyWhite (and its variants) original value 5,10 -->
+    <set
+        xpath="/blocks/block[@name='portaPottyWhite']/drop[@event='Harvest' and @name='resourceScrapPolymers']/@count">
+        500,1000</set>
+
+    <!-- Tires (decor) -->
+
+    <!-- decoCarTireSmallFlat original value 3,6 -->
+    <set
+        xpath="/blocks/block[@name='decoCarTireSmallFlat']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        300,600</set>
+
+    <!-- decoCarTireFlat original value 3,6 -->
+    <set
+        xpath="/blocks/block[@name='decoCarTireFlat']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        300,600</set>
+
+    <!-- decoCarTirePile (and decoCarTireStack) original value 9,12 -->
+    <set
+        xpath="/blocks/block[@name='decoCarTirePile']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        900,1200</set>
+
+    <!-- decoCarTireSmallFlat02 original value 3,6 -->
+    <set
+        xpath="/blocks/block[@name='decoCarTireSmallFlat02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        300,600</set>
+
+    <!-- decoCarTireFlat02 original value 3,6 -->
+    <set
+        xpath="/blocks/block[@name='decoCarTireFlat02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        300,600</set>
+
+    <!-- decoCarTirePile02 (and decoCarTireStack02) original value 9,12 -->
+    <set
+        xpath="/blocks/block[@name='decoCarTirePile02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        900,1200</set>
+
+    <!-- Carts -->
+
+    <!-- cntUtilityCartEmpty (and variants) original value 5,12 -->
+    <set
+        xpath="/blocks/block[@name='cntUtilityCartEmpty']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        500,1200</set>
+
+    <!-- cntJanitorCartEmpty original value 5,12 -->
+    <set
+        xpath="/blocks/block[@name='cntJanitorCartEmpty']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        500,1200</set>
+
+    <!-- Coolers -->
+
+    <!-- cntCoolerRandomLootHelper (and variants) original value 2,7 -->
+    <set
+        xpath="/blocks/block[@name='cntCoolerRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        200,700</set>
+
+    <!-- Plastic trash bins -->
+
+    <!-- cntBinTrashPlasticFullWhite (and variants) original value 1,3 -->
+    <set
+        xpath="/blocks/block[@name='cntBinTrashPlasticFullWhite']/drop[@event='Harvest' and @name='resourceScrapPolymers']/@count">
+        100,300</set>
+    <set
+        xpath="/blocks/block[@name='cntBinTrashPlasticFullWhite']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        100,300</set>
+
+    <!-- cntBinTrashPlasticEmptyWhite (and variants) original value 1,3 -->
+    <set
+        xpath="/blocks/block[@name='cntBinTrashPlasticEmptyWhite']/drop[@event='Harvest' and @name='resourceScrapPolymers']/@count">
+        100,300</set>
+    <set
+        xpath="/blocks/block[@name='cntBinTrashPlasticEmptyWhite']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@count">
+        100,300</set>
+
     <!-- Cotton plants: 3x cotton yield on harvest -->
     <set
         xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
@@ -171,7 +247,7 @@
     <!-- original value: 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
-        150,300</set>
+        200,400</set>
     <!-- original value: 0.2 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@prob">
