@@ -3,12 +3,12 @@
     <!-- CLAY original value 22 -->
     <set
         xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-        100</set>
+        150</set>
 
     <!-- CLAY original value 22 -->
     <set
         xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">
-        100</set>
+        150</set>
 
     <!-- CLAY original value 9 -->
     <set
@@ -171,7 +171,7 @@
     <!-- original value: 10,30 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">
-        50,100</set>
+        150,300</set>
     <!-- original value: 0.2 -->
     <set
         xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@event='Harvest' and @name='resourceCobblestones']/@prob">
@@ -209,7 +209,7 @@
     <!-- original value: 55 -->
     <set
         xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">
-        155</set>
+        300</set>
 
     <!-- original value: 10,15 -->
     <set
