@@ -54,6 +54,28 @@
         xpath="/blocks/block[@name='oreBoulderMaster']/drop[@event='Harvest' and @name='resourceRockSmall' and @tag='oreWoodHarvest']/@count">
         70</set>
 
+    <!-- Wood stacks: 100x wood yield on harvest -->
+
+    <!-- driftwood original value 8,14 -->
+    <set
+        xpath="/blocks/block[@name='driftwood']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        800,1400</set>
+
+    <!-- modularFireWoodStackA/B original value 30 -->
+    <set
+        xpath="/blocks/block[@name='modularFireWoodStackA']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        3000</set>
+
+    <!-- modularFireWoodStackC original value 10 -->
+    <set
+        xpath="/blocks/block[@name='modularFireWoodStackC']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        1000</set>
+
+    <!-- OSBWoodStack (and its variants) original value 20 -->
+    <set
+        xpath="/blocks/block[@name='OSBWoodStack']/drop[@event='Harvest' and @name='resourceWood']/@count">
+        2000</set>
+
     <!-- Cotton plants: 3x cotton yield on harvest -->
     <set
         xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
