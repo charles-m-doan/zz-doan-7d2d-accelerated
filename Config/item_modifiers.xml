@@ -1,0 +1,55 @@
+<configs>
+    <!--
+		7DTD item-mod exclusivity is primarily controlled by the item_modifier attribute `modifier_tags`.
+		If two mods share any same `modifier_tags` token, the game treats them as mutually exclusive.
+
+		Vanilla has both of these grips set to modifier_tags="health", which prevents stacking.
+		Give them distinct tags so they can both be installed (subject to available ModSlots).
+	-->
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGrip']/@modifier_tags">
+        ergonomicGrip</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']/@modifier_tags">
+        fortifyingGrip</set>
+
+    <!--
+		Armor mod install restrictions are controlled by the item_modifier attribute `blocked_tags`.
+		Vanilla blocks fittings/connectors on some armor via tags like `lightArmor` and `assassin`.
+		Override to allow installation anywhere (still blocked by `noMods`).
+	-->
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@blocked_tags">
+        noMods</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/@blocked_tags">
+        noMods</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorMuffledConnectors']/@blocked_tags">
+        noMods</set>
+    <set
+        xpath="/item_modifiers/item_modifier[@name='modArmorAdvancedMuffledConnectors']/@blocked_tags">
+        noMods</set>
+
+    <!-- Add +10% run speed to both fittings -->
+    <append xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/effect_group">
+        <passive_effect name="RunSpeed" operation="perc_add" value=".1" />
+        <display_value name="dRunSpeed" value=".1" />
+    </append>
+    <append xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/effect_group">
+        <passive_effect name="RunSpeed" operation="perc_add" value=".1" />
+        <display_value name="dRunSpeed" value=".1" />
+    </append>
+
+    <!-- Allow tempered blade on any melee weapon -->
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@installable_tags">
+        melee</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@blocked_tags">noMods</set>
+
+    <!-- Allow attribute boost mods on any armor slot (not just helmets) -->
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@installable_tags">
+        armorHead,armorChest,armorHands,armorFeet</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/@installable_tags">
+        armorHead,armorChest,armorHands,armorFeet</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@installable_tags">
+        armorHead,armorChest,armorHands,armorFeet</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/@installable_tags">
+        armorHead,armorChest,armorHands,armorFeet</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@installable_tags">
+        armorHead,armorChest,armorHands,armorFeet</set>
+</configs>

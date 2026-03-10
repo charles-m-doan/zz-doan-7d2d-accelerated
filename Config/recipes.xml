@@ -226,6 +226,23 @@
 			<ingredient name="resourceSpring" count="2" />
 		</recipe>
 
+		<!-- Attribute armor mods (10 forged steel each) -->
+		<recipe name="modArmorPerception" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="10" />
+		</recipe>
+		<recipe name="modArmorStrength" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="10" />
+		</recipe>
+		<recipe name="modArmorFortitude" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="10" />
+		</recipe>
+		<recipe name="modArmorAgility" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="10" />
+		</recipe>
+		<recipe name="modArmorIntellect" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="10" />
+		</recipe>
+
 		<!-- War3zuk: HD Mini Hatchet -->
 		<recipe name="HD Mini Hatchet" count="1" craft_time="30"
 			tags="craftingHarvestingTools,packMuleCrafting">
