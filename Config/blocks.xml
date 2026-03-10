@@ -147,6 +147,48 @@
         xpath="/blocks/block[@name='palletBagSandSingleFlat']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         200,400</set>
 
+    <!-- Cement bags: 100x cement yield on harvest -->
+
+    <!-- palletBagConcreteBaseFull original value 30,40 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteBaseFull']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        3000,4000</set>
+
+    <!-- palletBagConcreteTile original value 30,40 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteTile']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        3000,4000</set>
+
+    <!-- palletBagConcreteBaseMed original value 15,20 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteBaseMed']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        1500,2000</set>
+
+    <!-- palletBagConcreteCapMed original value 15,20 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteCapMed']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        1500,2000</set>
+
+    <!-- palletBagConcreteBaseSml original value 6,12 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteBaseSml']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        600,1200</set>
+
+    <!-- palletBagConcreteCapSml original value 6,12 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteCapSml']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        600,1200</set>
+
+    <!-- palletBagConcreteSingleBent original value 2,4 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteSingleBent']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        200,400</set>
+
+    <!-- palletBagConcreteSingleFlat original value 2,4 -->
+    <set
+        xpath="/blocks/block[@name='palletBagConcreteSingleFlat']/drop[@event='Harvest' and @name='resourceCement']/@count">
+        200,400</set>
+
     <!-- Scrap polymers sources: 100x polymers yield on harvest/destroy -->
 
     <!-- portaPottyWhite (and its variants) original value 5,10 -->
