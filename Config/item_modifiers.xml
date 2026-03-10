@@ -52,4 +52,8 @@
         armorHead,armorChest,armorHands,armorFeet</set>
     <set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@installable_tags">
         armorHead,armorChest,armorHands,armorFeet</set>
+
+    <!-- Allow barbed wire club mod on any melee weapon -->
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@installable_tags">
+        melee</set>
 </configs>
