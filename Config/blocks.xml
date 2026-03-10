@@ -105,6 +105,48 @@
         xpath="/blocks/block[@name='dryWallStack']/drop[@event='Harvest' and @name='resourcePaper']/@count">
         400</set>
 
+    <!-- Sand bags: 100x sand (crushed sand) yield on harvest -->
+
+    <!-- sandbagStraight01 (and its variants) original value 2 -->
+    <set
+        xpath="/blocks/block[@name='sandbagStraight01']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        200</set>
+
+    <!-- palletBagSandBaseFull original value 30,40 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandBaseFull']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        3000,4000</set>
+
+    <!-- palletBagSandTile original value 30,40 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandTile']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        3000,4000</set>
+
+    <!-- palletBagSandBaseMed original value 15,20 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandBaseMed']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        1500,2000</set>
+
+    <!-- palletBagSandCapMed original value 15,20 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandCapMed']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        1500,2000</set>
+
+    <!-- palletBagSandCapSml original value 6,12 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandCapSml']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        600,1200</set>
+
+    <!-- palletBagSandSingleBent original value 2,4 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandSingleBent']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        200,400</set>
+
+    <!-- palletBagSandSingleFlat original value 2,4 -->
+    <set
+        xpath="/blocks/block[@name='palletBagSandSingleFlat']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
+        200,400</set>
+
     <!-- Cotton plants: 3x cotton yield on harvest -->
     <set
         xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest' and @name='resourceCropCottonPlant' and @tag='wildCropsHarvest']/@count">
