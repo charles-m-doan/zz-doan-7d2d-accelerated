@@ -16,20 +16,6 @@
 		xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">
 		4</set>
 
-	<!-- Contact Grenade -->
-	<!-- original value: 4 -->
-	<set
-		xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.RadiusBlocks']/@value">
-		6</set>
-	<!-- original value: 8 -->
-	<set
-		xpath="/items/item[@name='thrownGrenadeContact']/property[@class='Action0']/property[@name='Throw_strength_default']/@value">
-		20</set>
-	<!-- original value: 50 -->
-	<set
-		xpath="/items/item[@name='thrownGrenadeContact']/property[@class='Action0']/property[@name='Throw_strength_max']/@value">
-		70</set>
-
 	<!-- Spears -->
 	<!-- Normal Attack Range: original value: 2.6 (primary attack / Action0) -->
 	<set
@@ -71,36 +57,54 @@
 	<set
 		xpath="/items/item[@name='ammoArrowExploding']/property[@class='Action1']/property[@name='Explosion.RadiusEntities']/@value">
 		6</set>
-	<!-- original value: 2 -->
+	<!-- original value: 3 -->
 	<set
-		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">
+		xpath="/items/item[@name='ammoArrowExploding']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">
+		0</set>
+	<!-- original value: 80 -->
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/property[@class='Action1']/property[@name='Explosion.BlockDamage']/@value">
 		0</set>
 	<!-- original value: 180 -->
 	<set
-		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='EntityDamage']/@value">
+		xpath="/items/item[@name='ammoArrowExploding']/property[@class='Action1']/property[@name='Explosion.EntityDamage']/@value">
 		400</set>
-	<!-- original value: 40 -->
 	<set
-		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='ProjectileVelocity']/@value">
-		55</set>
+		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/display_value[@name='dExRadius']/@value">
+		6</set>
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/display_value[@name='dExBlockDamage']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/display_value[@name='dExEntityDamage']/@value">
+		400</set>
 
 	<!-- Exploding Crossbow Bolts -->
 	<!-- original value: 4 -->
 	<set
 		xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@class='Action1']/property[@name='Explosion.RadiusEntities']/@value">
 		7</set>
-	<!-- original value: 2 -->
+	<!-- original value: 3 -->
 	<set
-		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">
 		0</set>
-	<!-- original value: 250 -->
+	<!-- original value: 60 -->
 	<set
-		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='EntityDamage']/@value">
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@class='Action1']/property[@name='Explosion.BlockDamage']/@value">
+		0</set>
+	<!-- original value: 180 -->
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@class='Action1']/property[@name='Explosion.EntityDamage']/@value">
 		400</set>
-	<!-- original value: 45 -->
 	<set
-		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='ProjectileVelocity']/@value">
-		70</set>
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/display_value[@name='dExRadius']/@value">
+		7</set>
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/display_value[@name='dExBlockDamage']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/display_value[@name='dExEntityDamage']/@value">
+		400</set>
 
 	<!-- Forging / Smelting Stuff -->
 	<!-- original value: .25 -->
