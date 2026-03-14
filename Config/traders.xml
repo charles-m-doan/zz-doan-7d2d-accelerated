@@ -1,0 +1,29 @@
+<configs>
+    <!--
+		Boost Trader Jen's stock.
+
+		Vanilla reference: ref/game_original/traders.xml
+		- Jen is trader_info id="2".
+		- Pine forest uses biomeTags="forest" in rwgmixer.xml (handled elsewhere).
+
+		Notes:
+		- Adding a concrete <item name="..."/> to a trader's trader_items list makes it part of
+		  their always-available inventory for that reset (subject to any engine-level gating).
+	-->
+
+    <!--
+		Always offer a crucible (as close to "always" as possible):
+		- Vanilla crucible item name is toolForgeCrucible.
+		- Normally it appears as a rare roll inside the rareTools group.
+	-->
+    <append xpath="/traders/trader_info[@id='2']/trader_items[item[@group='medicine']]">
+        <item name="toolForgeCrucible" count="1" />
+    </append>
+
+    <!-- Boost food availability for Jen -->
+    <append xpath="/traders/trader_info[@id='2']/trader_items[item[@group='medicine']]">
+        <item group="cannedfood" count="8,14" />
+        <item group="foodSupplies" count="6,12" />
+        <item group="preparedFood" count="3,6" />
+    </append>
+</configs>
