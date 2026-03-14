@@ -1,0 +1,45 @@
+<configs>
+    <!--
+		Building block stats are mostly defined on the MATERIAL in materials.xml:
+		- MaxDamage: hit points
+		- stability_glue: horizontal support capacity per side
+		- Mass: stability load of the block
+
+		Goal for player-building blocks:
+		- frameShapes (Mwood_weak_shapes)
+		- woodShapes (Mwood_shapes)
+		- cobblestoneShapes (Mcobblestone_shapes)
+		- steelShapes (Msteel_shapes)
+
+		Changes:
+		- Double MaxDamage
+		- Double stability_glue
+		- Half Mass (int; rounded down)
+	-->
+
+    <!-- Frame shapes -->
+    <set xpath="/materials/material[@id='Mwood_weak_shapes']/property[@name='MaxDamage']/@value">500</set>
+    <set
+        xpath="/materials/material[@id='Mwood_weak_shapes']/property[@name='stability_glue']/@value">
+        80</set>
+    <set xpath="/materials/material[@id='Mwood_weak_shapes']/property[@name='Mass']/@value">1</set>
+
+    <!-- Wood shapes -->
+    <set xpath="/materials/material[@id='Mwood_shapes']/property[@name='MaxDamage']/@value">5000</set>
+    <set xpath="/materials/material[@id='Mwood_shapes']/property[@name='stability_glue']/@value">80</set>
+    <set xpath="/materials/material[@id='Mwood_shapes']/property[@name='Mass']/@value">2</set>
+
+    <!-- Cobblestone shapes -->
+    <set xpath="/materials/material[@id='Mcobblestone_shapes']/property[@name='MaxDamage']/@value">
+        10000</set>
+    <set
+        xpath="/materials/material[@id='Mcobblestone_shapes']/property[@name='stability_glue']/@value">
+        240</set>
+    <set xpath="/materials/material[@id='Mcobblestone_shapes']/property[@name='Mass']/@value">4</set>
+
+    <!-- Steel shapes -->
+    <set xpath="/materials/material[@id='Msteel_shapes']/property[@name='MaxDamage']/@value">50000</set>
+    <set xpath="/materials/material[@id='Msteel_shapes']/property[@name='stability_glue']/@value">
+        1000</set>
+    <set xpath="/materials/material[@id='Msteel_shapes']/property[@name='Mass']/@value">10</set>
+</configs>
