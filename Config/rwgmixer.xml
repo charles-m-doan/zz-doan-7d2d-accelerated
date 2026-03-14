@@ -1,0 +1,20 @@
+<configs>
+    <!--
+		Trader biome spawning is controlled by /rwgmixer/prefab_spawn_adjust nodes.
+
+		In vanilla (see ref/game_original/rwgmixer.xml), pine forest uses biomeTags="forest".
+
+		Goal: Make Trader Jen the only trader that can spawn in pine forest (forest)
+		and desert (desert).
+		Implementation: Put Jen in "forest,desert" and move other traders out of those biomes.
+	-->
+
+    <!-- Jen -> Pine forest + desert (and the only trader allowed in those biomes) -->
+    <set xpath="//prefab_spawn_adjust[@partial_name='trader_jen']/@biomeTags">forest,desert</set>
+
+    <!-- Rekt -> Burnt forest (so he still spawns somewhere) -->
+    <set xpath="//prefab_spawn_adjust[@partial_name='trader_rekt']/@biomeTags">burntforest</set>
+
+    <!-- Bob is desert in vanilla; move him out so Jen is the only desert trader -->
+    <set xpath="//prefab_spawn_adjust[@partial_name='trader_bob']/@biomeTags">burntforest</set>
+</configs>
