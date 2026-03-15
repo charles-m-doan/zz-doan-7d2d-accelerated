@@ -254,6 +254,131 @@
 		</item>
 	</append>
 
+	<!-- =============================== ARMOR CHANGES =============================== -->
+
+	<!-- Remove stamina + mobility penalties from Assassin / Commando armor -->
+	<!-- These sets are medium armor; vanilla penalties come from both per-item effects and the
+	mediumArmorPenalty tag. -->
+	<!-- Assassin -->
+	<set xpath="/items/item[@name='armorAssassinHelmet']/property[@name='Tags']/@value">
+		head,armor,armorHead,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorAssassinBonus,assassin</set>
+	<set xpath="/items/item[@name='armorAssassinOutfit']/property[@name='Tags']/@value">
+		upperbody,chest,armor,armorChest,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorAssassinBonus,assassin</set>
+	<set xpath="/items/item[@name='armorAssassinGloves']/property[@name='Tags']/@value">
+		upperbody,hands,armor,armorHands,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorAssassinBonus,assassin</set>
+	<set xpath="/items/item[@name='armorAssassinBoots']/property[@name='Tags']/@value">
+		lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorAssassinBonus,assassin</set>
+
+	<set
+		xpath="/items/item[@name='armorAssassinHelmet']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinOutfit']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinGloves']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinBoots']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+
+	<set
+		xpath="/items/item[@name='armorAssassinHelmet']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinHelmet']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinHelmet']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinOutfit']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinOutfit']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinOutfit']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinGloves']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinGloves']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinGloves']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinBoots']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinBoots']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorAssassinBoots']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+
+	<!-- Commando -->
+	<set xpath="/items/item[@name='armorCommandoHelmet']/property[@name='Tags']/@value">
+		head,armor,armorHead,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorCommandoBonus</set>
+	<set xpath="/items/item[@name='armorCommandoOutfit']/property[@name='Tags']/@value">
+		upperbody,chest,armor,armorChest,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorCommandoBonus</set>
+	<set xpath="/items/item[@name='armorCommandoGloves']/property[@name='Tags']/@value">
+		upperbody,hands,armor,armorHands,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorCommandoBonus</set>
+	<set xpath="/items/item[@name='armorCommandoBoots']/property[@name='Tags']/@value">
+		lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorDeg,armorMediumSkill,biomeChallenge,armorCommandoBonus</set>
+
+	<set
+		xpath="/items/item[@name='armorCommandoHelmet']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoOutfit']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoGloves']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoBoots']/effect_group/passive_effect[@name='Mobility']/@value">
+		0</set>
+
+	<set
+		xpath="/items/item[@name='armorCommandoHelmet']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoHelmet']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoHelmet']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoOutfit']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoOutfit']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoOutfit']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoGloves']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoGloves']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoGloves']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoBoots']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='walking']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoBoots']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">
+		0</set>
+	<set
+		xpath="/items/item[@name='armorCommandoBoots']/effect_group/display_value[@name='dStaminaChangeOT']/@value">
+		0</set>
+
 	<!-- Auto-generated patch: set ModSlots to the global maximum for every mod-capable item -->
 	<!-- Detected global max ModSlots in vanilla items.xml: 5 -->
 	<!-- This forces every tier to have the same maximum number of modifier slots. -->
