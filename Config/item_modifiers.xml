@@ -41,6 +41,14 @@
         melee</set>
     <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@blocked_tags">noMods</set>
 
+    <!--
+		Vanilla conflict: Structural Brace and Tempered Blade are mutually exclusive because they share
+		a `modifier_tags` token: "durability".
+		Give Structural Brace a distinct tag so both can be installed.
+	-->
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@modifier_tags">
+        structuralBrace</set>
+
     <!-- Allow attribute boost mods on any armor slot (not just helmets) -->
     <set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@installable_tags">
         armorHead,armorChest,armorHands,armorFeet</set>
