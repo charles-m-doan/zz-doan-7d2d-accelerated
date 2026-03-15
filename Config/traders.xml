@@ -26,4 +26,14 @@
         <item group="foodSupplies" count="6,12" />
         <item group="preparedFood" count="3,6" />
     </append>
+
+	<!-- Boost tools for Jen (specialty + general lists) -->
+	<set xpath="/traders/trader_info[@id='2']/trader_items[item[@group='medicine']]/item[@group='tools']/@count">20</set>
+	<set xpath="/traders/trader_info[@id='2']/trader_items[item[@group='traderAlways']]/item[@group='tools']/@count">18</set>
+	<set xpath="/traders/trader_info[@id='2']/trader_items[item[@group='traderAlways']]/item[@group='rareTools']/@count">5,7</set>
+
+	<!-- Ensure more wrenches specifically -->
+	<append xpath="/traders/trader_info[@id='2']/trader_items[item[@group='medicine']]">
+		<item name="meleeToolSalvageT1Wrench" count="1,3" quality="1,5" />
+	</append>
 </configs>
