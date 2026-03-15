@@ -9,6 +9,7 @@
 		- frameShapes (Mwood_weak_shapes)
 		- woodShapes (Mwood_shapes)
 		- cobblestoneShapes (Mcobblestone_shapes)
+        - concreteShapes (Mconcrete_shapes)
 		- steelShapes (Msteel_shapes)
 
 		Changes:
@@ -36,6 +37,13 @@
         xpath="/materials/material[@id='Mcobblestone_shapes']/property[@name='stability_glue']/@value">
         240</set>
     <set xpath="/materials/material[@id='Mcobblestone_shapes']/property[@name='Mass']/@value">4</set>
+
+    <!-- Concrete shapes -->
+    <set xpath="/materials/material[@id='Mconcrete_shapes']/property[@name='MaxDamage']/@value">
+        20000</set>
+    <set xpath="/materials/material[@id='Mconcrete_shapes']/property[@name='stability_glue']/@value">
+        480</set>
+    <set xpath="/materials/material[@id='Mconcrete_shapes']/property[@name='Mass']/@value">5</set>
 
     <!-- Steel shapes -->
     <set xpath="/materials/material[@id='Msteel_shapes']/property[@name='MaxDamage']/@value">50000</set>
