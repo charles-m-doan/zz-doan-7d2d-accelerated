@@ -36,7 +36,6 @@
 
 	<!-- Remove 'fetch_clear' and 'buried_supplies' quests from trader Jen offerings -->
 	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier2_fetch_clear']" />
-	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier3_fetch_clear']" />
 	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier1_buried_supplies']" />
 	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier2_buried_supplies']" />
 	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier3_buried_supplies']" />

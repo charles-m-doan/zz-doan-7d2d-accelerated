@@ -72,6 +72,18 @@
 			<!-- <ingredient name="resourceSilverNugget" count="1" /> -->
 		</recipe>
 
+		<!-- Glue at chemistry station using murky/river water (keeps the boiled-water recipe too) -->
+		<recipe name="resourceGlue" count="5" craft_area="chemistryStation"
+			tags="perkAdvancedEngineering,chemStationCrafting">
+			<ingredient name="resourceBone" count="5" />
+			<ingredient name="drinkJarRiverWater" count="1" />
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add"
+					value="-1"
+					tags="resourceBone" />
+			</effect_group>
+		</recipe>
+
 		<!-- Craftable Scrap Polymers (chemistry station) -->
 
 		<recipe name="resourceScrapPolymers" count="1" craft_area="chemistryStation"
