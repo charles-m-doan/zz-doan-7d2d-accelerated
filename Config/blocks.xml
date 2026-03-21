@@ -25,6 +25,14 @@
         xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">
         100</set>
 
+    <!-- Farm plot blocks (POI/dev-placed): allow shoveling them up into the player-placeable
+    variant -->
+    <!-- Vanilla: farmPlotBlockPlayer drops farmPlotBlockVariantHelper on Destroy, but farmPlotBlock
+    (Dev/POI) drops nothing. -->
+    <set xpath="/blocks/block[@name='farmPlotBlock']/drop[@event='Destroy']/@name">
+        farmPlotBlockVariantHelper</set>
+    <set xpath="/blocks/block[@name='farmPlotBlock']/drop[@event='Destroy']/@count">1</set>
+
     <!-- Gore blocks: 3x bone yield (resourceBone) -->
 
     <!-- goreBlockAnimal original value 5,10 -->
