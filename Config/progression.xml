@@ -11,6 +11,14 @@
 		</effect_group>
 	</append>
 
+	<!-- Agility Mastery: +10% walk speed and +5% run speed per perk level -->
+	<append xpath="/progression/perks/perk[@name='perkAgilityMastery']">
+		<effect_group>
+			<passive_effect name="WalkSpeed" operation="perc_add" level="1,5" value=".1,.5" />
+			<passive_effect name="RunSpeed" operation="perc_add" level="1,5" value=".05,.25" />
+		</effect_group>
+	</append>
+
 	<!-- Fortitude: +10% stamina recovery per Fortitude level (1 => 10%, 10 => 100%) -->
 	<append xpath="/progression/attributes/attribute[@name='attFortitude']">
 		<effect_group>
@@ -66,15 +74,18 @@
 	<!-- Counterbalance: reduce Harvesting XP roughly inverse to yield (rank1: -50%, rank5: -66.67%) -->
 	<set
 		xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Harvesting']/@value">
-		-.5,-.6667</set>
+		0,0</set>
 
-	<!-- Agility Mastery: +10% walk speed and +5% run speed per perk level -->
-	<append xpath="/progression/perks/perk[@name='perkAgilityMastery']">
-		<effect_group>
-			<passive_effect name="WalkSpeed" operation="perc_add" level="1,5" value=".1,.5" />
-			<passive_effect name="RunSpeed" operation="perc_add" level="1,5" value=".05,.25" />
-		</effect_group>
-	</append>
+	<!-- Intellect Mastery: vanilla magazine skill-point bonus (50% chance) unlocked at rank 1 -->
+	<set
+		xpath="/progression/perks/perk[@name='perkIntellectMastery']/level_requirements[@level='1']/requirement[@name='ProgressionLevel' and @progression_name='attIntellect']/@value">
+		3</set>
+	<set
+		xpath="/progression/perks/perk[@name='perkIntellectMastery']/level_requirements[@level='1']/requirement[@name='ProgressionLevel' and @progression_name='attIntellect']/@desc_key">
+		reqIntellectLevel03</set>
+	<set
+		xpath="/progression/perks/perk[@name='perkIntellectMastery']/effect_group/triggered_effect[@trigger='onPerkLevelChanged' and @action='ModifyCVar']/requirement[@name='ProgressionLevel' and @progression_name='perkIntellectMastery' and @operation='GTE' and @value='3']/@value">
+		1</set>
 
 	<!-- HD Mini Hatchet: follow the same magazine-based crafting tier rules as the stone axe -->
 	<set
