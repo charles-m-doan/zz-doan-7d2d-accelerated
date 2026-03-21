@@ -1,5 +1,8 @@
 <configs>
 
+	<!-- Double trader quest tier progression speed (vanilla: quests_per_tier=10) -->
+	<set xpath="/quests/@quests_per_tier">5</set>
+
 	<!-- Remove pure 'clear' / 'infested clear' quests from trader offerings -->
 
 	<!-- Rekt -->
