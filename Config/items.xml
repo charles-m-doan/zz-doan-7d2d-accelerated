@@ -74,7 +74,10 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"
 					tags="perkMiner69r" />
 				<display_value name="dBlockRepairAmount" value="350" />
-				<passive_effect name="HarvestCount" operation="base_set" value=".8"
+				<!-- 3x the butcher harvest -->
+				<passive_effect name="HarvestCount" operation="base_set" value="1"
+					tags="butcherHarvest" />
+				<passive_effect name="HarvestCount" operation="perc_add" value="2"
 					tags="butcherHarvest" />
 				<!-- Farming: 2x crop yield + bonus seed drop while using this tool -->
 				<passive_effect name="HarvestCount" operation="perc_add" value="1"
